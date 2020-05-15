@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    //Problem: Currently Game can start in PauseMenu, this has to be adressed in the Main Menu script.
+
+
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
