@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     Vector2 movement;
     public Animator animator;
+    public int maxHealth = 100;
+    public int currentHealth = 100;
+    public bool isAlive = true;
 
     // Update is called once per frame
     void Update()
