@@ -60,6 +60,6 @@ public class Enemy : MonoBehaviour
 
     void moveFromPlayer(Vector2 direction) //Moves Enemy away from player
     {
-        rb.MovePosition(-1 * (Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+        rb.MovePosition((Vector2)transform.position + (direction * -1 * moveSpeed * Time.deltaTime));
     }
 }
