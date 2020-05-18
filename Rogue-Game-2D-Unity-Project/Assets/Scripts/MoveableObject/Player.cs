@@ -5,13 +5,18 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public int maxHealth = 100;
-    private int currentHealth = 100;
+    private int currentHealth;
     public bool isAlive = true;
     
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     Vector2 movement;
     public Animator animator;
+
+    public Player()
+    {
+        currentHealth = maxHealth;
+    }
 
     public int CurrentHealth
     {

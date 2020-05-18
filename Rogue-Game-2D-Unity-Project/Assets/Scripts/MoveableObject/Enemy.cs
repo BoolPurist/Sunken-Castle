@@ -9,9 +9,15 @@ public class Enemy : MonoBehaviour
     public float moveSpeed = 2f;
     private Vector2 movement;
 
-    public int MaxHealth = 100;
-    private int currentHealth = 100;
+    public int maxHealth = 100;
+    private int currentHealth;
     public bool isAlive = true;
+    public int attackType = 1;
+
+    public Enemy()
+    {
+        currentHealth = maxHealth;
+    }
 
     public int CurrentHealth
     {
@@ -27,20 +33,33 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = player.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
+        Vector3 direction = player.position - transform.position; //saves the direction from the Enemy to the player in "direction"
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //calculates the angle at which the enemy has to spin in order to stay in line with the player
+        rb.rotation = angle; //spins the enemy;
         direction.Normalize(); //Brings the value of "direction" between "-1" and "1" for the movement function
         movement = direction;
     }
 
-    private void FixedUpdate() //
+    private void FixedUpdate() //Moves the Enemy
     {
-        moveCharacter(movement);
+        if(attackType == 1)
+        {
+            moveToPlayer(movement);
+        }
+        else if(attackType == 2)
+        {
+            moveFromPlayer(movement);
+        }
+        
     }
 
-    void moveCharacter(Vector2 direction)
+    void moveToPlayer(Vector2 direction) //Moves Enemy towards the player
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+    }
+
+    void moveFromPlayer(Vector2 direction) //Moves Enemy away from player
+    {
+        rb.MovePosition(-1 * (Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
 }
