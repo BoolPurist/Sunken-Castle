@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bba317dc1e332748b149df429c58184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBtwAttacks: 0.5
+  timeBtwAttacks: 0.1
   attackPosRight: {fileID: 1062292688}
   attackPosLeft: {fileID: 1287408878}
   attackPosUp: {fileID: 119273337}
