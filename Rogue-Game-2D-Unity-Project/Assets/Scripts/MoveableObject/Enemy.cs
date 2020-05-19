@@ -14,11 +14,6 @@ public class Enemy : MonoBehaviour
     public bool isAlive = true;
     public int attackType = 1;
 
-    public Enemy()
-    {
-        currentHealth = maxHealth;
-    }
-
     public int CurrentHealth
     {
         get { return currentHealth; }
@@ -28,6 +23,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame

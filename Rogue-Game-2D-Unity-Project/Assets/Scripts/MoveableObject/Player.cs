@@ -13,11 +13,6 @@ public class Player : MonoBehaviour
     Vector2 movement;
     public Animator animator;
 
-    public Player()
-    {
-        currentHealth = maxHealth;
-    }
-
     public int CurrentHealth
     {
         get { return currentHealth; }
@@ -26,6 +21,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth; 
     }
 
     void Update()
