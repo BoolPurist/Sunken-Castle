@@ -30,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
 
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
@@ -40,7 +40,7 @@ public class PlayerAttack : MonoBehaviour
 
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
             }
             else if (Input.GetKey(KeyCode.UpArrow))
@@ -50,7 +50,7 @@ public class PlayerAttack : MonoBehaviour
 
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
             }
             else if (Input.GetKey(KeyCode.DownArrow))
@@ -60,7 +60,7 @@ public class PlayerAttack : MonoBehaviour
 
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
             }
             curTimeBtwAttacks = timeBtwAttacks; //After the attack, Timer gets set back

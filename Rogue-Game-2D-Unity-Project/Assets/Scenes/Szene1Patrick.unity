@@ -161,9 +161,11 @@ GameObject:
   m_Component:
   - component: {fileID: 164231163}
   - component: {fileID: 164231162}
-  - component: {fileID: 164231161}
   - component: {fileID: 164231160}
   - component: {fileID: 164231164}
+  - component: {fileID: 164231166}
+  - component: {fileID: 164231165}
+  - component: {fileID: 164231161}
   m_Layer: 8
   m_Name: EnemyTest
   m_TagString: Untagged
@@ -204,12 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914be3fb13cefb44ea9b347e5e9e2841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1589898820}
-  rb: {fileID: 0}
-  moveSpeed: 1
   maxHealth: 100
-  isAlive: 1
-  attackType: 2
 --- !u!212 &164231162
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -268,7 +265,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164231159}
   m_LocalRotation: {x: -0, y: 0, z: 0.00042406097, w: -0.99999994}
-  m_LocalPosition: {x: -3.49, y: -0.23, z: 0}
+  m_LocalPosition: {x: -2.48, y: 0.08, z: 0}
   m_LocalScale: {x: 3.811679, y: 3.6710947, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -300,6 +297,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.45, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &164231165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164231159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209da3d25ce6c6b498d7c558a5769622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &164231166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164231159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ed018e93e15b845ae4eff5fcfff242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1589898820}
+  rb: {fileID: 164231160}
+  moveSpeed: 1
+  movementType: 2
 --- !u!1 &1062292687
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,8 +542,9 @@ GameObject:
   - component: {fileID: 1589898818}
   - component: {fileID: 1589898819}
   - component: {fileID: 1589898822}
-  - component: {fileID: 1589898817}
   - component: {fileID: 1589898823}
+  - component: {fileID: 1589898821}
+  - component: {fileID: 1589898817}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -535,12 +561,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1589898816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfa797eb88c4fba478d3cd88d5ccd926, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d58980ad9e954b40a0fce0687352ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  isAlive: 1
-  moveSpeed: 10
+  moveSpeed: 5
   rb: {fileID: 1589898818}
 --- !u!50 &1589898818
 Rigidbody2D:
@@ -621,7 +645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589898816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.87, y: -0.03, z: 0}
+  m_LocalPosition: {x: 0.23, y: 0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1062292688}
@@ -631,6 +655,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1589898821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589898816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa797eb88c4fba478d3cd88d5ccd926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!58 &1589898822
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -679,9 +716,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1704377978}
   - component: {fileID: 1704377977}
-  - component: {fileID: 1704377976}
   - component: {fileID: 1704377975}
   - component: {fileID: 1704377979}
+  - component: {fileID: 1704377981}
+  - component: {fileID: 1704377980}
+  - component: {fileID: 1704377976}
   m_Layer: 8
   m_Name: EnemyTest (1)
   m_TagString: Untagged
@@ -722,12 +761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914be3fb13cefb44ea9b347e5e9e2841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1589898820}
-  rb: {fileID: 0}
-  moveSpeed: 3
   maxHealth: 100
-  isAlive: 1
-  attackType: 1
 --- !u!212 &1704377977
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -786,7 +820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704377974}
   m_LocalRotation: {x: -0, y: 0, z: 0.00042406097, w: -0.99999994}
-  m_LocalPosition: {x: 5.66, y: 2.19, z: 0}
+  m_LocalPosition: {x: 7.74, y: 0.05, z: 0}
   m_LocalScale: {x: 3.811679, y: 3.6710947, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -818,6 +852,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.45, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &1704377980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704377974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209da3d25ce6c6b498d7c558a5769622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1704377981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704377974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ed018e93e15b845ae4eff5fcfff242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1589898820}
+  rb: {fileID: 1704377975}
+  moveSpeed: 3
+  movementType: 1
 --- !u!1 &1962569869
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962569869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.83, y: 2.65, z: 0}
+  m_LocalPosition: {x: -0.09, y: 3.24, z: 0}
   m_LocalScale: {x: 8.673752, y: 6.9349904, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
