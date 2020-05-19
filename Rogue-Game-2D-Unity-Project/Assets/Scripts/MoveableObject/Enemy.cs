@@ -29,6 +29,11 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(currentHealth <= 0)
+        {
+            Destroy(gameObject); //If health is, or is below 0, destroy the object
+        }
+
         Vector3 direction = player.position - transform.position; //saves the direction from the Enemy to the player in "direction"
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //calculates the angle at which the enemy has to spin in order to stay in line with the player
         rb.rotation = angle; //spins the enemy;
@@ -57,5 +62,11 @@ public class Enemy : MonoBehaviour
     void moveFromPlayer(Vector2 direction) //Moves Enemy away from player
     {
         rb.MovePosition((Vector2)transform.position + (direction * -1 * moveSpeed * Time.deltaTime));
+    }
+
+    public void TakeDamage(int damage) //Function which reduces the health of an enemy, gets called in the PlayerAttack script
+    {
+        currentHealth -= damage;
+        Debug.Log("damage TAKEN"); //Debugging notification for testing
     }
 }
