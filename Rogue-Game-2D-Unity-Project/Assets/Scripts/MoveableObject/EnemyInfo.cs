@@ -23,7 +23,8 @@ public class EnemyInfo : MonoBehaviour
     {
         if(currentHealth <= 0) //ADD EVENT
         {
-            Destroy(this.gameObject); //If health is, or is below 0, destroy the object
+
+            Destroy(gameObject); //If health is, or is below 0, destroy the object
         }
     }
 

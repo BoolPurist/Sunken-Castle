@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
 {
+    public delegate void OnHealthChange (int number);
+    public event OnHealthChange OnHealthChanges;
     public event EventHandler OnDeathPlayer;
-    public event EventHandler OnHealthChange;
+
 
     public int maxHealth = 100;
     private int currentHealth;
@@ -19,21 +21,24 @@ public class PlayerInfo : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        OnHealthChanges += GameObject.FindWithTag("GUIHealth").GetComponent<UpdateStatsText>().CallbackUpdateStats;
+        OnDeathPlayer += GameObject.FindWithTag("MainCamera").GetComponent<ManageGameOverScreen>().CallbackCreateGameOverScreen;
     }
 
     void Update()
     {
-        this.currentHealth++;
         if (currentHealth <= 0)
         {
-            OnDeathPlayer(this, EventArgs.Empty);
+            OnDeathPlayer.Invoke(this, EventArgs.Empty);
+            Destroy(gameObject);
         }
+        TakeDamage(1);
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        OnHealthChange(this, EventArgs.Empty);
+        OnHealthChanges.Invoke(CurrentHealth);
     }
 
 
