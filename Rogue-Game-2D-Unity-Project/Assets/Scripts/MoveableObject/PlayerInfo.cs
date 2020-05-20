@@ -7,22 +7,24 @@ public class PlayerInfo : MonoBehaviour
 {
     public event EventHandler OnDeathPlayer;
     public event EventHandler OnHealthChange;
+
     public int maxHealth = 100;
     private int currentHealth;
-    
+
     public int CurrentHealth
     {
         get { return currentHealth; }
     }
 
     void Start()
-    {      
-        currentHealth = maxHealth; 
+    {
+        currentHealth = maxHealth;
     }
 
     void Update()
     {
-        if(currentHealth <= 0)
+        this.currentHealth++;
+        if (currentHealth <= 0)
         {
             OnDeathPlayer(this, EventArgs.Empty);
         }
@@ -34,6 +36,6 @@ public class PlayerInfo : MonoBehaviour
         OnHealthChange(this, EventArgs.Empty);
     }
 
-    
+
 }
 

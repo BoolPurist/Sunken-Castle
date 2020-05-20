@@ -992,7 +992,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1858616956}
-        m_MethodName: OnClickStartNewGame
+        m_MethodName: OnClickChangeScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1295,8 +1295,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1858616955}
-  - component: {fileID: 1858616956}
   - component: {fileID: 1858616957}
+  - component: {fileID: 1858616956}
   m_Layer: 0
   m_Name: EventsMainMenue
   m_TagString: Untagged

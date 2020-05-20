@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6642312845777872841}
   - component: {fileID: 3535155826397463474}
   - component: {fileID: 6301525590440269291}
+  - component: {fileID: -7454399145084759034}
   m_Layer: 0
   m_Name: TextStats
   m_TagString: Untagged
@@ -78,3 +79,15 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Stat :  '
+--- !u!114 &-7454399145084759034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6326337699202870811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea219dcdf5e323044bda1aceb0893ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
