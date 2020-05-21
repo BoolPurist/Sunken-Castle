@@ -32,7 +32,6 @@ public class PlayerInfo : MonoBehaviour
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
             Destroy(gameObject);
         }
-        TakeDamage(1);
     }
 
     public void TakeDamage(int damage)

@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class EnemyInfo : MonoBehaviour
 {
-    //public event EventHandler OnDeathEnemy; 
+    public delegate void OnDeathEnemy(int number);
+    public event OnDeathEnemy OnDeathEnemies;
+
+    public int score = 100;
     public int maxHealth = 100;
     private int currentHealth;
 
@@ -16,6 +19,7 @@ public class EnemyInfo : MonoBehaviour
 
     void Start()
     {
+        OnDeathEnemies += GameObject.FindWithTag("GUIScore").GetComponent<UpdateStatsText>().CallbackUpdateStats;
         currentHealth = maxHealth;
     }
 
@@ -23,7 +27,7 @@ public class EnemyInfo : MonoBehaviour
     {
         if(currentHealth <= 0) //ADD EVENT
         {
-
+            OnDeathEnemies.Invoke(score);
             Destroy(gameObject); //If health is, or is below 0, destroy the object
         }
     }
