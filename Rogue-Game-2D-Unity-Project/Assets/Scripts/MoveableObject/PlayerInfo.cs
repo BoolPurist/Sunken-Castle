@@ -23,6 +23,7 @@ public class PlayerInfo : MonoBehaviour
         currentHealth = maxHealth;
         OnHealthChanges += GameObject.FindWithTag("GUIHealth").GetComponent<UpdateStatsText>().CallbackUpdateStats;
         OnDeathPlayer += GameObject.FindWithTag("MainCamera").GetComponent<ManageGameOverScreen>().CallbackCreateGameOverScreen;
+        OnHealthChanges.Invoke(CurrentHealth);
     }
 
     void Update()
