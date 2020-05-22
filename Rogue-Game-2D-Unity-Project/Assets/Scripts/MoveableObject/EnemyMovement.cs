@@ -27,6 +27,10 @@ public class EnemyMovement : MonoBehaviour
             direction.Normalize(); //Brings the value of "direction" between "-1" and "1" for the movement function
             movement = direction;
         }
+        else
+        {
+            movement = Vector3.zero;
+        }
     }
 
     private void FixedUpdate() //Moves the Enemy
