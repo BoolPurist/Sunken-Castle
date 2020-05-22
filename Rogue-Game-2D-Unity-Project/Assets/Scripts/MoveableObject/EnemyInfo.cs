@@ -19,7 +19,7 @@ public class EnemyInfo : MonoBehaviour
 
     void Start()
     {
-        OnDeathEnemies += GameObject.FindWithTag("GUIScore").GetComponent<UpdateStatsText>().CallbackUpdateStats;
+        OnDeathEnemies += GameObject.FindWithTag("GUIScore").GetComponent<UpdateStatsText>().CallbackUpdateStatsAdd;
         currentHealth = maxHealth;
     }
 
