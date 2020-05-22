@@ -7,7 +7,6 @@ public class ChangeScene : MonoBehaviour
     // Scene must also be added in the build settings for that project.
     public void OnClickChangeScene(string sceneName)
     {
-        Debug.Log("Clicking");
         if (sceneName == null || sceneName == String.Empty)
         {
             Debug.Log("No scene name was provided !");
