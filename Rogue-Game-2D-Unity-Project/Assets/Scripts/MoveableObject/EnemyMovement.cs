@@ -19,11 +19,14 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = player.position - transform.position; //saves the direction from the Enemy to the player in "direction"
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //calculates the angle at which the enemy has to spin in order to stay in line with the player
-        rb.rotation = angle; //spins the enemy;
-        direction.Normalize(); //Brings the value of "direction" between "-1" and "1" for the movement function
-        movement = direction;
+        if(player != null)
+        {
+            Vector3 direction = player.position - transform.position; //saves the direction from the Enemy to the player in "direction"
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //calculates the angle at which the enemy has to spin in order to stay in line with the player
+            rb.rotation = angle; //spins the enemy;
+            direction.Normalize(); //Brings the value of "direction" between "-1" and "1" for the movement function
+            movement = direction;
+        }
     }
 
     private void FixedUpdate() //Moves the Enemy
