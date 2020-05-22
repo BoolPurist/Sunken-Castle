@@ -24,25 +24,31 @@ public class UpdateStatsText : MonoBehaviour
 
     }
 
+    // Updates the gui text the current stat value.
+    private void UpdateText()
+    {
+        Text statText = this.GetComponent<Text>();
+        statText.text = $"{this.textTemplate} {this.currentStat}";
+    }
+
     // Takes the number and insert it at end of the gui text.
     public void CallbackUpdateStats(int number)
     {
         this.currentStat = number;
-        Text statText = this.GetComponent<Text>();
-        statText.text = $"{this.textTemplate} {number}";
+        this.UpdateText();
     }
 
     // Adds number to a inner stat value and then inserts that value at the end of the guitext
     public void CallbackUpdateStatsAdd(int number)
     {
         this.currentStat += number;
-        CallbackUpdateStats(currentStat);
+        this.UpdateText();
     }
 
     // Resets the stat value to zero and then inserts that zero at the end of the gui text.
     public void CallbackUpdateStatsReset()
     {
         this.currentStat = 0;
-        CallbackUpdateStats(currentStat);
+        this.UpdateText();
     }
 }
