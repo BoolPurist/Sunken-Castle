@@ -11,8 +11,6 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
-    public Scene previousScene;
-
     // Update is called once per frame
     void Update()
     {
@@ -33,7 +31,8 @@ public class PauseMenu : MonoBehaviour
     // Game is resumed
     public void Resume()
     {
-        SceneManager.LoadScene(previousScene); //
+        // Scene before Pause_Menu_Scene is loaded
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -42,8 +41,6 @@ public class PauseMenu : MonoBehaviour
     // Game is paused
     void Pause()
     {
-        // Previous Scene is saved
-        previousScene = scenename; //
         SceneManager.LoadScene(Pause_Menu_Scene); //
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
