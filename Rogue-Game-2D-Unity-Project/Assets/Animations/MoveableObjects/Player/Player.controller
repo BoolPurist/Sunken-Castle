@@ -111,6 +111,12 @@ AnimatorController:
   m_Name: Player
   serializedVersion: 5
   m_AnimatorParameters:
+  - m_Name: Speed
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: Horizontal
     m_Type: 1
     m_DefaultFloat: 0
@@ -118,12 +124,6 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: Vertical
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: Speed
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -150,7 +150,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Player_Idle
-  m_Speed: 0.1
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8558805465926428278}
@@ -181,7 +181,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: 456d6af773cb14a4cb9bdf09d1025446, type: 2}
     m_Threshold: -1
     m_Position: {x: 0, y: -1}
-    m_TimeScale: 0.05
+    m_TimeScale: 5
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
@@ -189,7 +189,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: e23fd6f5bf19d1942b9dadc35fedacf5, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 1}
-    m_TimeScale: 0.05
+    m_TimeScale: 5
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
@@ -197,7 +197,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: 10848b42fd442d8419d752675da78bfa, type: 2}
     m_Threshold: 3
     m_Position: {x: -1, y: 0}
-    m_TimeScale: 0.05
+    m_TimeScale: 5
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
@@ -205,7 +205,7 @@ BlendTree:
     m_Motion: {fileID: 7400000, guid: 85f6e387d56dec04bb142a46aae72ad9, type: 2}
     m_Threshold: 5
     m_Position: {x: 1, y: 0}
-    m_TimeScale: 0.05
+    m_TimeScale: 5
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
