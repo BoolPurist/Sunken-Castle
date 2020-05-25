@@ -128,6 +128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8258146796176117684, guid: 567ecb02f87517542bb0845d9fa8ad75,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 11.210022
+      objectReference: {fileID: 0}
     - target: {fileID: 8520280414304190855, guid: 567ecb02f87517542bb0845d9fa8ad75,
         type: 3}
       propertyPath: m_Name
@@ -218,6 +223,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabGameOverScreen: {fileID: 8383093309961739429, guid: e97fab259d08aed4ebf3c7492dbc17c0,
     type: 3}
+--- !u!1 &1926819268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8016446817179768403, guid: 45ac8d50db962824fba9295b6af925f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 8016446816529446931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1926819275
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926819268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2db73331f372cfb4eac5e5b70970df17, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1962569869
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,10 +533,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8016446817179768402, guid: 45ac8d50db962824fba9295b6af925f4,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1926819275}
     - target: {fileID: 8016446817179768403, guid: 45ac8d50db962824fba9295b6af925f4,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8016446817179768404, guid: 45ac8d50db962824fba9295b6af925f4,
+        type: 3}
+      propertyPath: attackRange
+      value: 1.24
       objectReference: {fileID: 0}
     - target: {fileID: 8016446817179768407, guid: 45ac8d50db962824fba9295b6af925f4,
         type: 3}
