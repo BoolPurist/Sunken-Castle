@@ -390,6 +390,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyRunToPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 2808500035184839706, guid: 38a9648c136a49541be54e680ca70854,
+        type: 3}
+      propertyPath: damage
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2808500035184839706, guid: 38a9648c136a49541be54e680ca70854,
+        type: 3}
+      propertyPath: attackRange.x
+      value: 1.94
+      objectReference: {fileID: 0}
     - target: {fileID: 2808500035184839707, guid: 38a9648c136a49541be54e680ca70854,
         type: 3}
       propertyPath: player

@@ -30,6 +30,8 @@ public class PlayerInfo : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            currentHealth = 0;
+            OnHealthChanges.Invoke(CurrentHealth);
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
             Destroy(gameObject);
         }
