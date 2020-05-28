@@ -7,7 +7,7 @@ public class PlayerAttack : MonoBehaviour
 
     public float timeBtwAttacks; //Time the player has to wait before attacking again, public so changeable by the designer (in seconds, so value 5f means 5 seconds)
     private float curTimeBtwAttacks; //Time until the next attack can be started
-
+    public Animator animator;
     
     public Transform attackPosRight; //Position of the attack
     public Transform attackPosLeft;
@@ -32,6 +32,8 @@ public class PlayerAttack : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
+                animator.SetFloat("AttackDirectionX", 1);
+                animator.SetBool("IsAttacking", true);
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
             {
@@ -42,6 +44,8 @@ public class PlayerAttack : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
+                animator.SetFloat("AttackDirectionX", -1);
+                animator.SetBool("IsAttacking", true);
             }
             else if (Input.GetKey(KeyCode.UpArrow))
             {
@@ -52,6 +56,8 @@ public class PlayerAttack : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
+                animator.SetFloat("AttackDirectionY", 1);
+                animator.SetBool("IsAttacking", true);
             }
             else if (Input.GetKey(KeyCode.DownArrow))
             {
@@ -62,6 +68,8 @@ public class PlayerAttack : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
+                animator.SetFloat("AttackDirectionY", -1);
+                animator.SetBool("IsAttacking", true);
             }
             curTimeBtwAttacks = timeBtwAttacks; //After the attack, Timer gets set back
         }
@@ -69,6 +77,9 @@ public class PlayerAttack : MonoBehaviour
         {
             curTimeBtwAttacks -= Time.deltaTime; //Time gets reduced by time passed
         }
+        animator.SetBool("IsAttacking", false);
+        animator.SetFloat("AttackDirectionX", 0);
+        animator.SetFloat("AttackDirectionY", 0);
     }
 
     void OnDrawGizmosSelected() //Visualizes the attack for testing
