@@ -13,12 +13,6 @@ public class EnemyAttack : MonoBehaviour
     public float timeBtwEnemyAttack;
     private float curTimeBtwEnemyAttack;
 
-    void Start()
-    {
-        
-    }
-
-
     void Update()
     {
         if(curTimeBtwEnemyAttack <= 0)

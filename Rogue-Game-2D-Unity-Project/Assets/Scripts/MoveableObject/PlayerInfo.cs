@@ -43,6 +43,19 @@ public class PlayerInfo : MonoBehaviour
         OnHealthChanges.Invoke(CurrentHealth);
     }
 
+    public void GainHealth(int health)
+    {
+        if(currentHealth + health >= 100)
+        {
+            currentHealth = 100;
+        }
+        else
+        {
+            currentHealth += health;
+        }
+        OnHealthChanges.Invoke(CurrentHealth);
+    }
+
 
 }
 
