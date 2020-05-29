@@ -31,7 +31,7 @@ public class PauseResume : MonoBehaviour
     public void Resume()
     {
         // Scene before Pause_Menu_Scene is loaded
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
