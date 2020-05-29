@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class PauseMenu : MonoBehaviour
+public class PauseResume : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
@@ -31,7 +31,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         // Scene before Pause_Menu_Scene is loaded
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -39,8 +39,7 @@ public class PauseMenu : MonoBehaviour
 
     // Game is paused
     void Pause()
-    {
-        SceneManager.LoadScene(Pause_Menu_Scene); //
+    {   // SceneManager.LoadScene(Pause_Menu_Scene);
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
