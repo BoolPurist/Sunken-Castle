@@ -10,11 +10,10 @@ public class UpdateStatsText : MonoBehaviour
     private string textTemplate;
     private int currentStat = 0;
     // Start is called before the first frame update
+
     void Start()
     {
-        Text statText = this.GetComponent<Text>();
-        // Saves the text given by the unity inspector.
-        textTemplate = statText.text;
+
     }
 
 
@@ -28,6 +27,12 @@ public class UpdateStatsText : MonoBehaviour
     private void UpdateText()
     {
         Text statText = this.GetComponent<Text>();
+        if (this.textTemplate == null)
+        {
+            this.textTemplate = statText.text;
+        }
+
+        int textPointsLength = this.currentStat.ToString().Length;
         statText.text = $"{this.textTemplate} {this.currentStat}";
     }
 
