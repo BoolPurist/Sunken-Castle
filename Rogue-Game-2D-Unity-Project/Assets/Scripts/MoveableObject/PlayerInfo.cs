@@ -8,6 +8,7 @@ public class PlayerInfo : MonoBehaviour
     public delegate void OnHealthChange (int number);
     public event OnHealthChange OnHealthChanges;
     public event EventHandler OnDeathPlayer;
+    public Animator animator;
 
 
     public int maxHealth = 100;
@@ -20,6 +21,7 @@ public class PlayerInfo : MonoBehaviour
 
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
         currentHealth = maxHealth;
         OnHealthChanges += GameObject.FindWithTag("GUIHealth").GetComponent<UpdateStatsText>().CallbackUpdateStats;
         OnDeathPlayer += GameObject.FindWithTag("MainCamera").GetComponent<ManageGameOverScreen>().CallbackCreateGameOverScreen;
@@ -39,6 +41,7 @@ public class PlayerInfo : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        animator.SetTrigger("IsHit");
         currentHealth -= damage;
         OnHealthChanges.Invoke(CurrentHealth);
     }
