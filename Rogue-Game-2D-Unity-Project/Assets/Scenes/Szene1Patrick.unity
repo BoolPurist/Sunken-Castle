@@ -701,6 +701,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1926819275}
+    - target: {fileID: 8016446817179768406, guid: 45ac8d50db962824fba9295b6af925f4,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1926819275}
     - target: {fileID: 8016446817179768407, guid: 45ac8d50db962824fba9295b6af925f4,
         type: 3}
       propertyPath: m_LocalPosition.x

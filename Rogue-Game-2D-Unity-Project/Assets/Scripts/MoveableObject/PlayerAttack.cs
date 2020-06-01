@@ -14,7 +14,6 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPosUp;
     public Transform attackPosDown; 
 
-
     public float attackRange; //Range of the attack
     public LayerMask whatIsEnemy; 
     public int damage; //Damage dealt to enemies in radius
@@ -32,8 +31,7 @@ public class PlayerAttack : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
-                animator.SetFloat("AttackDirectionX", 1);
-                animator.SetBool("IsAttacking", true);
+                animator.SetTrigger("IsAttackingRight");
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
             {
@@ -44,8 +42,7 @@ public class PlayerAttack : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
-                animator.SetFloat("AttackDirectionX", -1);
-                animator.SetBool("IsAttacking", true);
+                animator.SetTrigger("IsAttackingLeft");
             }
             else if (Input.GetKey(KeyCode.UpArrow))
             {
@@ -56,8 +53,7 @@ public class PlayerAttack : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
-                animator.SetFloat("AttackDirectionY", 1);
-                animator.SetBool("IsAttacking", true);
+                animator.SetTrigger("IsAttackingUp");
             }
             else if (Input.GetKey(KeyCode.DownArrow))
             {
@@ -68,8 +64,7 @@ public class PlayerAttack : MonoBehaviour
                 {
                     enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
                 }
-                animator.SetFloat("AttackDirectionY", -1);
-                animator.SetBool("IsAttacking", true);
+                animator.SetTrigger("IsAttackingDown");
             }
             curTimeBtwAttacks = timeBtwAttacks; //After the attack, Timer gets set back
         }
@@ -77,9 +72,6 @@ public class PlayerAttack : MonoBehaviour
         {
             curTimeBtwAttacks -= Time.deltaTime; //Time gets reduced by time passed
         }
-        animator.SetBool("IsAttacking", false);
-        animator.SetFloat("AttackDirectionX", 0);
-        animator.SetFloat("AttackDirectionY", 0);
     }
 
     void OnDrawGizmosSelected() //Visualizes the attack for testing
