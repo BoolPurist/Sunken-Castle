@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
 {
-    public delegate void OnHealthChange (int number);
+    public delegate void OnHealthChange(int number);
     public event OnHealthChange OnHealthChanges;
     public event EventHandler OnDeathPlayer;
     public Animator animator;
@@ -49,7 +49,7 @@ public class PlayerInfo : MonoBehaviour
 
     public void GainHealth(int health)
     {
-        if(currentHealth + health >= 100)
+        if (currentHealth + health >= 100)
         {
             currentHealth = 100;
         }
