@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 4214852443846517671}
   - component: {fileID: 4214852443846517668}
   - component: {fileID: 4214852443846517674}
+  - component: {fileID: 810638579}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -122,7 +123,7 @@ Transform:
   m_GameObject: {fileID: 4214852443846517669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.23, y: 0.14, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4214852443827639817}
   - {fileID: 4214852444082004838}
@@ -277,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d58980ad9e954b40a0fce0687352ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 1
   rb: {fileID: 4214852443846517675}
   animator: {fileID: 4214852443846517674}
 --- !u!95 &4214852443846517674
@@ -299,6 +300,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &810638579
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4214852443846517669}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015006065, y: -1.0956335}
+  serializedVersion: 2
+  m_Radius: 0.40287852
 --- !u!1 &4214852444082004839
 GameObject:
   m_ObjectHideFlags: 0
