@@ -1,43 +1,40 @@
 fileFormatVersion: 2
-guid: c80967f6c5b5ad540ab0a966eff495fb
+guid: c953e82f3e2a0204684f20c5143f9585
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3225214209695656935
-    second: Player_Die_Front_Sword_0
+      213: 171104229164936750
+    second: Player_Front_Die_normal_0
   - first:
-      213: 7178697462625575588
-    second: Player_Die_Front_Sword_1
+      213: 1571765276588850950
+    second: Player_Front_Die_normal_1
   - first:
-      213: 3728189839013842460
-    second: Player_Die_Front_Sword_2
+      213: -6901963353235666550
+    second: Player_Front_Die_normal_2
   - first:
-      213: -7294927469557210195
-    second: Player_Die_Front_Sword_3
+      213: 4598491122760971670
+    second: Player_Front_Die_normal_3
   - first:
-      213: -8416515149571586328
-    second: Player_Die_Front_Sword_4
+      213: 5982240202087780842
+    second: Player_Front_Die_normal_4
   - first:
-      213: -6237401013977769465
-    second: Player_Die_Front_Sword_5
+      213: -1261995565030372241
+    second: Player_Front_Die_normal_5
   - first:
-      213: 5911582168527168904
-    second: Player_Die_Front_Sword_6
+      213: 33277932612986899
+    second: Player_Front_Die_normal_6
   - first:
-      213: 4020878019912177119
-    second: Player_Die_Front_Sword_7
+      213: 4247714041584291547
+    second: Player_Front_Die_normal_7
   - first:
-      213: -5610692639155203366
-    second: Player_Die_Front_Sword_8
+      213: -128450611551822142
+    second: Player_Front_Die_normal_8
   - first:
-      213: -525972596129626516
-    second: Player_Die_Front_Sword_9
+      213: -6290183229541073959
+    second: Player_Front_Die_normal_9
   - first:
-      213: -1689849717179934631
-    second: Player_Die_Front_Sword_10
-  - first:
-      213: -8818020018322347954
-    second: Player_Die_Front_Sword_11
+      213: 2186164477984251544
+    second: Player_Front_Die_normal_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,28 +120,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7eba37d5c3342cc20800000000000000
-      internalID: 3225214209695656935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Die_Front_Sword_1
+      name: Player_Front_Die_normal_0
       rect:
         serializedVersion: 2
         x: 0
@@ -152,20 +128,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a2abc1de4bdf9360800000000000000
-      internalID: 7178697462625575588
+      spriteID: e2e61fec362ef5200800000000000000
+      internalID: 171104229164936750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_2
+      name: Player_Front_Die_normal_1
       rect:
         serializedVersion: 2
         x: 0
@@ -173,41 +149,41 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1e04a1e7e03db330800000000000000
-      internalID: 3728189839013842460
+      spriteID: 60f3f55013800d510800000000000000
+      internalID: 1571765276588850950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_3
+      name: Player_Front_Die_normal_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 255
+        y: 256
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da3adcadd1633ca90800000000000000
-      internalID: -7294927469557210195
+      spriteID: a89cf9df5ec4730a0800000000000000
+      internalID: -6901963353235666550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_4
+      name: Player_Front_Die_normal_3
       rect:
         serializedVersion: 2
         x: 0
@@ -215,20 +191,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e687176018823b80800000000000000
-      internalID: -8416515149571586328
+      spriteID: 69574f2ff4f11df30800000000000000
+      internalID: 4598491122760971670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_5
+      name: Player_Front_Die_normal_4
       rect:
         serializedVersion: 2
         x: 0
@@ -236,20 +212,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70a913033dc4079a0800000000000000
-      internalID: -6237401013977769465
+      spriteID: ae1d08eb4cf250350800000000000000
+      internalID: 5982240202087780842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_6
+      name: Player_Front_Die_normal_5
       rect:
         serializedVersion: 2
         x: 0
@@ -257,20 +233,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 885689f49a82a0250800000000000000
-      internalID: 5911582168527168904
+      spriteID: f6c0f3e48bd7c7ee0800000000000000
+      internalID: -1261995565030372241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_7
+      name: Player_Front_Die_normal_6
       rect:
         serializedVersion: 2
         x: 0
@@ -278,20 +254,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd59a0e61470dc730800000000000000
-      internalID: 4020878019912177119
+      spriteID: 318a1487a1a367000800000000000000
+      internalID: 33277932612986899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_8
+      name: Player_Front_Die_normal_7
       rect:
         serializedVersion: 2
         x: 0
@@ -299,20 +275,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad2514b75c0d222b0800000000000000
-      internalID: -5610692639155203366
+      spriteID: bde021c5a69e2fa30800000000000000
+      internalID: 4247714041584291547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_9
+      name: Player_Front_Die_normal_8
       rect:
         serializedVersion: 2
         x: 0
@@ -320,20 +296,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c668a16e5be53b8f0800000000000000
-      internalID: -525972596129626516
+      spriteID: 2ce954f69d6a73ef0800000000000000
+      internalID: -128450611551822142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_10
+      name: Player_Front_Die_normal_9
       rect:
         serializedVersion: 2
         x: 0
@@ -341,20 +317,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95812bba2a27c88e0800000000000000
-      internalID: -1689849717179934631
+      spriteID: 9dbb517fda7c4b8a0800000000000000
+      internalID: -6290183229541073959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_11
+      name: Player_Front_Die_normal_10
       rect:
         serializedVersion: 2
         x: 0
@@ -362,14 +338,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e48ec91638910a580800000000000000
-      internalID: -8818020018322347954
+      spriteID: 89e14da8201d65e10800000000000000
+      internalID: 2186164477984251544
       vertices: []
       indices: 
       edges: []

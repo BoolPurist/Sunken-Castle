@@ -32,6 +32,7 @@ public class PlayerInfo : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            animator.SetTrigger("Dies");
             currentHealth = 0;
             OnHealthChanges.Invoke(CurrentHealth);
             OnDeathPlayer.Invoke(this, EventArgs.Empty);

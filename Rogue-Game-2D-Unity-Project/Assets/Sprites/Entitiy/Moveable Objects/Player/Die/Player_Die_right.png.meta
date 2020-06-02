@@ -1,43 +1,31 @@
 fileFormatVersion: 2
-guid: c80967f6c5b5ad540ab0a966eff495fb
+guid: 928769905ae80d448a4aea0d1c47377a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3225214209695656935
-    second: Player_Die_Front_Sword_0
+      213: -1277968288424186212
+    second: Player_Die_right_0
   - first:
-      213: 7178697462625575588
-    second: Player_Die_Front_Sword_1
+      213: 7893464012594098237
+    second: Player_Die_right_1
   - first:
-      213: 3728189839013842460
-    second: Player_Die_Front_Sword_2
+      213: 8416118215772908979
+    second: Player_Die_right_2
   - first:
-      213: -7294927469557210195
-    second: Player_Die_Front_Sword_3
+      213: 6049286176830604088
+    second: Player_Die_right_3
   - first:
-      213: -8416515149571586328
-    second: Player_Die_Front_Sword_4
+      213: 8524295513145872821
+    second: Player_Die_right_4
   - first:
-      213: -6237401013977769465
-    second: Player_Die_Front_Sword_5
+      213: -3515426712140275255
+    second: Player_Die_right_5
   - first:
-      213: 5911582168527168904
-    second: Player_Die_Front_Sword_6
+      213: -1383794646907225746
+    second: Player_Die_right_6
   - first:
-      213: 4020878019912177119
-    second: Player_Die_Front_Sword_7
-  - first:
-      213: -5610692639155203366
-    second: Player_Die_Front_Sword_8
-  - first:
-      213: -525972596129626516
-    second: Player_Die_Front_Sword_9
-  - first:
-      213: -1689849717179934631
-    second: Player_Die_Front_Sword_10
-  - first:
-      213: -8818020018322347954
-    second: Player_Die_Front_Sword_11
+      213: 270116254888204281
+    second: Player_Die_right_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,91 +111,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7eba37d5c3342cc20800000000000000
-      internalID: 3225214209695656935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Die_Front_Sword_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a2abc1de4bdf9360800000000000000
-      internalID: 7178697462625575588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Die_Front_Sword_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1e04a1e7e03db330800000000000000
-      internalID: 3728189839013842460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Die_Front_Sword_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 255
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da3adcadd1633ca90800000000000000
-      internalID: -7294927469557210195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Die_Front_Sword_4
+      name: Player_Die_right_0
       rect:
         serializedVersion: 2
         x: 0
@@ -215,20 +119,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e687176018823b80800000000000000
-      internalID: -8416515149571586328
+      spriteID: c9e2346dc9eb34ee0800000000000000
+      internalID: -1277968288424186212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_5
+      name: Player_Die_right_1
       rect:
         serializedVersion: 2
         x: 0
@@ -236,20 +140,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70a913033dc4079a0800000000000000
-      internalID: -6237401013977769465
+      spriteID: d303006b2b73b8d60800000000000000
+      internalID: 7893464012594098237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_6
+      name: Player_Die_right_2
       rect:
         serializedVersion: 2
         x: 0
@@ -257,20 +161,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 885689f49a82a0250800000000000000
-      internalID: 5911582168527168904
+      spriteID: 3bda6de3dee0cc470800000000000000
+      internalID: 8416118215772908979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_7
+      name: Player_Die_right_3
       rect:
         serializedVersion: 2
         x: 0
@@ -278,20 +182,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd59a0e61470dc730800000000000000
-      internalID: 4020878019912177119
+      spriteID: 8334ba23ab163f350800000000000000
+      internalID: 6049286176830604088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_8
+      name: Player_Die_right_4
       rect:
         serializedVersion: 2
         x: 0
@@ -299,20 +203,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad2514b75c0d222b0800000000000000
-      internalID: -5610692639155203366
+      spriteID: 5b114850b916c4670800000000000000
+      internalID: 8524295513145872821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_9
+      name: Player_Die_right_5
       rect:
         serializedVersion: 2
         x: 0
@@ -320,20 +224,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c668a16e5be53b8f0800000000000000
-      internalID: -525972596129626516
+      spriteID: 9c1a5f4e702b63fc0800000000000000
+      internalID: -3515426712140275255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_10
+      name: Player_Die_right_6
       rect:
         serializedVersion: 2
         x: 0
@@ -341,20 +245,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95812bba2a27c88e0800000000000000
-      internalID: -1689849717179934631
+      spriteID: e69f10da916cbcce0800000000000000
+      internalID: -1383794646907225746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Die_Front_Sword_11
+      name: Player_Die_right_7
       rect:
         serializedVersion: 2
         x: 0
@@ -362,14 +266,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e48ec91638910a580800000000000000
-      internalID: -8818020018322347954
+      spriteID: 9f79bac7d45afb300800000000000000
+      internalID: 270116254888204281
       vertices: []
       indices: 
       edges: []
