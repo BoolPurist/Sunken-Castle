@@ -7,6 +7,8 @@ public class EnemyInfo : MonoBehaviour
 {
     public delegate void OnDeathEnemy(int number);
     public event OnDeathEnemy OnDeathEnemies;
+    public Animator animator;
+    private bool isDead = false;
 
     public int score = 100;
     public int maxHealth = 100;
@@ -19,23 +21,33 @@ public class EnemyInfo : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         OnDeathEnemies += GameObject.FindWithTag("GUIScore").GetComponent<UpdateStatsText>().CallbackUpdateStatsAdd;
         currentHealth = maxHealth;
     }
 
     void Update()
     {
-        if(currentHealth <= 0) //ADD EVENT
+        if(currentHealth <= 0 && isDead == false) 
         {
-            OnDeathEnemies.Invoke(score);
-            Destroy(gameObject); //If health is, or is below 0, destroy the object
+            Die();
         }
     }
 
     public void TakeDamage(int damage) //Function which reduces the health of an enemy, gets called in the PlayerAttack script
     {
+        animator.SetTrigger("TakesDamage");
         currentHealth -= damage;
-        Debug.Log("damage TAKEN"); //Debugging notification for testing
+    }
+
+    public void Die()
+    {
+        GetComponent<EnemyMovement>().allowedToMove = false;
+        if (isDead == false)
+            OnDeathEnemies.Invoke(score);
+        isDead = true;
+        animator.SetTrigger("Dies");
+        Destroy(gameObject, 2f);
     }
 
 
