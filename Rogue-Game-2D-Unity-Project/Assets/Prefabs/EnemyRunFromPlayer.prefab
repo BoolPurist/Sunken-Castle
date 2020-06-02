@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2852279179028720330}
   - component: {fileID: 2852279179028720331}
   - component: {fileID: 2852279179028720328}
+  - component: {fileID: 16080271}
   m_Layer: 8
   m_Name: EnemyRunFromPlayer
   m_TagString: Untagged
@@ -30,9 +31,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2852279179028720329}
-  m_LocalRotation: {x: -0, y: 0, z: 0.00042406097, w: -0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00042768705, w: 0.99999994}
   m_LocalPosition: {x: -2.48, y: 0.08, z: 0}
-  m_LocalScale: {x: 3.811679, y: 3.6710947, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2852279180243350763}
   m_Father: {fileID: 0}
@@ -149,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   rb: {fileID: 2852279179028720327}
-  moveSpeed: 1
+  moveSpeed: 0.5
   movementType: 2
 --- !u!114 &2852279179028720330
 MonoBehaviour:
@@ -167,8 +168,8 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
-  damage: 1
-  attackRange: {x: 1.92, y: 1.85}
+  damage: 10
+  attackRange: {x: 0.7, y: 0.7}
   timeBtwEnemyAttack: 1
 --- !u!114 &2852279179028720331
 MonoBehaviour:
@@ -203,6 +204,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &16080271
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2852279179028720329}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0001269184, y: -0.2503607}
+  serializedVersion: 2
+  m_Radius: 0.075360656
 --- !u!1 &2852279180243350760
 GameObject:
   m_ObjectHideFlags: 0
