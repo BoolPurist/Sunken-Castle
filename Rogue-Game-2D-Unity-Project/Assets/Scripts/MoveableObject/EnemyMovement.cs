@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     public float moveSpeed = 2f;
     private Vector2 movement;
     public int movementType = 1;
+    public bool allowedToMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(player != null)
+        if(player != null && allowedToMove == true)
         {
             Vector3 direction = player.position - transform.position; //saves the direction from the Enemy to the player in "direction"
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //calculates the angle at which the enemy has to spin in order to stay in line with the player
