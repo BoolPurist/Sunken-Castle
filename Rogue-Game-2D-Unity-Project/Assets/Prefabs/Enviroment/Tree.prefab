@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2246442777306164902}
   - component: {fileID: 2246442777306164900}
   - component: {fileID: 2246442777306164901}
-  - component: {fileID: 2246442777306164903}
+  - component: {fileID: 1273018003}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -104,8 +104,8 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &2246442777306164903
-BoxCollider2D:
+--- !u!60 &1273018003
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0018779635, y: -0.6247554}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -127,6 +127,30 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17095089, y: 0.31466603}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.14536808, y: -0.5740321}
+      - {x: 0.14428604, y: -0.4206991}
+      - {x: -0.1460069, y: -0.41789353}
+      - {x: -0.1227735, y: -0.5104007}
+      - {x: -0.075750954, y: -0.5003502}
+      - {x: -0.07715126, y: -0.50671273}
+      - {x: -0.06407047, y: -0.51814413}
+      - {x: -0.14546952, y: -0.6015739}
+      - {x: -0.21062069, y: -0.66539973}
+      - {x: -0.28510293, y: -0.7048176}
+      - {x: -0.33248904, y: -0.73441863}
+      - {x: -0.31825566, y: -0.80021095}
+      - {x: -0.13553113, y: -0.77416706}
+      - {x: -0.117227904, y: -0.7361506}
+      - {x: -0.0025120452, y: -0.678877}
+      - {x: 0.042136125, y: -0.6849004}
+      - {x: 0.051576942, y: -0.7328721}
+      - {x: 0.08236366, y: -0.7686904}
+      - {x: 0.09170916, y: -0.7965721}
+      - {x: 0.24778198, y: -0.7883793}
+      - {x: 0.1343983, y: -0.6752097}
+      - {x: 0.40000805, y: -0.7905197}
+      - {x: 0.47574946, y: -0.78434783}
+      - {x: 0.31665045, y: -0.6668363}
+      - {x: 0.24980575, y: -0.62136716}
