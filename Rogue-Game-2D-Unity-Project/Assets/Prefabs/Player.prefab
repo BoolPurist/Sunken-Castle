@@ -123,7 +123,7 @@ Transform:
   m_GameObject: {fileID: 4214852443846517669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.23, y: 0.14, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 4214852443827639817}
   - {fileID: 4214852444082004838}
@@ -247,11 +247,11 @@ MonoBehaviour:
   attackPosLeft: {fileID: 4214852444082004838}
   attackPosUp: {fileID: 4214852443324931035}
   attackPosDown: {fileID: 4214852442165113267}
-  attackRange: 1.24
+  attackRange: 0.3
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 256
-  damage: 50
+  damage: 10
 --- !u!114 &4214852443846517671
 MonoBehaviour:
   m_ObjectHideFlags: 0
