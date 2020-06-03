@@ -9,6 +9,7 @@ public class PlayerInfo : MonoBehaviour
     public event OnHealthChange OnHealthChanges;
     public event EventHandler OnDeathPlayer;
     public Animator animator;
+    public bool isDead;
 
 
     public int maxHealth = 100;
@@ -32,11 +33,15 @@ public class PlayerInfo : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            animator.SetTrigger("Dies");
+            if(isDead == false)
+            {
+                animator.SetTrigger("Dies");
+                isDead = true;
+            }       
             currentHealth = 0;
             OnHealthChanges.Invoke(CurrentHealth);
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
-            Destroy(gameObject);
+            Destroy(gameObject,2f);
         }
     }
 
