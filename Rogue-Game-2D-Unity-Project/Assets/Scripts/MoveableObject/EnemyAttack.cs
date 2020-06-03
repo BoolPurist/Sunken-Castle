@@ -15,11 +15,16 @@ public class EnemyAttack : MonoBehaviour
 
     void Update()
     {
-        if(curTimeBtwEnemyAttack <= 0)
+        if (curTimeBtwEnemyAttack <= 0)
         {
             Collider2D[] Player = Physics2D.OverlapBoxAll(attackPos.position, attackRange, angle, whatIsPlayer);
             for (int i = 0; i < Player.Length; i++)
-            Player[i].GetComponent<PlayerInfo>().TakeDamage(damage);
+            {
+                Player[i].GetComponent<PlayerInfo>().TakeDamage(damage);
+                if (Player[i].GetComponent<PlayerInfo>().CurrentHealth <= 0)
+                    Destroy(gameObject);
+            }
+
 
             curTimeBtwEnemyAttack = timeBtwEnemyAttack;
         }
