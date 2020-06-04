@@ -6,8 +6,10 @@ public class EnemyMovement : MonoBehaviour
 {
     public Transform player;
     public Rigidbody2D rb;
-    public float moveSpeed = 2f;
     private Vector2 movement;
+    public Animator animator;
+    
+    public float moveSpeed = 2f;
     public int movementType = 1;
     public bool allowedToMove = true;
 
@@ -15,6 +17,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,8 +33,12 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
-            movement = Vector3.zero;
+            movement = Vector2.zero;
         }
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     private void FixedUpdate() //Moves the Enemy

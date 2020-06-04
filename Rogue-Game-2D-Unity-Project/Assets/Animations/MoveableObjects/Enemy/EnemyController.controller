@@ -80,17 +80,20 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 3
+    m_ConditionEvent: Speed
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5104988896055909558}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -162,13 +165,13 @@ AnimatorStateMachine:
     m_Position: {x: -100, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6797929738958654905}
-    m_Position: {x: 270, y: 90, z: 0}
+    m_Position: {x: 420, y: 210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5104988896055909558}
     m_Position: {x: -100, y: 300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2947495769972230667}
-    m_Position: {x: 280, y: 290, z: 0}
+    m_Position: {x: 220, y: 300, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -4167049307779815945}
@@ -176,9 +179,9 @@ AnimatorStateMachine:
   - {fileID: 4801037556743082859}
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 290, y: 200, z: 0}
-  m_EntryPosition: {x: -30, y: 40, z: 0}
-  m_ExitPosition: {x: 290, y: 0, z: 0}
+  m_AnyStatePosition: {x: 440, y: 310, z: 0}
+  m_EntryPosition: {x: -80, y: 40, z: 0}
+  m_ExitPosition: {x: 120, y: -40, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -3075006762658481561}
 --- !u!91 &9100000
@@ -195,31 +198,37 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Horizontal
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Vertical
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Dies
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: TakesDamage
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
+  - m_Name: Speed
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
