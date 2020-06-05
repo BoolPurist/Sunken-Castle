@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   rb: {fileID: 2432566366448508521}
+  animator: {fileID: 0}
   moveSpeed: 0.7
   movementType: 1
   allowedToMove: 1
@@ -169,7 +170,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
-  damage: 20
+  damage: 10
   attackRange: {x: 0.6, y: 0.6}
   timeBtwEnemyAttack: 1
 --- !u!114 &2432566366448508525
