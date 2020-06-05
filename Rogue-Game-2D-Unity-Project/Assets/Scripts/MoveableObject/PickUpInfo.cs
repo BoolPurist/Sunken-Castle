@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
+using UnityEngine.Experimental.Rendering.LWRP;
+using UnityEngine.Experimental.Rendering.Universal;
+using Light2D = UnityEngine.Experimental.Rendering.Universal.Light2D;
 
 public class PickUpInfo : MonoBehaviour
 {
@@ -8,6 +12,7 @@ public class PickUpInfo : MonoBehaviour
     public Transform healthPos;
     public LayerMask whatIsPlayer;
     public Vector2 healingRange;
+    public Light2D li;
 
     void Update()
     {
@@ -17,6 +22,7 @@ public class PickUpInfo : MonoBehaviour
             {
                 Player[i].GetComponent<PlayerInfo>().GainHealth(healthAmount);
                 Destroy(gameObject);
+                Destroy(li);
             }       
     }
 
