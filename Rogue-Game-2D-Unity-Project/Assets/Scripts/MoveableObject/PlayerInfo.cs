@@ -11,7 +11,8 @@ public class PlayerInfo : MonoBehaviour
     public event EventHandler OnDeathPlayer;
     public Animator animator;
     public int maxHealth = 100;
-    private int currentHealth;
+    [HideInInspector]
+    public int currentHealth;
 
     [HideInInspector]
     public bool isDead;

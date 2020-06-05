@@ -18,7 +18,7 @@ public class PickUpInfo : MonoBehaviour
     {
         Collider2D[] Player = Physics2D.OverlapBoxAll(healthPos.position, healingRange, whatIsPlayer);
         for (int i = 0; i < Player.Length; i++)
-            if(Player[i] != null)
+            if(Player[i] != null && Player[i].GetComponent<PlayerInfo>().currentHealth < 100)
             {
                 Player[i].GetComponent<PlayerInfo>().GainHealth(healthAmount);
                 Destroy(gameObject);
