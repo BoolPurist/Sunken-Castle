@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerInfo : MonoBehaviour
 {
@@ -9,11 +10,12 @@ public class PlayerInfo : MonoBehaviour
     public event OnHealthChange OnHealthChanges;
     public event EventHandler OnDeathPlayer;
     public Animator animator;
-    public bool isDead;
-
-
     public int maxHealth = 100;
     private int currentHealth;
+
+    [HideInInspector]
+    public bool isDead;
+
 
     public int CurrentHealth
     {
@@ -26,7 +28,7 @@ public class PlayerInfo : MonoBehaviour
         currentHealth = maxHealth;
         OnHealthChanges += GameObject.FindWithTag("GUIHealth").GetComponent<UpdateStatsText>().CallbackUpdateStats;
         OnDeathPlayer += GameObject.FindWithTag("MainCamera").GetComponent<ManageGameOverScreen>().CallbackCreateGameOverScreen;
-        OnHealthChanges.Invoke(CurrentHealth);
+        OnHealthChanges.Invoke(CurrentHealth);       
     }
 
     void Update()
@@ -41,7 +43,10 @@ public class PlayerInfo : MonoBehaviour
             currentHealth = 0;
             OnHealthChanges.Invoke(CurrentHealth);
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
+            GetComponent<PlayerMovement>().allowToMove = false;
+            GetComponent<CameraFollow>().allowToUpdate = false;
             Destroy(gameObject,2f);
+            gameObject.AddComponent<Camera>();
         }
     }
 

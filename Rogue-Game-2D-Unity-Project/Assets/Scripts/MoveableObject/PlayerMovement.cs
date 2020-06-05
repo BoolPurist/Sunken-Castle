@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
+    public bool allowToMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime); //moves the character
+        if(allowToMove)
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime); //moves the character
     }
 }

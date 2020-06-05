@@ -15,8 +15,8 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPosDown; 
 
     public float attackRange; //Range of the attack
-    public LayerMask whatIsEnemy; 
     public int damage; //Damage dealt to enemies in radius
+    public LayerMask whatIsEnemy; 
 
     void Update()
     {
