@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 511111066059357517}
   - component: {fileID: 2496540844118587072}
-  - component: {fileID: 2159818195089405587}
+  - component: {fileID: 70894632}
   m_Layer: 0
   m_Name: CasualTree
   m_TagString: Untagged
@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,8 +82,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2159818195089405587
-BoxCollider2D:
+--- !u!60 &70894632
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,7 +95,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019024596, y: -0.64487183}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -105,6 +105,21 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.2936339, y: 0.12875128}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.057213116, y: -0.42002937}
+      - {x: -0.08852829, y: -0.4198423}
+      - {x: -0.13249409, y: -0.5729074}
+      - {x: -0.18955405, y: -0.6153707}
+      - {x: -0.4857377, y: -0.7814884}
+      - {x: -0.31346917, y: -0.7651319}
+      - {x: -0.17790633, y: -0.71069145}
+      - {x: -0.21893425, y: -0.8028149}
+      - {x: -0.091654174, y: -0.7781103}
+      - {x: -0.011563706, y: -0.68655604}
+      - {x: 0.042266015, y: -0.6871738}
+      - {x: 0.13078564, y: -0.77724355}
+      - {x: 0.34744266, y: -0.78148836}
+      - {x: 0.18424918, y: -0.61916065}
+      - {x: 0.19572452, y: -0.6168329}
+      - {x: 0.121678695, y: -0.5687676}
