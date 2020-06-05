@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
@@ -7,6 +8,12 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+
+    // PauseMenu ist not active when Level is launched.
+    void Start()
+    {
+        pauseMenuUI.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
