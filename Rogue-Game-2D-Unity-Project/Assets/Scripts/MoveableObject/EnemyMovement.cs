@@ -37,9 +37,6 @@ public class EnemyMovement : MonoBehaviour
             movement = Vector2.zero;
         }
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     private void FixedUpdate() //Moves the Enemy
@@ -47,10 +44,18 @@ public class EnemyMovement : MonoBehaviour
         if (movementType == 1)
         {
             moveToPlayer(movement);
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+
         }
         else if (movementType == 2)
         {
-            moveFromPlayer(movement);
+            moveFromPlayer(-movement);
+            animator.SetFloat("Horizontal", -movement.x);
+            animator.SetFloat("Vertical", -movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+
         }
 
     }
@@ -63,7 +68,7 @@ public class EnemyMovement : MonoBehaviour
 
     void moveFromPlayer(Vector2 direction) //Moves Enemy away from player
     {
-        rb.MovePosition((Vector2)transform.position + (direction * -1 * moveSpeed * Time.deltaTime));
+        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
 
     void OnDrawGizmosSelected() //Visualizes the trigger distance for testing

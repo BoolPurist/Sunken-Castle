@@ -14,16 +14,21 @@ public class PickUpInfo : MonoBehaviour
     public Vector2 healingRange;
     public Light2D li;
 
+
     void Update()
     {
         Collider2D[] Player = Physics2D.OverlapBoxAll(healthPos.position, healingRange, whatIsPlayer);
         for (int i = 0; i < Player.Length; i++)
-            if(Player[i] != null && Player[i].GetComponent<PlayerInfo>().currentHealth < 100)
+        {
+            if (Player[i] != null && Player[i].GetComponent<PlayerInfo>().currentHealth < 100)
             {
                 Player[i].GetComponent<PlayerInfo>().GainHealth(healthAmount);
-                Destroy(gameObject);
                 Destroy(li);
-            }       
+                Destroy(this.gameObject);
+            }
+           
+        }
+        
     }
 
     void OnDrawGizmosSelected() //Visualizes the attack for testing

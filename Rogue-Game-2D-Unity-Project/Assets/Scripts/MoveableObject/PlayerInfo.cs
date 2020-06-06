@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class PlayerInfo : MonoBehaviour
@@ -16,6 +18,7 @@ public class PlayerInfo : MonoBehaviour
 
     [HideInInspector]
     public bool isDead;
+
 
 
     public int CurrentHealth
@@ -36,19 +39,20 @@ public class PlayerInfo : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            if(isDead == false)
+            if (isDead == false)
             {
                 animator.SetTrigger("Dies");
                 isDead = true;
-            }       
+            }
             currentHealth = 0;
             OnHealthChanges.Invoke(CurrentHealth);
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
             GetComponent<PlayerMovement>().allowToMove = false;
             GetComponent<CameraFollow>().allowToUpdate = false;
-            Destroy(gameObject,2f);
+            Destroy(gameObject, 2f);
             gameObject.AddComponent<Camera>();
         }
+        
     }
 
     public void TakeDamage(int damage)
@@ -69,6 +73,7 @@ public class PlayerInfo : MonoBehaviour
             currentHealth += health;
         }
         OnHealthChanges.Invoke(CurrentHealth);
+        
     }
 
 
