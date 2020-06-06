@@ -1,67 +1,67 @@
 fileFormatVersion: 2
-guid: dfa1f601e5a4ced4b8326b0599ffa342
+guid: ceb9e94f7bd68524c90a5d17a33057a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7388601697616875408
-    second: Dark Knight Front Attack_0
+      213: -1533338210292931960
+    second: Dark Knight Right Attack Animation SpriteSheet_0
   - first:
-      213: -3382827992250205111
-    second: Dark Knight Front Attack_1
+      213: -2509654014786063307
+    second: Dark Knight Right Attack Animation SpriteSheet_1
   - first:
-      213: 3525631061180128000
-    second: Dark Knight Front Attack_2
+      213: -8895241729353370900
+    second: Dark Knight Right Attack Animation SpriteSheet_2
   - first:
-      213: -1353864091582669143
-    second: Dark Knight Front Attack_3
+      213: -7115034889291373826
+    second: Dark Knight Right Attack Animation SpriteSheet_3
   - first:
-      213: 1156255648598045355
-    second: Dark Knight Front Attack_4
+      213: 1645565813164363172
+    second: Dark Knight Right Attack Animation SpriteSheet_4
   - first:
-      213: 6314213468485970825
-    second: Dark Knight Front Attack_5
+      213: 259030476397523058
+    second: Dark Knight Right Attack Animation SpriteSheet_5
   - first:
-      213: -2408089918521734594
-    second: Dark Knight Front Attack_6
+      213: 1530279914092225884
+    second: Dark Knight Right Attack Animation SpriteSheet_6
   - first:
-      213: 1320956535191573753
-    second: Dark Knight Front Attack_7
+      213: 5833016338056290871
+    second: Dark Knight Right Attack Animation SpriteSheet_7
   - first:
-      213: -6087267716244896632
-    second: Dark Knight Front Attack_8
+      213: -6906925131770221961
+    second: Dark Knight Right Attack Animation SpriteSheet_8
   - first:
-      213: 120493565669774992
-    second: Dark Knight Front Attack_9
+      213: -923132445657580925
+    second: Dark Knight Right Attack Animation SpriteSheet_9
   - first:
-      213: -4266839553781785239
-    second: Dark Knight Front Attack_10
+      213: -2737083281828306892
+    second: Dark Knight Right Attack Animation SpriteSheet_10
   - first:
-      213: 3491973862330721630
-    second: Dark Knight Front Attack_11
+      213: -1643151492270665049
+    second: Dark Knight Right Attack Animation SpriteSheet_11
   - first:
-      213: -3513556208985356524
-    second: Dark Knight Front Attack_12
+      213: 932344409956330634
+    second: Dark Knight Right Attack Animation SpriteSheet_12
   - first:
-      213: 1982972188107414464
-    second: Dark Knight Front Attack_13
+      213: 3572024303259352735
+    second: Dark Knight Right Attack Animation SpriteSheet_13
   - first:
-      213: -6805115559477982271
-    second: Dark Knight Front Attack_14
+      213: -4890132698315492263
+    second: Dark Knight Right Attack Animation SpriteSheet_14
   - first:
-      213: 7688269932634435304
-    second: Dark Knight Front Attack_15
+      213: -2847580791027841435
+    second: Dark Knight Right Attack Animation SpriteSheet_15
   - first:
-      213: 5235246249480343538
-    second: Dark Knight Front Attack_16
+      213: -725406885034776529
+    second: Dark Knight Right Attack Animation SpriteSheet_16
   - first:
-      213: 3672827620907108705
-    second: Dark Knight Front Attack_17
+      213: 2050561154792707928
+    second: Dark Knight Right Attack Animation SpriteSheet_17
   - first:
-      213: 4744766847095718523
-    second: Dark Knight Front Attack_18
+      213: 8584445202698426351
+    second: Dark Knight Right Attack Animation SpriteSheet_18
   - first:
-      213: 223783628484405832
-    second: Dark Knight Front Attack_19
+      213: 1298547940531647135
+    second: Dark Knight Right Attack Animation SpriteSheet_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -147,7 +147,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dark Knight Front Attack_0
+      name: Dark Knight Right Attack Animation SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -155,20 +155,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09f4d45f816998660800000000000000
-      internalID: 7388601697616875408
+      spriteID: 882e4fe850d78bae0800000000000000
+      internalID: -1533338210292931960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_1
+      name: Dark Knight Right Attack Animation SpriteSheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -176,20 +176,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94cbda13dd7cd01d0800000000000000
-      internalID: -3382827992250205111
+      spriteID: 5343b8368faeb2dd0800000000000000
+      internalID: -2509654014786063307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_2
+      name: Dark Knight Right Attack Animation SpriteSheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -197,20 +197,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00b99b245ce8de030800000000000000
-      internalID: 3525631061180128000
+      spriteID: ce239a2b6c0cd8480800000000000000
+      internalID: -8895241729353370900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_3
+      name: Dark Knight Right Attack Animation SpriteSheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -218,20 +218,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aede0328cb163de0800000000000000
-      internalID: -1353864091582669143
+      spriteID: ef2e64b1771524d90800000000000000
+      internalID: -7115034889291373826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_4
+      name: Dark Knight Right Attack Animation SpriteSheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -239,20 +239,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba2b934e268db0010800000000000000
-      internalID: 1156255648598045355
+      spriteID: 4ad4034736936d610800000000000000
+      internalID: 1645565813164363172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_5
+      name: Dark Knight Right Attack Animation SpriteSheet_5
       rect:
         serializedVersion: 2
         x: 64
@@ -260,20 +260,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98be71902b790a750800000000000000
-      internalID: 6314213468485970825
+      spriteID: 270bcab88d2489300800000000000000
+      internalID: 259030476397523058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_6
+      name: Dark Knight Right Attack Animation SpriteSheet_6
       rect:
         serializedVersion: 2
         x: 128
@@ -281,20 +281,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3a005b4afeb49ed0800000000000000
-      internalID: -2408089918521734594
+      spriteID: c55e16e5975ac3510800000000000000
+      internalID: 1530279914092225884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_7
+      name: Dark Knight Right Attack Animation SpriteSheet_7
       rect:
         serializedVersion: 2
         x: 192
@@ -302,20 +302,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f413d358faf45210800000000000000
-      internalID: 1320956535191573753
+      spriteID: 73225ee647903f050800000000000000
+      internalID: 5833016338056290871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_8
+      name: Dark Knight Right Attack Animation SpriteSheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -323,20 +323,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8840588834ea58ba0800000000000000
-      internalID: -6087267716244896632
+      spriteID: 77a2e96ef2ca520a0800000000000000
+      internalID: -6906925131770221961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_9
+      name: Dark Knight Right Attack Animation SpriteSheet_9
       rect:
         serializedVersion: 2
         x: 64
@@ -344,20 +344,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 096977372441ca100800000000000000
-      internalID: 120493565669774992
+      spriteID: 38a31ff7eef5033f0800000000000000
+      internalID: -923132445657580925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_10
+      name: Dark Knight Right Attack Animation SpriteSheet_10
       rect:
         serializedVersion: 2
         x: 128
@@ -365,20 +365,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96d1043580429c4c0800000000000000
-      internalID: -4266839553781785239
+      spriteID: 430a6f1c14de30ad0800000000000000
+      internalID: -2737083281828306892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_11
+      name: Dark Knight Right Attack Animation SpriteSheet_11
       rect:
         serializedVersion: 2
         x: 192
@@ -386,20 +386,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e55eb2df9bbf57030800000000000000
-      internalID: 3491973862330721630
+      spriteID: 7a2dd0f6c6a5239e0800000000000000
+      internalID: -1643151492270665049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_12
+      name: Dark Knight Right Attack Animation SpriteSheet_12
       rect:
         serializedVersion: 2
         x: 0
@@ -407,20 +407,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4174f095e375d3fc0800000000000000
-      internalID: -3513556208985356524
+      spriteID: a8ca4c31d4a50fc00800000000000000
+      internalID: 932344409956330634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_13
+      name: Dark Knight Right Attack Animation SpriteSheet_13
       rect:
         serializedVersion: 2
         x: 64
@@ -428,20 +428,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cb1f97e2bee48b10800000000000000
-      internalID: 1982972188107414464
+      spriteID: f9ef5dcad21629130800000000000000
+      internalID: 3572024303259352735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_14
+      name: Dark Knight Right Attack Animation SpriteSheet_14
       rect:
         serializedVersion: 2
         x: 128
@@ -449,20 +449,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cbc4d5247f5f81a0800000000000000
-      internalID: -6805115559477982271
+      spriteID: 954f16c4832c22cb0800000000000000
+      internalID: -4890132698315492263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_15
+      name: Dark Knight Right Attack Animation SpriteSheet_15
       rect:
         serializedVersion: 2
         x: 192
@@ -470,20 +470,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8eeedfff4c832ba60800000000000000
-      internalID: 7688269932634435304
+      spriteID: 5664f819b5c5b78d0800000000000000
+      internalID: -2847580791027841435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_16
+      name: Dark Knight Right Attack Animation SpriteSheet_16
       rect:
         serializedVersion: 2
         x: 0
@@ -491,20 +491,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ffc8f3f9b457a840800000000000000
-      internalID: 5235246249480343538
+      spriteID: f2821eb0846dee5f0800000000000000
+      internalID: -725406885034776529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_17
+      name: Dark Knight Right Attack Animation SpriteSheet_17
       rect:
         serializedVersion: 2
         x: 64
@@ -512,20 +512,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1694961034188f230800000000000000
-      internalID: 3672827620907108705
+      spriteID: 85752a5818e057c10800000000000000
+      internalID: 2050561154792707928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_18
+      name: Dark Knight Right Attack Animation SpriteSheet_18
       rect:
         serializedVersion: 2
         x: 128
@@ -533,20 +533,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b72c03ffe4cc8d140800000000000000
-      internalID: 4744766847095718523
+      spriteID: fe755a4fd63122770800000000000000
+      internalID: 8584445202698426351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Front Attack_19
+      name: Dark Knight Right Attack Animation SpriteSheet_19
       rect:
         serializedVersion: 2
         x: 192
@@ -554,14 +554,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84a6c52460a0b1300800000000000000
-      internalID: 223783628484405832
+      spriteID: f92343fc87e550210800000000000000
+      internalID: 1298547940531647135
       vertices: []
       indices: 
       edges: []
