@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 8520280414304190859}
   - component: {fileID: 1429471195085253424}
   - component: {fileID: 4379294907800159736}
+  - component: {fileID: 1542855501972361794}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: MainCamera
@@ -315,6 +316,22 @@ MonoBehaviour:
   buttonPause: 32
   pauseMenuPrefab: {fileID: 876123989479324782, guid: 606e6a77190093349b43dbc575b190f8,
     type: 3}
+--- !u!114 &1542855501972361794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8520280414304190855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f888dd82a5eea574791a4341298079cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 4214852443243257893, guid: 45ac8d50db962824fba9295b6af925f4,
+    type: 3}
+  verzoegerung: 0.1
+  allowToUpdate: 1
 --- !u!114 &4087084727524727129
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -25,7 +25,10 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(player.position, transform.position);  //saves the distance between Player and Enemy
+        float distance = 0f;
+
+        if(player != null)
+            distance = Vector3.Distance(player.position, transform.position);  //saves the distance between Player and Enemy
 
         if (player != null && allowedToMove == true && distance <= triggerDistance)
         {

@@ -21,16 +21,20 @@ public class CameraFollow : MonoBehaviour
     }
     void Update()
     {
-        if (allowToUpdate)
+        if (this.playerTransform != null)
         {
-            Vector3 cameraFollowPosition = playerTransform.position;
-            cameraFollowPosition.z = -10;
-            Vector3 cameraMoveDir = (cameraFollowPosition - transform.position).normalized;
-            float distance = Vector3.Distance(cameraFollowPosition, transform.position); //float to increase camera movement the further player is away from camera
-            float cameraMoveSpeed = 2f; 
+            if (allowToUpdate)
+            {
+                Vector3 cameraFollowPosition = playerTransform.position;
+                cameraFollowPosition.z = -10;
+                Vector3 cameraMoveDir = (cameraFollowPosition - transform.position).normalized;
+                float distance = Vector3.Distance(cameraFollowPosition, transform.position); //float to increase camera movement the further player is away from camera
+                float cameraMoveSpeed = 2f;
 
-            transform.position = transform.position + cameraMoveDir * distance * cameraMoveSpeed * Time.deltaTime; 
+                transform.position = transform.position + cameraMoveDir * distance * cameraMoveSpeed * Time.deltaTime;
+            }
         }
+       
         
     }
 }

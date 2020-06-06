@@ -43,10 +43,14 @@ public class PlayerInfo : MonoBehaviour
             currentHealth = 0;
             OnHealthChanges.Invoke(CurrentHealth);
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
-            GetComponent<PlayerMovement>().allowToMove = false;
-            GetComponent<CameraFollow>().allowToUpdate = false;
+            if(isDead == false)
+            {
+                GetComponent<PlayerMovement>().allowToMove = false;
+                GetComponent<CameraFollow>().allowToUpdate = false;
+                gameObject.AddComponent<Camera>();
+            }
             Destroy(gameObject, 2f);
-            gameObject.AddComponent<Camera>();
+            
         }
     }
 

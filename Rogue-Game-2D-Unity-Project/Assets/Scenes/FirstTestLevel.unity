@@ -425,27 +425,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1593296367}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &115675305 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8520280414304190855, guid: 567ecb02f87517542bb0845d9fa8ad75,
-    type: 3}
-  m_PrefabInstance: {fileID: 1975526900}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &115675311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115675305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f888dd82a5eea574791a4341298079cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTransform: {fileID: 810638578}
-  verzoegerung: 0.1
-  allowToUpdate: 1
 --- !u!1 &126569403
 GameObject:
   m_ObjectHideFlags: 0
@@ -33889,6 +33868,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1542855501972361794, guid: 567ecb02f87517542bb0845d9fa8ad75,
+        type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 810638578}
     - target: {fileID: 2286577266355071951, guid: 567ecb02f87517542bb0845d9fa8ad75,
         type: 3}
       propertyPath: m_CullTransparentMesh
