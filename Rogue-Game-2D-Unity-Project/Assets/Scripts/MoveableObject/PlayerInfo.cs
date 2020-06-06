@@ -28,24 +28,24 @@ public class PlayerInfo : MonoBehaviour
         currentHealth = maxHealth;
         OnHealthChanges += GameObject.FindWithTag("GUIHealth").GetComponent<UpdateStatsText>().CallbackUpdateStats;
         OnDeathPlayer += GameObject.FindWithTag("MainCamera").GetComponent<ManageGameOverScreen>().CallbackCreateGameOverScreen;
-        OnHealthChanges.Invoke(CurrentHealth);       
+        OnHealthChanges.Invoke(CurrentHealth);
     }
 
     void Update()
     {
         if (currentHealth <= 0)
         {
-            if(isDead == false)
+            if (isDead == false)
             {
                 animator.SetTrigger("Dies");
                 isDead = true;
-            }       
+            }
             currentHealth = 0;
             OnHealthChanges.Invoke(CurrentHealth);
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
             GetComponent<PlayerMovement>().allowToMove = false;
             GetComponent<CameraFollow>().allowToUpdate = false;
-            Destroy(gameObject,2f);
+            Destroy(gameObject, 2f);
             gameObject.AddComponent<Camera>();
         }
     }

@@ -8,9 +8,13 @@ public class ManageGameOverScreen : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject prefabGameOverScreen;
+
+    // Is used that the game over prefab is not created more than once.
+    private bool hasSpawnGameOver;
+
     void Start()
     {
-
+        this.hasSpawnGameOver = false;
     }
 
     // Update is called once per frame
@@ -21,13 +25,19 @@ public class ManageGameOverScreen : MonoBehaviour
 
     public void CallbackCreateGameOverScreen(object sender, EventArgs e)
     {
-        if (prefabGameOverScreen == null)
+        // Checks if the game over screen was already spawned.
+        if (hasSpawnGameOver == false)
         {
-            Debug.Log("No Prefab was provided for the game over screen !");
-        }
-        else
-        {
-            GameObject gameOverScreen = Instantiate(prefabGameOverScreen, this.transform);
+            if (prefabGameOverScreen == null)
+            {
+                Debug.Log("No Prefab was provided for the game over screen !");
+            }
+            else
+            {
+                GameObject gameOverScreen = Instantiate(prefabGameOverScreen, this.transform);
+                hasSpawnGameOver = true;
+            }
+
         }
     }
 }
