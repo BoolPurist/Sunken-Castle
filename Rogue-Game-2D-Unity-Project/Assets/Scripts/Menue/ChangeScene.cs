@@ -17,6 +17,7 @@ public class ChangeScene : MonoBehaviour
         }
     }
 
+    // Is used by the pause menu to change into another scene properly. Otherwise the scene change into, is still paused.
     public void OnClickChangeSceneFromPause(string sceneName)
     {
         Time.timeScale = 1f;
