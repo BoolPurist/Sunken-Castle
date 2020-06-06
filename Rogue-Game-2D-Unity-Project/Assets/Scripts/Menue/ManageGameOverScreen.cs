@@ -5,10 +5,14 @@ using UnityEngine;
 
 public class ManageGameOverScreen : MonoBehaviour
 {
+    [Header("Other Components")]
     // component that manages a pause menu in spawning and removing.
+    [Tooltip("Component for managing the pausing in the game. This way it prevents pausing during game over.")]
     public ManagePauseMenu pauseMenuState;
 
+    [Header("Prefabs")]
     // Prefab that is the menu for the game over overlay.
+    [Tooltip("Prefab that makes up the menu which comes up during game over.")]
     public GameObject prefabGameOverScreen;
 
     // Is used to prevent game over prefab being created more than once.

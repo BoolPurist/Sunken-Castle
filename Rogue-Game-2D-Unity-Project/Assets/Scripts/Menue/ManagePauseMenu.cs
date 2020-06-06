@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class ManagePauseMenu : MonoBehaviour
 {
+    [Header("Keybindings")]
     // Button to toggle between pause and game.
+    [Tooltip("Button to pause and unpause the game.")]
     public KeyCode buttonPause = KeyCode.Space;
+    [Header("Prefabs")]
     // Prefab that is the menu to interact with when the game is paused.
+    [Tooltip("Prefab that is the menu which comes up when the game is paused.")]
     public GameObject pauseMenuPrefab;
 
+    // Stores an object which a menu that comes up when game is paused.
     private GameObject pauseMenu;
     // Start is called before the first frame update
     void Start()
@@ -49,7 +54,6 @@ public class ManagePauseMenu : MonoBehaviour
     // Pause menu is destoried.
     public void Resume()
     {
-
         Time.timeScale = 1f;
         Destroy(pauseMenu);
     }
