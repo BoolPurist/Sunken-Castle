@@ -34098,6 +34098,16 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 2701556617636789516, guid: f61a3a0e4476e3146ad22c2dbbf74362,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.999948
+      objectReference: {fileID: 0}
+    - target: {fileID: 2701556617636789516, guid: f61a3a0e4476e3146ad22c2dbbf74362,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.010197614
+      objectReference: {fileID: 0}
     - target: {fileID: 4735892960758196853, guid: f61a3a0e4476e3146ad22c2dbbf74362,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34172,6 +34182,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Leuchtender Pilz 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597612872637826491, guid: f61a3a0e4476e3146ad22c2dbbf74362,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597612872637826491, guid: f61a3a0e4476e3146ad22c2dbbf74362,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[5]
+      value: 1298232955
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597612872637826491, guid: f61a3a0e4476e3146ad22c2dbbf74362,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 0.8583751
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f61a3a0e4476e3146ad22c2dbbf74362, type: 3}
