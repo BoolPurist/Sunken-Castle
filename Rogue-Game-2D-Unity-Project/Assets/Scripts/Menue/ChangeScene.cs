@@ -16,4 +16,10 @@ public class ChangeScene : MonoBehaviour
             SceneManager.LoadScene(sceneName);
         }
     }
+
+    public void OnClickChangeSceneFromPause(string sceneName)
+    {
+        Time.timeScale = 1f;
+        OnClickChangeScene(sceneName);
+    }
 }

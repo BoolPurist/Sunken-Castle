@@ -342,7 +342,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 876123988425560976}
-        m_MethodName: OnClickChangeScene
+        m_MethodName: OnClickChangeSceneFromPause
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -531,7 +531,6 @@ GameObject:
   - component: {fileID: 876123989158670475}
   - component: {fileID: 876123989158670472}
   - component: {fileID: 876123989158670473}
-  - component: {fileID: 876123989158670474}
   m_Layer: 5
   m_Name: Button Resume
   m_TagString: Untagged
@@ -639,30 +638,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 876123989479324773}
-        m_MethodName: Resume
+      - m_Target: {fileID: 1380569954545802878}
+        m_MethodName: CallbackResumeButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &876123989158670474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876123989158670519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f1be28ca2930941b07465aec89c8fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 876123988439514089}
 --- !u!1 &876123989225838994
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,7 +739,7 @@ GameObject:
   - component: {fileID: 876123989479324771}
   - component: {fileID: 876123989479324768}
   - component: {fileID: 876123989479324769}
-  - component: {fileID: 876123989479324773}
+  - component: {fileID: 1380569954545802878}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -841,7 +827,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &876123989479324773
+--- !u!114 &1380569954545802878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -853,4 +839,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f1be28ca2930941b07465aec89c8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 876123988439514089}
