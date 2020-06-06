@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ManageGameOverScreen : MonoBehaviour
 {
+
+    public ManagePauseMenu pauseMenuState;
     // Start is called before the first frame update
 
     public GameObject prefabGameOverScreen;
@@ -35,6 +37,12 @@ public class ManageGameOverScreen : MonoBehaviour
             else
             {
                 GameObject gameOverScreen = Instantiate(prefabGameOverScreen, this.transform);
+
+                if (pauseMenuState != null)
+                {
+                    pauseMenuState.enabled = false;
+                }
+
                 hasSpawnGameOver = true;
             }
 
