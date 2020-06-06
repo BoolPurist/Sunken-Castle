@@ -1,49 +1,67 @@
 fileFormatVersion: 2
-guid: a3931495d64cbb148b0877716dd9ff7e
+guid: 3e3e560109f3d1d49a445af1deb8cc75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2229536071603568148
-    second: Dark Knight Back Attack SpriteSheet_0
+      213: 1410003615167874839
+    second: Dark Knight Left Attack Animation SpriteSheet_0
   - first:
-      213: -4744127299696877624
-    second: Dark Knight Back Attack SpriteSheet_1
+      213: -5102324997789912385
+    second: Dark Knight Left Attack Animation SpriteSheet_1
   - first:
-      213: -1909167609927989447
-    second: Dark Knight Back Attack SpriteSheet_2
+      213: -3441585253553711905
+    second: Dark Knight Left Attack Animation SpriteSheet_2
   - first:
-      213: -4921392187251515818
-    second: Dark Knight Back Attack SpriteSheet_3
+      213: 2386935694794134263
+    second: Dark Knight Left Attack Animation SpriteSheet_3
   - first:
-      213: -1500458886587608724
-    second: Dark Knight Back Attack SpriteSheet_4
+      213: 6536899066107184354
+    second: Dark Knight Left Attack Animation SpriteSheet_4
   - first:
-      213: 6859510426715240235
-    second: Dark Knight Back Attack SpriteSheet_5
+      213: -3492538343411382300
+    second: Dark Knight Left Attack Animation SpriteSheet_5
   - first:
-      213: -6494709225166735927
-    second: Dark Knight Back Attack SpriteSheet_6
+      213: 7774341410174210604
+    second: Dark Knight Left Attack Animation SpriteSheet_6
   - first:
-      213: -7783029838571915156
-    second: Dark Knight Back Attack SpriteSheet_7
+      213: -7375910894143455450
+    second: Dark Knight Left Attack Animation SpriteSheet_7
   - first:
-      213: 2756788174653078282
-    second: Dark Knight Back Attack SpriteSheet_8
+      213: 5440527101561121133
+    second: Dark Knight Left Attack Animation SpriteSheet_8
   - first:
-      213: -7930454784269060072
-    second: Dark Knight Back Attack SpriteSheet_9
+      213: -6471602954650564311
+    second: Dark Knight Left Attack Animation SpriteSheet_9
   - first:
-      213: -1756970514065130072
-    second: Dark Knight Back Attack SpriteSheet_10
+      213: 7736980995602189171
+    second: Dark Knight Left Attack Animation SpriteSheet_10
   - first:
-      213: 204158571819289785
-    second: Dark Knight Back Attack SpriteSheet_11
+      213: 8365297150129000271
+    second: Dark Knight Left Attack Animation SpriteSheet_11
   - first:
-      213: -3932473648053098078
-    second: Dark Knight Back Attack SpriteSheet_12
+      213: -2570284286837009373
+    second: Dark Knight Left Attack Animation SpriteSheet_12
   - first:
-      213: 5366258847746482602
-    second: Dark Knight Back Attack SpriteSheet_13
+      213: -8000555033607532822
+    second: Dark Knight Left Attack Animation SpriteSheet_13
+  - first:
+      213: -4023815581889845966
+    second: Dark Knight Left Attack Animation SpriteSheet_14
+  - first:
+      213: 3473800745951576628
+    second: Dark Knight Left Attack Animation SpriteSheet_15
+  - first:
+      213: 788082732420240199
+    second: Dark Knight Left Attack Animation SpriteSheet_16
+  - first:
+      213: 7312423750322148353
+    second: Dark Knight Left Attack Animation SpriteSheet_17
+  - first:
+      213: 1594302100719558264
+    second: Dark Knight Left Attack Animation SpriteSheet_18
+  - first:
+      213: -9044403223136709689
+    second: Dark Knight Left Attack Animation SpriteSheet_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +124,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,7 +136,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,7 +147,91 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_0
+      name: Dark Knight Left Attack Animation SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717091641d6519310800000000000000
+      internalID: 1410003615167874839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Knight Left Attack Animation SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2f222a276e039b0800000000000000
+      internalID: -5102324997789912385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Knight Left Attack Animation SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd455b932780d30d0800000000000000
+      internalID: -3441585253553711905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Knight Left Attack Animation SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f297ed2e59102120800000000000000
+      internalID: 2386935694794134263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Knight Left Attack Animation SpriteSheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41eb9d99e37e0fe10800000000000000
-      internalID: 2229536071603568148
+      spriteID: 2e4c6ef011bb7ba50800000000000000
+      internalID: 6536899066107184354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_1
+      name: Dark Knight Left Attack Animation SpriteSheet_5
       rect:
         serializedVersion: 2
         x: 64
@@ -164,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cf955c3b59792eb0800000000000000
-      internalID: -4744127299696877624
+      spriteID: 4e7888481e2088fc0800000000000000
+      internalID: -3492538343411382300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_2
+      name: Dark Knight Left Attack Animation SpriteSheet_6
       rect:
         serializedVersion: 2
         x: 128
@@ -185,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9378f898c264185e0800000000000000
-      internalID: -1909167609927989447
+      spriteID: c221b04825204eb60800000000000000
+      internalID: 7774341410174210604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_3
+      name: Dark Knight Left Attack Animation SpriteSheet_7
       rect:
         serializedVersion: 2
         x: 192
@@ -206,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65e9d7e51e3b3bbb0800000000000000
-      internalID: -4921392187251515818
+      spriteID: 62f35abfe1083a990800000000000000
+      internalID: -7375910894143455450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_4
+      name: Dark Knight Left Attack Animation SpriteSheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -227,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c611ed8a79c4d2be0800000000000000
-      internalID: -1500458886587608724
+      spriteID: d69af6fd292a08b40800000000000000
+      internalID: 5440527101561121133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_5
+      name: Dark Knight Left Attack Animation SpriteSheet_9
       rect:
         serializedVersion: 2
         x: 64
@@ -248,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b27337dc360e13f50800000000000000
-      internalID: 6859510426715240235
+      spriteID: 9294fa8966f3036a0800000000000000
+      internalID: -6471602954650564311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_6
+      name: Dark Knight Left Attack Animation SpriteSheet_10
       rect:
         serializedVersion: 2
         x: 128
@@ -269,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c5fb72ce582ed5a0800000000000000
-      internalID: -6494709225166735927
+      spriteID: 37b01d429374f5b60800000000000000
+      internalID: 7736980995602189171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_7
+      name: Dark Knight Left Attack Animation SpriteSheet_11
       rect:
         serializedVersion: 2
         x: 192
@@ -290,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c68b7ab199f1df390800000000000000
-      internalID: -7783029838571915156
+      spriteID: f4fc602df61871470800000000000000
+      internalID: 8365297150129000271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_8
+      name: Dark Knight Left Attack Animation SpriteSheet_12
       rect:
         serializedVersion: 2
         x: 0
@@ -311,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0bb13f1d34124620800000000000000
-      internalID: 2756788174653078282
+      spriteID: 324df4f1f04845cd0800000000000000
+      internalID: -2570284286837009373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_9
+      name: Dark Knight Left Attack Animation SpriteSheet_13
       rect:
         serializedVersion: 2
         x: 64
@@ -332,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 818785c146d51f190800000000000000
-      internalID: -7930454784269060072
+      spriteID: aee0cdfe59158f090800000000000000
+      internalID: -8000555033607532822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_10
+      name: Dark Knight Left Attack Animation SpriteSheet_14
       rect:
         serializedVersion: 2
         x: 128
@@ -353,14 +455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8adff4450acfd97e0800000000000000
-      internalID: -1756970514065130072
+      spriteID: 23526cf1c098828c0800000000000000
+      internalID: -4023815581889845966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_11
+      name: Dark Knight Left Attack Animation SpriteSheet_15
       rect:
         serializedVersion: 2
         x: 192
@@ -374,14 +476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bcc32fa32155d200800000000000000
-      internalID: 204158571819289785
+      spriteID: 4324eea9f5b653030800000000000000
+      internalID: 3473800745951576628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_12
+      name: Dark Knight Left Attack Animation SpriteSheet_16
       rect:
         serializedVersion: 2
         x: 0
@@ -395,14 +497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a9e53f5d0c0d69c0800000000000000
-      internalID: -3932473648053098078
+      spriteID: 7431787d115dfea00800000000000000
+      internalID: 788082732420240199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dark Knight Back Attack SpriteSheet_13
+      name: Dark Knight Left Attack Animation SpriteSheet_17
       rect:
         serializedVersion: 2
         x: 64
@@ -416,8 +518,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa1e9b88df7c87a40800000000000000
-      internalID: 5366258847746482602
+      spriteID: 104d41578a2fa7560800000000000000
+      internalID: 7312423750322148353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Knight Left Attack Animation SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e5c0a4059102610800000000000000
+      internalID: 1594302100719558264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Knight Left Attack Animation SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3d9871033db7280800000000000000
+      internalID: -9044403223136709689
       vertices: []
       indices: 
       edges: []
