@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 511111066059357517}
   - component: {fileID: 2496540844118587072}
   - component: {fileID: 70894632}
+  - component: {fileID: 6307365194776224793}
   m_Layer: 0
   m_Name: CasualTree
   m_TagString: Untagged
@@ -123,3 +124,22 @@ PolygonCollider2D:
       - {x: 0.18424918, y: -0.61916065}
       - {x: 0.19572452, y: -0.6168329}
       - {x: 0.121678695, y: -0.5687676}
+--- !u!95 &6307365194776224793
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3863344429182191153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e1975d1c65238bb4492c979de22daee1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
