@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2432566366448508525}
   - component: {fileID: 2432566366448508438}
   - component: {fileID: 1732505072}
+  - component: {fileID: 4598077011346903471}
   m_Layer: 8
   m_Name: EnemyRunToPlayer
   m_TagString: Untagged
@@ -226,6 +227,21 @@ CircleCollider2D:
   m_Offset: {x: 0.01308039, y: -0.24698958}
   serializedVersion: 2
   m_Radius: 0.065395474
+--- !u!114 &4598077011346903471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432566366448508526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc27049f53904f04ab24eb3efae86d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: 0
+  updateOnce: 0
 --- !u!1 &2432566366567645209
 GameObject:
   m_ObjectHideFlags: 0
