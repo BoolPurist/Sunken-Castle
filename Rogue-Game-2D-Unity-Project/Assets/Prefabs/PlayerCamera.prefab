@@ -179,6 +179,8 @@ GameObject:
   - component: {fileID: 8520280414304190852}
   - component: {fileID: 8520280414304190859}
   - component: {fileID: 1429471195085253424}
+  - component: {fileID: 4379294907800159736}
+  - component: {fileID: 1542855501972361794}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: MainCamera
@@ -296,8 +298,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 967cc9311e1050d41854440825d62cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuState: {fileID: 4379294907800159736}
   prefabGameOverScreen: {fileID: 8383093309961739429, guid: e97fab259d08aed4ebf3c7492dbc17c0,
     type: 3}
+--- !u!114 &4379294907800159736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8520280414304190855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c627d61aa5e6a489fa7a4b1469c39f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPause: 32
+  pauseMenuPrefab: {fileID: 876123989479324782, guid: 606e6a77190093349b43dbc575b190f8,
+    type: 3}
+--- !u!114 &1542855501972361794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8520280414304190855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f888dd82a5eea574791a4341298079cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 4214852443243257893, guid: 45ac8d50db962824fba9295b6af925f4,
+    type: 3}
+  verzoegerung: 0.1
+  allowToUpdate: 1
 --- !u!114 &4087084727524727129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,12 +424,12 @@ PrefabInstance:
     - target: {fileID: 6642312845777872841, guid: ec5c29b64bf85a6428fa4f6bd03210c2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 86.29999
+      value: 4.25
       objectReference: {fileID: 0}
     - target: {fileID: 6642312845777872841, guid: ec5c29b64bf85a6428fa4f6bd03210c2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.210007
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6642312845777872841, guid: ec5c29b64bf85a6428fa4f6bd03210c2,
         type: 3}
@@ -430,12 +464,12 @@ PrefabInstance:
     - target: {fileID: 6642312845777872841, guid: ec5c29b64bf85a6428fa4f6bd03210c2,
         type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6642312845777872841, guid: ec5c29b64bf85a6428fa4f6bd03210c2,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec5c29b64bf85a6428fa4f6bd03210c2, type: 3}
