@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 8f2a2014b9d727a4fa0cdf161889185a
+guid: be807cddca9b0a044a70436edda7c8e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1601324783420334166
-    second: Statue SpriteSheet_0
+      213: 6776938301105096762
+    second: Casual Tree Idle SpriteSheet_0
   - first:
-      213: -1239246508549095180
-    second: Statue SpriteSheet_1
+      213: 4103434719220995297
+    second: Casual Tree Idle SpriteSheet_1
   - first:
-      213: 4720614439559610268
-    second: Statue SpriteSheet_2
+      213: 299585148404626565
+    second: Casual Tree Idle SpriteSheet_2
   - first:
-      213: 3316696541812854110
-    second: Statue SpriteSheet_3
-  - first:
-      213: 6386364324823975347
-    second: Statue SpriteSheet_4
-  - first:
-      213: -4207321018323080934
-    second: Statue SpriteSheet_5
-  - first:
-      213: -35967807440514374
-    second: Statue SpriteSheet_6
+      213: 6999338408666959833
+    second: Casual Tree Idle SpriteSheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -84,8 +75,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 1
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,8 +87,8 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 1
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,13 +99,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Statue SpriteSheet_0
+      name: Casual Tree Idle SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 5
-        y: 120
-        width: 45
-        height: 59
+        y: 40
+        width: 31
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6506cc5086c093610800000000000000
-      internalID: 1601324783420334166
+      spriteID: a38cb16aa758c0e50800000000000000
+      internalID: 6776938301105096762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Statue SpriteSheet_1
+      name: Casual Tree Idle SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 120
-        width: 45
-        height: 59
+        x: 45
+        y: 40
+        width: 31
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,104 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f0c9c4cddf4dcee0800000000000000
-      internalID: -1239246508549095180
+      spriteID: 1e41c2ed22452f830800000000000000
+      internalID: 4103434719220995297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Statue SpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 120
-        width: 45
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9fb78762ddf28140800000000000000
-      internalID: 4720614439559610268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Statue SpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 60
-        width: 45
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5d8582aee5470e20800000000000000
-      internalID: 3316696541812854110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Statue SpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 60
-        width: 45
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b54c5b548ce0a850800000000000000
-      internalID: 6386364324823975347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Statue SpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 125
-        y: 60
-        width: 45
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1961de33d79c95c0800000000000000
-      internalID: -4207321018323080934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Statue SpriteSheet_6
+      name: Casual Tree Idle SpriteSheet_2
       rect:
         serializedVersion: 2
         x: 5
         y: 0
-        width: 45
-        height: 59
+        width: 31
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +155,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab2982e3877308ff0800000000000000
-      internalID: -35967807440514374
+      spriteID: 584f3aeea17582400800000000000000
+      internalID: 299585148404626565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Casual Tree Idle SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df8757d235a22160800000000000000
+      internalID: 6999338408666959833
       vertices: []
       indices: 
       edges: []
