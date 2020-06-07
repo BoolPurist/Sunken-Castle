@@ -12,6 +12,8 @@ public class PositionRendererSorter : MonoBehaviour
     [SerializeField]
     private bool updateOnce = false;
 
+    private float timer;
+    private float timerMax = 0.1f;
 
 
 
@@ -23,10 +25,14 @@ public class PositionRendererSorter : MonoBehaviour
 
     void LateUpdate()
     {
-        myRender.sortingOrder = (int)(sortingOrderBase - (transform.position.y * 100) - offset);
-
-        if(updateOnce)
-            Destroy(this);
+        timer -= Time.deltaTime;
+        if (timer <= 0f)
+        {
+            myRender.sortingOrder = (int)(sortingOrderBase - (transform.position.y * 100) - offset);
+            if (updateOnce)
+                Destroy(this);
+            timer = timerMax;
+        }
     }
 
 
