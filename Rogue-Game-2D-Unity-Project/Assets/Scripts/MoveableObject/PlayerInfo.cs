@@ -48,7 +48,7 @@ public class PlayerInfo : MonoBehaviour
             OnHealthChanges.Invoke(CurrentHealth);
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
 
-            if(isDead == false)
+            if(isDead == true)
             {
                 GetComponent<PlayerMovement>().allowToMove = false;
                 GetComponent<CameraFollow>().allowToUpdate = false;
