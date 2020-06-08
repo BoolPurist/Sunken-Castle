@@ -11,8 +11,11 @@ public class EnemyAttack : MonoBehaviour
     private int angle = 0;
     private Animator anim;
 
+
     public float timeBtwEnemyAttack;
     private float curTimeBtwEnemyAttack;
+    [HideInInspector]
+    public bool allowToAttack = true;
 
 
     void Start()
@@ -21,7 +24,7 @@ public class EnemyAttack : MonoBehaviour
     }
     void Update()
     {
-        if (curTimeBtwEnemyAttack <= 0)
+        if (curTimeBtwEnemyAttack <= 0 && allowToAttack)
         {
             Collider2D[] Player = Physics2D.OverlapBoxAll(attackPos.position, attackRange, angle, whatIsPlayer);
 

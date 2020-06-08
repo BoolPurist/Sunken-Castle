@@ -42,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Vanish
+    uniqueID: 940300019
+    locked: 0
   - name: TileMapBackground
     uniqueID: 1298232955
     locked: 0

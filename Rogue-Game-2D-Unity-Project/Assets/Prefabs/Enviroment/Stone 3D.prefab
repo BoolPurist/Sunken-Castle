@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1160438174821578241}
   - component: {fileID: 1019972223759854177}
   - component: {fileID: 1730883972457697842}
+  - component: {fileID: 3763453942365305870}
   m_Layer: 0
   m_Name: Stone 3D
   m_TagString: Untagged
@@ -50,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 529a6651c23730d47894de0101b6a58f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -123,3 +124,18 @@ PolygonCollider2D:
       - {x: 0.1354718, y: -0.4241774}
       - {x: 0.0738271, y: -0.4354391}
       - {x: 0.024930634, y: -0.44798827}
+--- !u!114 &3763453942365305870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4576626183897050236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc27049f53904f04ab24eb3efae86d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: 0
+  updateOnce: 1

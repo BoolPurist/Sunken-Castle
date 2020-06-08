@@ -46,6 +46,7 @@ public class EnemyInfo : MonoBehaviour
         if (isDead == false)
             OnDeathEnemies.Invoke(score);
         isDead = true;
+        GetComponent<EnemyAttack>().allowToAttack = false;
         animator.SetTrigger("Dies");
         Destroy(gameObject, 2f);
     }

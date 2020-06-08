@@ -5,46 +5,32 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
-
-    public GameObject pauseMenuUI;
 
     // PauseMenu ist not active when Level is launched.
     void Start()
     {
-        pauseMenuUI.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Game is paused when ESC get pressed
-        if (Input.GetKeyDown(KeyCode.Escape))
+
+    }
+
+    public void CallbackResumeButton()
+    {
+        // The parent of the object which is component is attached to is has the component to resume the game properly.
+        GameObject playerCamera = this.transform.parent.gameObject;
+        // Checks if for some reason the object with this component has not parent.
+        if (playerCamera == null)
         {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            Debug.LogError("Pause menu has no parent for some reason. The parent usually a camera of the player then would handle the resuming the game.");
+            return;
         }
+
+        // Let the game resume from the pause menu properly.
+        playerCamera.GetComponent<ManagePauseMenu>().Resume();
     }
 
-    // Game is resumed
-    public void Resume()
-    {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
-
-    // Game is paused
-    void Pause()
-    {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-    }
 }

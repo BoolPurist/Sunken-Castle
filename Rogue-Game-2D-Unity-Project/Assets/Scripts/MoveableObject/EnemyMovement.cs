@@ -11,6 +11,8 @@ public class EnemyMovement : MonoBehaviour
     
     public float moveSpeed = 2f;
     public int movementType = 1;
+    public float triggerDistance = 5f;
+    [HideInInspector]
     public bool allowedToMove = true;
 
     // Start is called before the first frame update
@@ -23,12 +25,14 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(player != null && allowedToMove == true)
+        float distance = 0f;
+
+        if(player != null)
+            distance = Vector3.Distance(player.position, transform.position);  //saves the distance between Player and Enemy
+
+        if (player != null && allowedToMove == true && distance <= triggerDistance)
         {
-            Vector3 direction = player.position - transform.position; //saves the direction from the Enemy to the player in "direction"
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; //calculates the angle at which the enemy has to spin in order to stay in line with the player
-            rb.rotation = angle; //spins the enemy;
-            direction.Normalize(); //Brings the value of "direction" between "-1" and "1" for the movement function
+            Vector3 direction = (player.position - transform.position).normalized; //saves and normalizes the direction from the Enemy to the player in "direction"
             movement = direction;
         }
         else
@@ -36,9 +40,6 @@ public class EnemyMovement : MonoBehaviour
             movement = Vector2.zero;
         }
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     private void FixedUpdate() //Moves the Enemy
@@ -46,21 +47,37 @@ public class EnemyMovement : MonoBehaviour
         if (movementType == 1)
         {
             moveToPlayer(movement);
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+
         }
         else if (movementType == 2)
         {
-            moveFromPlayer(movement);
+            moveFromPlayer(-movement);
+            animator.SetFloat("Horizontal", -movement.x);
+            animator.SetFloat("Vertical", -movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+
         }
 
     }
 
     void moveToPlayer(Vector2 direction) //Moves Enemy towards the player
     {
-        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+
+         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
 
     void moveFromPlayer(Vector2 direction) //Moves Enemy away from player
     {
-        rb.MovePosition((Vector2)transform.position + (direction * -1 * moveSpeed * Time.deltaTime));
+        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+    }
+
+    void OnDrawGizmosSelected() //Visualizes the trigger distance for testing
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, triggerDistance);
+
     }
 }

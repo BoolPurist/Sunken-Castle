@@ -20,11 +20,15 @@ public LayerMask whatIsPlayer
 
 Summary: Layer used to check if a Player is currently touching the entity
 
+public Light2D li
+
+Summary: PointLight2D used to enlighten the healing potion
+
 ## Methods
 
 private void Update()
 
-Summary: Is cast once per frame. Checks if a Player is in range of the healingRange, if yes, acitvates "GainHealth(int x)" method of the player, whereas x is the healthAmount. If Player "picked up" the entity, the entity gets destroyed.
+Summary: Is cast once per frame. Checks if a Player is in range of the healingRange, if yes, acitvates "GainHealth(int x)" method of the player, whereas x is the healthAmount. If Player "picked up" the entity, the entity and the Light2D gets destroyed.
 
 private void OnDrawGismosSelected()
 

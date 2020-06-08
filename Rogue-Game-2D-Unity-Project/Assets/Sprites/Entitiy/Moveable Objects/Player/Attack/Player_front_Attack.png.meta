@@ -23,6 +23,30 @@ TextureImporter:
   - first:
       213: 3997802397015859226
     second: Player_front_Attack_6
+  - first:
+      213: 6062419539957957370
+    second: Player_front_Attack_0
+  - first:
+      213: 8127795018943006822
+    second: Player_front_Attack_1
+  - first:
+      213: -2792621938251368676
+    second: Player_front_Attack_2
+  - first:
+      213: -5667420948572723704
+    second: Player_front_Attack_3
+  - first:
+      213: 839547479000214227
+    second: Player_front_Attack_4
+  - first:
+      213: -6662467181959986253
+    second: Player_front_Attack_5
+  - first:
+      213: -3070600021817424337
+    second: Player_front_Attack_6
+  - first:
+      213: 736356008613952773
+    second: Player_front_Attack_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,19 +135,19 @@ TextureImporter:
       name: Player_front_Attack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 504
-        width: 63
-        height: 84
+        x: 18
+        y: 544
+        width: 21
+        height: 27
       alignment: 9
-      pivot: {x: 0.476, y: 0.66}
+      pivot: {x: 0.5721595, y: 0.57541686}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a22ce6517e7aab460800000000000000
-      internalID: 7258298360399839786
+      spriteID: af2c496937a022450800000000000000
+      internalID: 6062419539957957370
       vertices: []
       indices: 
       edges: []
@@ -132,19 +156,19 @@ TextureImporter:
       name: Player_front_Attack_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 420
-        width: 63
-        height: 84
+        x: 18
+        y: 460
+        width: 21
+        height: 28
       alignment: 9
-      pivot: {x: 0.476, y: 0.66}
+      pivot: {x: 0.57031703, y: 0.5900933}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b87d86d4ba2adc930800000000000000
-      internalID: 4165164087009400715
+      spriteID: 668894fb18abbc070800000000000000
+      internalID: 8127795018943006822
       vertices: []
       indices: 
       edges: []
@@ -153,19 +177,19 @@ TextureImporter:
       name: Player_front_Attack_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 336
-        width: 63
-        height: 84
+        x: 18
+        y: 376
+        width: 21
+        height: 29
       alignment: 9
-      pivot: {x: 0.476, y: 0.66}
+      pivot: {x: 0.5556278, y: 0.6033325}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1348439c46351a5d0800000000000000
-      internalID: -3053067380042988495
+      spriteID: c177092a42d9e39d0800000000000000
+      internalID: -2792621938251368676
       vertices: []
       indices: 
       edges: []
@@ -174,40 +198,19 @@ TextureImporter:
       name: Player_front_Attack_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 252
-        width: 63
-        height: 84
+        x: 18
+        y: 292
+        width: 21
+        height: 29
       alignment: 9
-      pivot: {x: 0.476, y: 0.66}
+      pivot: {x: 0.57020444, y: 0.6016751}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a14e60777cad1830800000000000000
-      internalID: 4043577669435933090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_front_Attack_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 168
-        width: 63
-        height: 84
-      alignment: 9
-      pivot: {x: 0.476, y: 0.66}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30141ce82c0f6d520800000000000000
-      internalID: 2726631342828765443
+      spriteID: 80627bfaca64951b0800000000000000
+      internalID: -5667420948572723704
       vertices: []
       indices: 
       edges: []
@@ -216,19 +219,19 @@ TextureImporter:
       name: Player_front_Attack_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 84
-        width: 63
-        height: 84
+        x: 5
+        y: 192
+        width: 52
+        height: 42
       alignment: 9
-      pivot: {x: 0.476, y: 0.66}
+      pivot: {x: 0.48172235, y: 0.7471822}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 903845707b34346f0800000000000000
-      internalID: -701642663558610167
+      spriteID: 3b3c393b5692a83a0800000000000000
+      internalID: -6662467181959986253
       vertices: []
       indices: 
       edges: []
@@ -237,19 +240,40 @@ TextureImporter:
       name: Player_front_Attack_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 63
-        height: 84
+        x: 5
+        y: 106
+        width: 53
+        height: 44
       alignment: 9
-      pivot: {x: 0.476, y: 0.66}
+      pivot: {x: 0.47191, y: 0.7632838}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a10e55c491c0b7730800000000000000
-      internalID: 3997802397015859226
+      spriteID: f2604448c890365d0800000000000000
+      internalID: -3070600021817424337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_front_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 40
+        width: 26
+        height: 27
+      alignment: 9
+      pivot: {x: 0.6377503, y: 0.60451776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50db8a173ef083a00800000000000000
+      internalID: 736356008613952773
       vertices: []
       indices: 
       edges: []
