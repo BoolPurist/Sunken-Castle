@@ -26,9 +26,9 @@ public class PickUpInfo : MonoBehaviour
                 Destroy(li);
                 Destroy(this.gameObject);
             }
-           
+
         }
-        
+
     }
 
     void OnDrawGizmosSelected() //Visualizes the attack for testing

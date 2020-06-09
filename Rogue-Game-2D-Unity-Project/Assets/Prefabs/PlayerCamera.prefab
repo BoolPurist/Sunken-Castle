@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c627d61aa5e6a489fa7a4b1469c39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonPause: 32
+  buttonPause: 27
   pauseMenuPrefab: {fileID: 876123989479324782, guid: 606e6a77190093349b43dbc575b190f8,
     type: 3}
 --- !u!114 &1542855501972361794

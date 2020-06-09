@@ -37,38 +37,41 @@ public class PlayerInfo : MonoBehaviour
 
     void Update()
     {
+        // Checks if player dies.
         if (currentHealth <= 0)
         {
             if (isDead == false)
             {
+                // Plays death animation. 
                 animator.SetTrigger("Dies");
+                // Makes sure that the death animation is not played more than once.
                 isDead = true;
+                // Prevents the player moving in his death animation via player input.
+                GetComponent<PlayerMovement>().allowToMove = false;
             }
+            // Prevents the display of health to show a negativ number.
             currentHealth = 0;
             OnHealthChanges.Invoke(CurrentHealth);
+            // Triggers game over screen and disables toggling pause menu.
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
 
-            if(isDead == true)
-            {
-                GetComponent<PlayerMovement>().allowToMove = false;
-                GetComponent<CameraFollow>().allowToUpdate = false;
-                gameObject.AddComponent<Camera>();
-            }
             Destroy(gameObject, 2f);
-            
         }
-        
+
     }
 
     public void TakeDamage(int damage)
     {
+        // Gives visuell feedback to player for player being hit.
         animator.SetTrigger("IsHit");
         currentHealth -= damage;
+        // Updates health gui on the player view.
         OnHealthChanges.Invoke(CurrentHealth);
     }
 
     public void GainHealth(int health)
     {
+        // Checks that the player does not gain more health than his max health.
         if (currentHealth + health >= 100)
         {
             currentHealth = 100;
@@ -77,8 +80,9 @@ public class PlayerInfo : MonoBehaviour
         {
             currentHealth += health;
         }
+        // Updates gui for player health
         OnHealthChanges.Invoke(CurrentHealth);
-        
+
     }
 
 
