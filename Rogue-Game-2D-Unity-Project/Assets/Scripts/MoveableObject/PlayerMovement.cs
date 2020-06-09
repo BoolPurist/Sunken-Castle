@@ -32,14 +32,17 @@ public class PlayerMovement : MonoBehaviour
             movement.y = 0;
         }
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     void FixedUpdate()
     {
-        if(allowToMove)
+        if (allowToMove)
+        {
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime); //moves the character
+        }
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 }
