@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5635359700025413156}
   - component: {fileID: 6230245772766813561}
   - component: {fileID: 970291069129520434}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 8520280413429861822}
   - component: {fileID: 8520280413429861817}
   - component: {fileID: 8520280413429861816}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GUIPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 1429471195085253424}
   - component: {fileID: 4379294907800159736}
   - component: {fileID: 1542855501972361794}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayerCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -366,6 +366,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: GUIHealth
       objectReference: {fileID: 0}
+    - target: {fileID: 6326337699202870811, guid: ec5c29b64bf85a6428fa4f6bd03210c2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6642312845777872841, guid: ec5c29b64bf85a6428fa4f6bd03210c2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -506,6 +511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: GUIScore
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326337699202870811, guid: ec5c29b64bf85a6428fa4f6bd03210c2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6642312845777872841, guid: ec5c29b64bf85a6428fa4f6bd03210c2,
         type: 3}
