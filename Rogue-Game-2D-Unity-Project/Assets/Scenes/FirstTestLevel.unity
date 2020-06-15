@@ -31162,6 +31162,7 @@ GameObject:
   - component: {fileID: 1193091709}
   - component: {fileID: 1193091708}
   - component: {fileID: 1193091710}
+  - component: {fileID: 1193091711}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -31248,6 +31249,27 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   updateOnce: 1
+--- !u!114 &1193091711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193091707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db09e92efafcf724ab9a168035c952d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portal: {fileID: 1193091709}
+  WhatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 256
+  WhatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 512
+  levelRadius: {x: 0, y: 0}
+  portalRadius: {x: 1.77, y: 1.77}
 --- !u!1001 &1196487847
 PrefabInstance:
   m_ObjectHideFlags: 0
