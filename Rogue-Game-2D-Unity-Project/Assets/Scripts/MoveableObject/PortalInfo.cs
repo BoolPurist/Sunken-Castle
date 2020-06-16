@@ -5,6 +5,7 @@ using UnityEngine;
 public class PortalInfo : MonoBehaviour
 {
     public Transform portal;
+    public Transform levelCenter;
     public LayerMask WhatIsEnemy;
     public LayerMask WhatIsPlayer;
     public Vector2 levelRadius;
@@ -24,7 +25,7 @@ public class PortalInfo : MonoBehaviour
     {
         if(isActivated == false)
         {
-            Collider2D[] Enemy = Physics2D.OverlapBoxAll(portal.position, levelRadius, WhatIsEnemy);
+            Collider2D[] Enemy = Physics2D.OverlapBoxAll(levelCenter.position, levelRadius, WhatIsEnemy);
             if(Enemy[0] == null)
             {
                 Activate();
@@ -53,7 +54,7 @@ public class PortalInfo : MonoBehaviour
     void OnDrawGizmosSelected() //Visualizes the levelRadius and portalRadius for testing
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(portal.position, (Vector3)levelRadius);
+        Gizmos.DrawWireCube(levelCenter.position, (Vector3)levelRadius);
         Gizmos.DrawWireCube(portal.position, (Vector3)portalRadius);
     }
 }

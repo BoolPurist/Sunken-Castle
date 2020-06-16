@@ -31230,7 +31230,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 16.785416, y: 0.34195697, z: 23.13}
   m_LocalScale: {x: 1, y: 1, z: 21}
-  m_Children: []
+  m_Children:
+  - {fileID: 2073652088}
   m_Father: {fileID: 2004825941}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31262,13 +31263,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   portal: {fileID: 1193091709}
+  levelCenter: {fileID: 2073652088}
   WhatIsEnemy:
     serializedVersion: 2
     m_Bits: 256
   WhatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
-  levelRadius: {x: 0, y: 0}
+  levelRadius: {x: 37.8, y: 10.5}
   portalRadius: {x: 1.77, y: 1.77}
 --- !u!1001 &1196487847
 PrefabInstance:
@@ -34148,6 +34150,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1238537893161963243}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2073652087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2073652088}
+  m_Layer: 0
+  m_Name: levelCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2073652088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073652087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.94, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1193091709}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2077672751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2246442777306164902, guid: c8a2ad98ceabf784ba307c5402c56c14,
