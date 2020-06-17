@@ -29813,6 +29813,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.049000002
       objectReference: {fileID: 0}
+    - target: {fileID: 2432566366448508521, guid: 38a9648c136a49541be54e680ca70854,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2432566366448508524, guid: 38a9648c136a49541be54e680ca70854,
         type: 3}
       propertyPath: attackRange.x
@@ -29846,33 +29851,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 526382473}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e4f797c2fdd66c43a93ca7ebb37530d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 2
-  radius: 0.23
-  height: 2
-  repathRate: 0.5
-  canSearch: 1
-  canMove: 1
-  maxSpeed: 1
-  gravity: {x: NaN, y: NaN, z: NaN}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  centerOffsetCompatibility: NaN
-  orientation: 1
-  enableRotation: 0
-  targetCompatibility: {fileID: 0}
-  maxAcceleration: -2.5
-  rotationSpeed: 360
-  slowdownDistance: 0.48
-  pickNextWaypointDist: 0.98
-  endReachedDistance: 0.49
-  alwaysDrawGizmos: 1
-  slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 1
-  constrainInsideGraph: 0
+  target: {fileID: 810638578}
+  speed: 100
+  nextWaypointDistance: 3
 --- !u!114 &526382475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29907,20 +29891,6 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 523441906}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &526382486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526382473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  target: {fileID: 810638578}
 --- !u!1 &600601336
 GameObject:
   m_ObjectHideFlags: 0
