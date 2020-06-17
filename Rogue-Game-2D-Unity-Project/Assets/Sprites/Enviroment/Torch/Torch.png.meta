@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: be807cddca9b0a044a70436edda7c8e9
+guid: fb1fde2e2ac880f4d937123ada520714
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6776938301105096762
-    second: Casual Tree Idle SpriteSheet_0
+      213: -8553596595128423742
+    second: Torch_0
   - first:
-      213: 4103434719220995297
-    second: Casual Tree Idle SpriteSheet_1
+      213: 330400763883709057
+    second: Torch_1
   - first:
-      213: 299585148404626565
-    second: Casual Tree Idle SpriteSheet_2
+      213: 6950709768184568528
+    second: Torch_2
   - first:
-      213: 6999338408666959833
-    second: Casual Tree Idle SpriteSheet_3
+      213: 837017221450738011
+    second: Torch_3
   - first:
-      213: -4614480252592532041
-    second: Casual Tree Idle SpriteSheet_0
+      213: 9103131428984308761
+    second: Torch_4
   - first:
-      213: -6091765726276794522
-    second: Casual Tree Idle SpriteSheet_1
+      213: -6545210212983845557
+    second: Torch_5
   - first:
-      213: 8162617617393964482
-    second: Casual Tree Idle SpriteSheet_2
-  - first:
-      213: 2566756321209492350
-    second: Casual Tree Idle SpriteSheet_3
+      213: 2483307524810053647
+    second: Torch_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -69,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,13 +108,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Casual Tree Idle SpriteSheet_0
+      name: Torch_0
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +122,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b5da29a8a216ffb0800000000000000
-      internalID: -4614480252592532041
+      spriteID: 2ca216337358b4980800000000000000
+      internalID: -8553596595128423742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Casual Tree Idle SpriteSheet_1
+      name: Torch_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1826ec48eb1d59400800000000000000
+      internalID: 330400763883709057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch_2
       rect:
         serializedVersion: 2
         x: 64
         y: 64
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +164,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6674f56f853b57ba0800000000000000
-      internalID: -6091765726276794522
+      spriteID: 0da9a7d25b1e57060800000000000000
+      internalID: 6950709768184568528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Casual Tree Idle SpriteSheet_2
+      name: Torch_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59a47b6abead9b00800000000000000
+      internalID: 837017221450738011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914cd40edc1d45e70800000000000000
+      internalID: 9103131428984308761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4dc6d24dfdba25a0800000000000000
+      internalID: -6545210212983845557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,29 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c5dc12c971774170800000000000000
-      internalID: 8162617617393964482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Casual Tree Idle SpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e732eae5643fe9320800000000000000
-      internalID: 2566756321209492350
+      spriteID: f089b54690b767220800000000000000
+      internalID: 2483307524810053647
       vertices: []
       indices: 
       edges: []
