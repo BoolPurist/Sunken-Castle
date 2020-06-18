@@ -30477,12 +30477,17 @@ PrefabInstance:
     - target: {fileID: 2432566366448508521, guid: 38a9648c136a49541be54e680ca70854,
         type: 3}
       propertyPath: m_LinearDrag
-      value: 1.53
+      value: 2.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432566366448508521, guid: 38a9648c136a49541be54e680ca70854,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2432566366448508525, guid: 38a9648c136a49541be54e680ca70854,
         type: 3}
       propertyPath: maxHealth
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2432566366448508526, guid: 38a9648c136a49541be54e680ca70854,
         type: 3}
@@ -33602,11 +33607,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 810638578}
-  speed: 300
+  speed: 50
   nextWaypointDistance: 1
-  animator: {fileID: 0}
+  animator: {fileID: 1936361186}
   triggerDistance: 5
   allowedToMove: 1
+--- !u!95 &1936361186 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2432566366448508438, guid: 38a9648c136a49541be54e680ca70854,
+    type: 3}
+  m_PrefabInstance: {fileID: 967219591}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1936361192
 MonoBehaviour:
   m_ObjectHideFlags: 0
