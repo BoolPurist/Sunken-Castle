@@ -30479,6 +30479,11 @@ PrefabInstance:
       propertyPath: m_LinearDrag
       value: 1.53
       objectReference: {fileID: 0}
+    - target: {fileID: 2432566366448508525, guid: 38a9648c136a49541be54e680ca70854,
+        type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2432566366448508526, guid: 38a9648c136a49541be54e680ca70854,
         type: 3}
       propertyPath: m_Name
@@ -31793,7 +31798,7 @@ MonoBehaviour:
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
     cacheStartup: 0
-  showNavGraphs: 1
+  showNavGraphs: 0
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -33598,7 +33603,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 810638578}
   speed: 300
-  nextWaypointDistance: 1.5
+  nextWaypointDistance: 1
+  animator: {fileID: 0}
+  triggerDistance: 5
+  allowedToMove: 1
 --- !u!114 &1936361192
 MonoBehaviour:
   m_ObjectHideFlags: 0

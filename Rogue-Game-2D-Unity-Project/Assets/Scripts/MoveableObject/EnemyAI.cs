@@ -5,10 +5,16 @@ using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
+    //Classic attributes
     public Transform target; //Player position
     public float speed = 2f; //Enemy walking speed
     public float nextWaypointDistance = 1f; //When Enemy is this close to waypoint, waypoint is seen as reached, go after the next waypoint
+    public Animator animator;
+    public float triggerDistance = 5f;
+    [HideInInspector]
+    public bool allowedToMove = true;
 
+    //Attributes used for A* pathfinding
     Path path;
     int currentWaypoint = 0; //Current waypoint of current path
     bool reachedEndOfPath = false; //Did we reach the end of the path?
@@ -21,8 +27,9 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
-        InvokeRepeating("UpdatePath", 0f, 0.5f); //Update path every 0.5 seconds
+        InvokeRepeating("UpdatePath", 0f, 0.5f); //Update path every 0.5 seconds, value can be changed accordingly
         seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 
@@ -57,8 +64,18 @@ public class EnemyAI : MonoBehaviour
             reachedEndOfPath = false; //We didn't reacht the end yet
         }
 
+        
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized; //Next waypoint - currentPositon gives us vector to the waypoint
         Vector2 force = direction * speed * Time.deltaTime; //force that moves the enemy, normalized direction Vector times the speed
+
+        if (allowedToMove == false || target == null)
+        {
+            force = Vector2.zero;
+        }
+
+        animator.SetFloat("Horizontal", force.x);
+        animator.SetFloat("Vertical", force.y);
+        animator.SetFloat("Speed", force.sqrMagnitude);
 
         rb.AddForce(force); //Moves the enemy
 
@@ -70,4 +87,12 @@ public class EnemyAI : MonoBehaviour
         }
 
     }
+
+
+    //COMMENTS FOR DEVELOPMENT
+
+            //animator.SetFloat("Horizontal", movement.x);
+            //animator.SetFloat("Vertical", movement.y);
+            //animator.SetFloat("Speed", movement.sqrMagnitude);
+
 }
