@@ -31264,6 +31264,7 @@ GameObject:
   - component: {fileID: 1193091708}
   - component: {fileID: 1193091710}
   - component: {fileID: 1193091711}
+  - component: {fileID: 1193091712}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -31373,6 +31374,25 @@ MonoBehaviour:
     m_Bits: 512
   levelRadius: {x: 37.8, y: 10.5}
   portalRadius: {x: 1.77, y: 1.77}
+--- !u!95 &1193091712
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193091707}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ffdca69125976be45aaf7c5a76242799, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1196487847
 PrefabInstance:
   m_ObjectHideFlags: 0
