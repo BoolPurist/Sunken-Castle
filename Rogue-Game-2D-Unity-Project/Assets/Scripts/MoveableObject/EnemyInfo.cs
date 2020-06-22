@@ -42,7 +42,7 @@ public class EnemyInfo : MonoBehaviour
 
     public void Die()
     {
-        GetComponent<EnemyMovement>().allowedToMove = false;
+        GetComponent<EnemyAI>().allowedToMove = false;
         if (isDead == false)
             OnDeathEnemies.Invoke(score);
         isDead = true;
