@@ -502,9 +502,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1603066137272355042}
-        m_MethodName: OnClickChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 2908600383743817725}
+        m_MethodName: ResetSceneWideObject
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -539,7 +539,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabSceneWideObject: {fileID: 4930179866177097568, guid: bf41eb87f1f82cc41bbbe614a0e897f6,
     type: 3}
-  prefabSceneWideObjectTag: Hello
 --- !u!1 &2675737088958964670
 GameObject:
   m_ObjectHideFlags: 0
