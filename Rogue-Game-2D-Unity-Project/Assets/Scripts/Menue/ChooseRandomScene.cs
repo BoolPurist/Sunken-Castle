@@ -25,8 +25,10 @@ public class ChooseRandomScene : MonoBehaviour
 
     }
 
+    // Chooses the next left random level.
     public void ChooseNextRandomScene()
     {
+        // Accessing the loader for selecting a random scene.
         SelectScenes sceneLoader = GameObject.FindGameObjectWithTag(this.prefabSceneWideObjectTag).GetComponent<SelectScenes>();
         if (sceneLoader != null)
         {
@@ -34,8 +36,10 @@ public class ChooseRandomScene : MonoBehaviour
         }
     }
 
+    // Choosing a random scene from pause menu. So the new loaded scene is not paused.
     public void ChooseNextRandomSceneFromPause()
     {
+        // Stoping pausing the game.
         Time.timeScale = 1f;
         this.ChooseNextRandomScene();
 

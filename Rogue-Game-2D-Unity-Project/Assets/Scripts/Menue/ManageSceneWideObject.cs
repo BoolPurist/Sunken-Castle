@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ManageSceneWideObject : MonoBehaviour
 {
+    // Prefab for object which exits through serveral scenes.
     public GameObject prefabSceneWideObject;
 
     private string prefabSceneWideObjectTag;
@@ -27,12 +28,14 @@ public class ManageSceneWideObject : MonoBehaviour
 
     }
 
+    // Deletes the scene wide object and creates a new one. This way the object is rested.
     public void ResetSceneWideObject()
     {
         this.DeleteSceneWideObject();
         this.Spawn();
     }
 
+    // Creates a scene wide object. It only does so when the object does not exit yet.
     public void SpawnSceneWideObject()
     {
         if (GameObject.FindGameObjectWithTag(this.prefabSceneWideObjectTag) == null)
@@ -45,12 +48,14 @@ public class ManageSceneWideObject : MonoBehaviour
     {
         GameObject sceneWideObject = Instantiate(this.prefabSceneWideObject);
 
+        // A unique tag must be assigned to the scene wide object.
         if (this.prefabSceneWideObjectTag == "Untagged")
         {
             Debug.LogError("The prefab for the scene wide object is not tagged !");
             return;
         }
 
+        // Storing the tag for finding it later.
         this.prefabSceneWideObjectTag = sceneWideObject.tag;
 
         // This causes the object to continue to exits throughout the scene.
@@ -61,6 +66,7 @@ public class ManageSceneWideObject : MonoBehaviour
     {
         GameObject sceneWideObject = GameObject.FindGameObjectWithTag(prefabSceneWideObjectTag);
 
+        // Only delete it if it exits !
         if (sceneWideObject != null)
         {
             Destroy(sceneWideObject);
