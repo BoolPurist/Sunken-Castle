@@ -60,6 +60,16 @@ public class SelectScenes : MonoBehaviour
         {
             this.sceneIndexesLeft.Add(index);
         }
+
+        int indexCount = this.sceneIndexesLeft.Count;
+
+        // Current scene should not be picked again for the next scene.
+        // Check for only main menu is accessible to player. indexCount == 0 ?
+        // Check for only main menu and one scene is accessible to the player. indexCount == 1 ?  
+        if (indexCount != 0 && indexCount != 1)
+        {
+            this.sceneIndexesLeft.Remove(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
 
