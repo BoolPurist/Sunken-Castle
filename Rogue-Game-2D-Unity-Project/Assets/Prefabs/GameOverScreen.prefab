@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5642870678125609092}
   - component: {fileID: 289242585087181847}
   m_Layer: 0
-  m_Name: Text
+  m_Name: GameOverTitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Game Over !
---- !u!114 &5507420428055933871
+--- !u!114 &1925022111494750532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,9 +87,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4562855846294819110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af047f1c72e0cda4884f10be3998c3f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6420ab380b49e89458a787a409f617fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabSceneWideObject: {fileID: 4930179866177097568, guid: bf41eb87f1f82cc41bbbe614a0e897f6,
+    type: 3}
 --- !u!114 &2936838024822368118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,11 +746,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5507420428055933871}
+      objectReference: {fileID: 1925022111494750532}
     - target: {fileID: 8262639289397968197, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CallbackResetScene
+      value: ResetSceneWideObject
       objectReference: {fileID: 0}
     - target: {fileID: 8262639289397968197, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}

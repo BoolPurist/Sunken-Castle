@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: 6999338408666959833
     second: Casual Tree Idle SpriteSheet_3
+  - first:
+      213: -4614480252592532041
+    second: Casual Tree Idle SpriteSheet_0
+  - first:
+      213: -6091765726276794522
+    second: Casual Tree Idle SpriteSheet_1
+  - first:
+      213: 8162617617393964482
+    second: Casual Tree Idle SpriteSheet_2
+  - first:
+      213: 2566756321209492350
+    second: Casual Tree Idle SpriteSheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,10 +114,10 @@ TextureImporter:
       name: Casual Tree Idle SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 40
-        width: 31
-        height: 35
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a38cb16aa758c0e50800000000000000
-      internalID: 6776938301105096762
+      spriteID: 7b5da29a8a216ffb0800000000000000
+      internalID: -4614480252592532041
       vertices: []
       indices: 
       edges: []
@@ -123,10 +135,10 @@ TextureImporter:
       name: Casual Tree Idle SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 45
-        y: 40
-        width: 31
-        height: 35
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,8 +146,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e41c2ed22452f830800000000000000
-      internalID: 4103434719220995297
+      spriteID: 6674f56f853b57ba0800000000000000
+      internalID: -6091765726276794522
       vertices: []
       indices: 
       edges: []
@@ -144,10 +156,10 @@ TextureImporter:
       name: Casual Tree Idle SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 31
-        height: 35
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 584f3aeea17582400800000000000000
-      internalID: 299585148404626565
+      spriteID: 2c5dc12c971774170800000000000000
+      internalID: 8162617617393964482
       vertices: []
       indices: 
       edges: []
@@ -165,10 +177,10 @@ TextureImporter:
       name: Casual Tree Idle SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 45
+        x: 64
         y: 0
-        width: 31
-        height: 35
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,8 +188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9df8757d235a22160800000000000000
-      internalID: 6999338408666959833
+      spriteID: e732eae5643fe9320800000000000000
+      internalID: 2566756321209492350
       vertices: []
       indices: 
       edges: []

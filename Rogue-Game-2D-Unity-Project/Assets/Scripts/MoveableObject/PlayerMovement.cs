@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (allowToMove)
         {
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime); //moves the character
+            rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime); //moves the character
         }
 
         animator.SetFloat("Horizontal", movement.x);
