@@ -34,12 +34,12 @@ public class CameraFollow : MonoBehaviour
             if (allowToUpdate)
             {
 
-                UnityEngine.Vector3 cameraFollowPosition = playerTransform.position;
+                UnityEngine.Vector3 cameraFollowPosition = playerTransform.position; //Position which Camera has to Follow
                 cameraFollowPosition.z = -10;
-                UnityEngine.Vector3 cameraMoveDir = (cameraFollowPosition - transform.position).normalized;
+                UnityEngine.Vector3 cameraMoveDir = (cameraFollowPosition - transform.position).normalized; //Direction in which Camera has to move
                 float distance = UnityEngine.Vector3.Distance(cameraFollowPosition, transform.position); //float to increase camera movement the further player is away from camera
                 float cameraMoveSpeed = 2f;
-                transform.position = transform.position + cameraMoveDir * distance * cameraMoveSpeed * Time.deltaTime;
+                transform.position = transform.position + cameraMoveDir * distance * cameraMoveSpeed * Time.deltaTime; //Term to calculate new CameraPostion
 
             }
 
