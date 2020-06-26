@@ -29,10 +29,14 @@ public class ChooseRandomScene : MonoBehaviour
     public void ChooseNextRandomScene()
     {
         // Accessing the loader for selecting a random scene.
-        SelectScenes sceneLoader = GameObject.FindGameObjectWithTag(this.prefabSceneWideObjectTag).GetComponent<SelectScenes>();
+        GameObject sceneLoader = GameObject.FindGameObjectWithTag(this.prefabSceneWideObjectTag);
         if (sceneLoader != null)
         {
-            sceneLoader.LoadNextScene();
+            sceneLoader.GetComponent<SelectScenes>().LoadNextScene();
+        }
+        else
+        {
+            this.GetComponent<ManageSceneWideObject>().ResetSceneWideObject();
         }
     }
 
