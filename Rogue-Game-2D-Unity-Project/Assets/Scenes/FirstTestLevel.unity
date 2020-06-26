@@ -32723,7 +32723,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerTransform
       value: 
-      objectReference: {fileID: 810638578}
+      objectReference: {fileID: 0}
     - target: {fileID: 8520280414304190855, guid: 567ecb02f87517542bb0845d9fa8ad75,
         type: 3}
       propertyPath: m_Name

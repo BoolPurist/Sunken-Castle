@@ -10,7 +10,7 @@ using UnityEngine.Analytics;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform playerTransform;
+    private Transform playerTransform;
     public float verzoegerung = 0.1f;
     [HideInInspector]
     public bool allowToUpdate = true;
@@ -23,12 +23,18 @@ public class CameraFollow : MonoBehaviour
     UnityEngine.Vector3 fixPosition;
 
 
-   
+
     void Start()
     {
         cam = GetComponent<Camera>();
         boxCollider = GetComponent<BoxCollider2D>();
-        transform.position = playerTransform.position;        
+
+        this.playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        if (this.playerTransform != null)
+        {
+            transform.position = playerTransform.position;
+        }
     }
     void FixedUpdate()
     {
@@ -47,7 +53,7 @@ public class CameraFollow : MonoBehaviour
 
                     if (playerTransform.position.y < fixPosition.y)
                     {
-                        vertical = false; 
+                        vertical = false;
                         once = true;
                     }
                     else
@@ -185,11 +191,11 @@ public class CameraFollow : MonoBehaviour
 
             if (allowToUpdate)
             {
-                
+
                 if (vertical && horizontal)
                 {
                     //Camera musn't move!
-                }                                
+                }
                 else if (vertical)
                 {
                     float cameraFollowPosition = playerTransform.position.x;
@@ -217,9 +223,9 @@ public class CameraFollow : MonoBehaviour
                 }
             }
 
-               
+
         }
-       
-        
+
+
     }
 }
