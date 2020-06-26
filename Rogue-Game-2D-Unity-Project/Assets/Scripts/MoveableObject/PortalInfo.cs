@@ -19,7 +19,7 @@ public class PortalInfo : MonoBehaviour
         this.isActivated = isActivated == false && GameObject.FindGameObjectsWithTag("Enemy").Length == 0;
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerStay2D(Collider2D other)
     {
 
         if (this.isActivated == true && other.CompareTag("Player") && other.isTrigger == false)
