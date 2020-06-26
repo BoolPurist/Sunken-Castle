@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 618536024265183924}
   - component: {fileID: 3329132977548675782}
   - component: {fileID: 774353874668949805}
+  - component: {fileID: 1935089909891508625}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -60,7 +61,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618536024265183822}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.88, y: -0.53, z: 23.13}
   m_LocalScale: {x: 1, y: 1, z: 21}
   m_Children:
@@ -145,7 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db09e92efafcf724ab9a168035c952d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portal: {fileID: 618536024265183816}
   WhatIsPlayer:
     serializedVersion: 2
     m_Bits: 512
@@ -224,3 +224,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabSceneWideObject: {fileID: 4930179866177097568, guid: bf41eb87f1f82cc41bbbe614a0e897f6,
     type: 3}
+--- !u!114 &1935089909891508625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618536024265183822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.3
+  m_Color: {r: 0.12967247, g: 0.5174306, b: 0.8867924, a: 1}
+  m_Intensity: 0.72
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: f3d60b387b76614dd59f84e40000000049988627934bc9ba7dd34fbb477cf498
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 334.31
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0.31
+  m_PointLightOuterRadius: 2.1813285
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}

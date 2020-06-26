@@ -12,7 +12,6 @@ public class PickUpInfo : MonoBehaviour
     public Transform healthPos;
     public LayerMask whatIsPlayer;
     public Vector2 healingRange;
-    public Light2D li;
 
 
     void Update()
@@ -23,7 +22,6 @@ public class PickUpInfo : MonoBehaviour
             if (Player[i] != null && Player[i].GetComponent<PlayerInfo>() != null && Player[i].GetComponent<PlayerInfo>().currentHealth < 100)
             {
                 Player[i].GetComponent<PlayerInfo>().GainHealth(healthAmount);
-                Destroy(li);
                 Destroy(this.gameObject);
             }
 
