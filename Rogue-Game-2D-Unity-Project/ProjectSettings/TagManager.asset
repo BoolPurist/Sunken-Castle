@@ -8,6 +8,7 @@ TagManager:
   - GUIScore
   - GUIHealth
   - MenueGameOver
+  - SceneLoader
   layers:
   - Default
   - TransparentFX
