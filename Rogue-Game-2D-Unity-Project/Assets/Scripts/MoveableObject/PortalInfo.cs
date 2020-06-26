@@ -6,10 +6,7 @@ using UnityEngine.SceneManagement;
 public class PortalInfo : MonoBehaviour
 {
     public Transform portal;
-    public Transform levelCenter;
-    public LayerMask WhatIsEnemy;
     public LayerMask WhatIsPlayer;
-    public Vector2 levelRadius;
     public Vector2 portalRadius;
 
     public string sceneToLoad;
@@ -20,49 +17,29 @@ public class PortalInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        count = 0;
         if(isActivated == false)
         {
-            Collider2D[] EnemyNumber = Physics2D.OverlapBoxAll(levelCenter.position,levelRadius, WhatIsEnemy);
-            for(int i = 0;i < EnemyNumber.Length; i++)
+            if(GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
             {
-                count++;
-            }
-            if(count == 0)
-            {
-                Debug.Log("No more enemies present");
-                Activate();
-            }
-            else
-            {
-                Debug.Log("Enemies still present");
-                Debug.Log(count);
+                isActivated = true;
             }
         }
-        else
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (isActivated)
         {
-            Collider2D[] Player = Physics2D.OverlapBoxAll(portal.position, portalRadius, WhatIsPlayer);
-            if(Player != null)
+            if (other.CompareTag("Player") && !other.isTrigger)
             {
-                ChangeLevel();
+                SceneManager.LoadScene(sceneToLoad);
             }
         }
-    }
-
-    void Activate()
-    {
-        isActivated = true;
-    }
-
-    void ChangeLevel()
-    {
-        SceneManager.LoadScene(sceneToLoad);
     }
 
     void OnDrawGizmosSelected() //Visualizes the levelRadius and portalRadius for testing
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(levelCenter.position, (Vector3)levelRadius);
         Gizmos.DrawWireCube(portal.position, (Vector3)portalRadius);
     }
 }
