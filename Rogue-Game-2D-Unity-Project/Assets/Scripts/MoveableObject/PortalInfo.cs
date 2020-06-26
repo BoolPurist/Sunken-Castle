@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PortalInfo : MonoBehaviour
 {
-    public Transform portal;
     public LayerMask WhatIsPlayer;
     public Vector2 portalRadius;
 
@@ -17,29 +16,21 @@ public class PortalInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isActivated == false)
-        {
-            if(GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
-            {
-                isActivated = true;
-            }
-        }
+        this.isActivated = isActivated == false && GameObject.FindGameObjectsWithTag("Enemy").Length == 0;
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (isActivated)
+
+        if (this.isActivated == true && other.CompareTag("Player") && other.isTrigger == false)
         {
-            if (other.CompareTag("Player") && !other.isTrigger)
-            {
-                SceneManager.LoadScene(sceneToLoad);
-            }
+            this.GetComponent<ChooseRandomScene>().ChooseNextRandomScene();
         }
     }
 
     void OnDrawGizmosSelected() //Visualizes the levelRadius and portalRadius for testing
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(portal.position, (Vector3)portalRadius);
+        Gizmos.DrawWireCube(this.gameObject.transform.position, (Vector3)portalRadius);
     }
 }
