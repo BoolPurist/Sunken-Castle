@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PortalInfo : MonoBehaviour
 {
@@ -11,30 +12,37 @@ public class PortalInfo : MonoBehaviour
     public Vector2 levelRadius;
     public Vector2 portalRadius;
 
+    public string sceneToLoad;
+
+    private int count = 0;
     private bool isActivated = false;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
+        count = 0;
         if(isActivated == false)
         {
-            Collider2D[] Enemy = Physics2D.OverlapBoxAll(levelCenter.position, levelRadius, WhatIsEnemy);
-            if(Enemy[0] == null)
+            Collider2D[] EnemyNumber = Physics2D.OverlapBoxAll(levelCenter.position,levelRadius, WhatIsEnemy);
+            for(int i = 0;i < EnemyNumber.Length; i++)
             {
+                count++;
+            }
+            if(count == 0)
+            {
+                Debug.Log("No more enemies present");
                 Activate();
+            }
+            else
+            {
+                Debug.Log("Enemies still present");
+                Debug.Log(count);
             }
         }
         else
         {
             Collider2D[] Player = Physics2D.OverlapBoxAll(portal.position, portalRadius, WhatIsPlayer);
-            if(Player[0] != null)
+            if(Player != null)
             {
                 ChangeLevel();
             }
@@ -48,7 +56,7 @@ public class PortalInfo : MonoBehaviour
 
     void ChangeLevel()
     {
-
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     void OnDrawGizmosSelected() //Visualizes the levelRadius and portalRadius for testing
