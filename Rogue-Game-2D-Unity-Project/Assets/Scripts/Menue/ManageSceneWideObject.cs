@@ -3,17 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ManageSceneWideObject : MonoBehaviour
 {
     // Prefab for object which exits through serveral scenes.
+    [Tooltip("Prefab as base for the object to exit over serverls scenes.")]
     public GameObject prefabSceneWideObject;
 
-    private string prefabSceneWideObjectTag;
+    protected string prefabSceneWideObjectTag;
 
-    private void Awake()
+    protected void Awake()
     {
         // Storing tag assigned to the prefab for later checking if the object already exits.
-        this.prefabSceneWideObjectTag = prefabSceneWideObject.tag;
+        this.prefabSceneWideObjectTag = this.prefabSceneWideObject.tag;
     }
 
     // Start is called before the first frame update

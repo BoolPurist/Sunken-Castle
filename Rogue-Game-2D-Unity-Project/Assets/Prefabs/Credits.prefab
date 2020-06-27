@@ -133,7 +133,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -122.02}
-  m_SizeDelta: {x: 1729.147, y: 794.8033}
+  m_SizeDelta: {x: 1729.147, y: 852.87006}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &3446824524408676873
 CanvasRenderer:
@@ -193,7 +193,7 @@ MonoBehaviour:
     Graphic Art:
 
 
-    Marcus Heider:
+    Marcus Heider
 
     Daniel Titz
 
@@ -386,7 +386,7 @@ PrefabInstance:
     - target: {fileID: 8262639289397968196, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 53.29
+      value: -42.305
       objectReference: {fileID: 0}
     - target: {fileID: 8262639289397968196, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}
