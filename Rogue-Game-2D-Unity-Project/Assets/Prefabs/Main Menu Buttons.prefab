@@ -419,8 +419,8 @@ GameObject:
   - component: {fileID: 2675737088956435367}
   - component: {fileID: 2675737088956435366}
   - component: {fileID: 2675737088956435365}
-  - component: {fileID: 1603066137272355042}
   - component: {fileID: 2908600383743817725}
+  - component: {fileID: 1603066137272355042}
   m_Layer: 5
   m_Name: Button new Game
   m_TagString: Untagged
@@ -539,18 +539,6 @@ MonoBehaviour:
           m_StringArgument: FirstTestLevel
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1603066137272355042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2675737088956435371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c23820441f793846882461d74284ae7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2908600383743817725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,6 +553,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabSceneWideObject: {fileID: 4930179866177097568, guid: bf41eb87f1f82cc41bbbe614a0e897f6,
     type: 3}
+--- !u!114 &1603066137272355042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2675737088956435371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c23820441f793846882461d74284ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2675737088958964670
 GameObject:
   m_ObjectHideFlags: 0

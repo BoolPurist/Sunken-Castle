@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class ReplaceObjectWithPrefab : MonoBehaviour
 {
+    [Tooltip("Object in scene which needs to be deleted/replaced.")]
     public GameObject toReplaceObject;
-
+    [Tooltip("Object which should be created in a scene.")]
     public GameObject prefab;
 
     // Start is called before the first frame update

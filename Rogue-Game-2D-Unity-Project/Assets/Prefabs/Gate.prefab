@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 618536024265183925}
   - component: {fileID: 618536024265183924}
   - component: {fileID: 3329132977548675782}
-  - component: {fileID: 774353874668949805}
   - component: {fileID: 1935089909891508625}
   m_Layer: 0
   m_Name: Gate
@@ -206,20 +205,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32fd4822370c905459d74f834b97cc08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabSceneWideObject: {fileID: 4930179866177097568, guid: bf41eb87f1f82cc41bbbe614a0e897f6,
-    type: 3}
---- !u!114 &774353874668949805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618536024265183822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6420ab380b49e89458a787a409f617fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefabSceneWideObject: {fileID: 4930179866177097568, guid: bf41eb87f1f82cc41bbbe614a0e897f6,
