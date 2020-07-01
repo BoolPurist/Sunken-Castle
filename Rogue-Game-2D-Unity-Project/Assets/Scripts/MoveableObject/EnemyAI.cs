@@ -6,6 +6,7 @@ using Pathfinding;
 public class EnemyAI : MonoBehaviour
 {
     //Classic attributes
+    [HideInInspector]
     public Transform target; //Player position
     public float speed = 2f; //Enemy walking speed
     public float nextWaypointDistance = 1f; //When Enemy is this close to waypoint, waypoint is seen as reached, go after the next waypoint
@@ -29,6 +30,7 @@ public class EnemyAI : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        target = GameObject.Find("Player").transform;
 
         InvokeRepeating("UpdatePath", 0f, 1f); //Update path every 0.5 seconds, value can be changed accordingly
         seeker.StartPath(rb.position, target.position, OnPathComplete);
