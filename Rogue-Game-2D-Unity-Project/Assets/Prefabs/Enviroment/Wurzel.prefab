@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
-  offset: 8
+  offset: 10
   updateOnce: 1
 --- !u!60 &5234198139260293276
 PolygonCollider2D:
