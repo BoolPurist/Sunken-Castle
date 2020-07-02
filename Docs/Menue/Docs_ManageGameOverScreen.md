@@ -1,19 +1,15 @@
 # class ManageGameOverScreen
 
-Creates a Game Over screen on the player screen on base of an unity prefab.
+Creates a Game Over screen on the game view on the base of an unity prefab.
 
-## public attributes for unity inspector
+## Where to attach ?
 
-**public GameObject prefabGameOverScreen**
+It recommended to attach this component to the game object in a scene that represents the camera of the player. That object has usually a component "Camera" attached.
 
-Summary: Prefab from which the game over screen is created.
+## properties in the unity inspector.
 
-## callback methods
+Pause Menu State (optional)
+Other component that handles a pause menu. This way the pause menu will not triggered during the game over screen because the game is over. This component should be attached to same game object that the ManageGameOversScreen is attached to.
 
-**public void CallbackCreateGameOverScreen(object sender, EventArgs e)**
-
-Summary: Creates a Game Over screen on the player screen on base of an unity prefab and makes it as a child of the game object with that component.
-
-Parameter sender: Object that represents the events fired.
-
-Parameter e: Is empty is usually, contains no information.
+Prefab Game Over Screen (mandatory)
+Prefab that makes up the menu for game over when the player dies. A prefab must be assigned to the property in the unity inspector for this component to work properly.

@@ -8,9 +8,6 @@ public class PortalInfo : MonoBehaviour
     public LayerMask WhatIsPlayer;
     public Vector2 portalRadius;
 
-    public string sceneToLoad;
-
-    private int count = 0;
     private bool isActivated = false;
 
     // Update is called once per frame

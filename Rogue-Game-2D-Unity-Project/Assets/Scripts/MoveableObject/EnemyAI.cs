@@ -114,11 +114,4 @@ public class EnemyAI : MonoBehaviour
 
     }
 
-
-    //COMMENTS FOR DEVELOPMENT
-
-    //animator.SetFloat("Horizontal", movement.x);
-    //animator.SetFloat("Vertical", movement.y);
-    //animator.SetFloat("Speed", movement.sqrMagnitude);
-
 }
