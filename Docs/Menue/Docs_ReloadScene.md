@@ -4,6 +4,6 @@ Gives a menu the ability to reload a scene.
 
 ## callback methods
 
-**public void CallbackResetScene()**
+public void CallbackResetScene()
 
-Summary: Loads current scene new.
+Loads current scene new.

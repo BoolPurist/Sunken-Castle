@@ -1,38 +1,19 @@
 # class UpdateStatsText
 
-Serves as an interface for other game objects to display a status as number in text displayed on
+Serves as an interface for other game objects to display a status as a number in a text displayed on
 the player view.
 
-## private attributes
+## where to attach
 
-**private string textTemplate**
+Attach it to a game object with the unity component "Text". That game object must be a child of a game
+object with component "canvas".
 
-Summary: Holds the text given by the unity inspector to be used later.
+## properties from other components in the unity inspector that influences this component.
 
-**private int currentStat = 0**
+Text from the component "Text".
+It is text field. What is written here, will be displayed before the number manged by the component
+"UpdateStatsText".
 
-Summary: Stores the current number representing the a status.
+## Note on usage in a prefab
 
-## methods
-
-**private void UpdateText()**
-
-Summary: Updates the displayed text with current number as status provided by attribute "currentStat".
-
-## callback methods
-
-**public void CallbackUpdateStats(int number)**
-
-Summary: Sets the attribute "currentStat" equal with the number as parameter and invokes the method UpdateText() to update the displayed text.
-
-Parameter number: integer value provided by the fired events.
-
-**public void CallbackUpdateStatsAdd(int number)**
-
-Summary: Adds the parameter "number" to the attribute "currentStat" and invokes the method UpdateText() to update the displayed text.
-
-Parameter number: integer value provided by the fired events.
-
-**public void CallbackUpdateStatsReset()**
-
-Summary: Sets the attribute "currentStat" equal with the zero and invokes the invokes the method UpdateText() to update the displayed text.
+It is recommended to place a game object as text with this component attached to place to the left of canvas. Reason: Otherwise a part the status as text can be outside to the game view.
