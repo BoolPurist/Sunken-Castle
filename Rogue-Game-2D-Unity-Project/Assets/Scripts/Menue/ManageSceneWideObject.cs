@@ -64,6 +64,7 @@ public class ManageSceneWideObject : MonoBehaviour
         DontDestroyOnLoad(sceneWideObject);
     }
 
+    // Deletes the scene wide object if was created.
     private void DeleteSceneWideObject()
     {
         GameObject sceneWideObject = GameObject.FindGameObjectWithTag(prefabSceneWideObjectTag);

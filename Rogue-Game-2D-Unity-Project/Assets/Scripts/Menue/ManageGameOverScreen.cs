@@ -35,10 +35,10 @@ public class ManageGameOverScreen : MonoBehaviour
     {
         // Checks if the game over screen was already spawned.
         // Otherwise there is a danger of spawning duplicate menus on top of each other.
-        if (hasSpawnGameOver == false)
+        if (this.hasSpawnGameOver == false)
         {
             // Usually a prefab for the game over should be selected in the unity inspector for this component.
-            if (prefabGameOverScreen == null)
+            if (this.prefabGameOverScreen == null)
             {
                 Debug.Log("No Prefab was provided for the game over screen !");
             }
@@ -46,12 +46,12 @@ public class ManageGameOverScreen : MonoBehaviour
             {
                 GameObject gameOverScreen = Instantiate(prefabGameOverScreen, this.transform);
                 // Deactivates a manager component for a pause menu so pausing during game over is not possible anymore.
-                if (pauseMenuState != null)
+                if (this.pauseMenuState != null)
                 {
-                    pauseMenuState.enabled = false;
+                    this.pauseMenuState.enabled = false;
                 }
                 // Makes sure no duplicate game over screen is spawned.
-                hasSpawnGameOver = true;
+                this.hasSpawnGameOver = true;
             }
 
         }
