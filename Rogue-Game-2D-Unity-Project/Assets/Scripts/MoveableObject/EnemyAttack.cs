@@ -26,17 +26,17 @@ public class EnemyAttack : MonoBehaviour
     {
         if (curTimeBtwEnemyAttack <= 0 && allowToAttack)
         {
-            Collider2D[] Player = Physics2D.OverlapBoxAll(attackPos.position, attackRange, angle, whatIsPlayer);
+            Collider2D Player = Physics2D.OverlapBox(attackPos.position, attackRange, angle, whatIsPlayer);
 
-            for (int i = 0; i < Player.Length; i++)
+            if(Player != null)
             {
-                Player[i].GetComponent<PlayerInfo>().TakeDamage(damage);
-                if (Player[i].GetComponent<PlayerInfo>().CurrentHealth <= 0)
+                Player.GetComponent<PlayerInfo>().TakeDamage(damage);
+                if (Player.GetComponent<PlayerInfo>().CurrentHealth <= 0)
                     Destroy(gameObject);
                 anim.SetTrigger("Attacking");
             }
-
-
+                
+            
             curTimeBtwEnemyAttack = timeBtwEnemyAttack;
         }
         else

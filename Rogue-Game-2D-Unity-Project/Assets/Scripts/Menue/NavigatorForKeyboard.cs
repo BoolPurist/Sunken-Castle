@@ -22,7 +22,7 @@ public class NavigatorForKeyboard : MonoBehaviour
     private List<Button> buttons = new List<Button>();
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         foreach (Transform child in this.transform)
         {
@@ -36,7 +36,7 @@ public class NavigatorForKeyboard : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         // Listens to the keyboard stroke.
         bool MoveUpKeyPressed = Input.GetKeyDown(MoveUpKey);
