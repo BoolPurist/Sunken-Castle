@@ -2,17 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChooseRandomScene : MonoBehaviour
+public class ChooseRandomScene : ManageSceneWideObject
 {
-    public GameObject prefabSceneWideObject;
 
-    private string prefabSceneWideObjectTag;
-
-    private void Awake()
-    {
-        // Storing tag assigned to the prefab for later checking if the object already exits.
-        this.prefabSceneWideObjectTag = prefabSceneWideObject.tag;
-    }
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +21,14 @@ public class ChooseRandomScene : MonoBehaviour
     public void ChooseNextRandomScene()
     {
         // Accessing the loader for selecting a random scene.
-        SelectScenes sceneLoader = GameObject.FindGameObjectWithTag(this.prefabSceneWideObjectTag).GetComponent<SelectScenes>();
+        GameObject sceneLoader = GameObject.FindGameObjectWithTag(this.prefabSceneWideObjectTag);
         if (sceneLoader != null)
         {
-            sceneLoader.LoadNextScene();
+            sceneLoader.GetComponent<SelectScenes>().LoadNextScene();
+        }
+        else
+        {
+            base.ResetSceneWideObject();
         }
     }
 

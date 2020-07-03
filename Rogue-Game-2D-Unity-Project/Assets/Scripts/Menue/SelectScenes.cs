@@ -37,7 +37,7 @@ public class SelectScenes : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
 
 
@@ -59,6 +59,16 @@ public class SelectScenes : MonoBehaviour
         foreach (int index in this.sceneIndexes)
         {
             this.sceneIndexesLeft.Add(index);
+        }
+
+        int indexCount = this.sceneIndexesLeft.Count;
+
+        // Current scene should not be picked again for the next scene.
+        // Check for only main menu is accessible to player. indexCount == 0 ?
+        // Check for only main menu and one scene is accessible to the player. indexCount == 1 ?  
+        if (indexCount != 0 && indexCount != 1)
+        {
+            this.sceneIndexesLeft.Remove(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
