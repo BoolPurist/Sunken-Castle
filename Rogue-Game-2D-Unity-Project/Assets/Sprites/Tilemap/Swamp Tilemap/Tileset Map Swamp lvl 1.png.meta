@@ -551,6 +551,12 @@ TextureImporter:
   - first:
       213: -3632551343187640092
     second: Tileset Map Swamp lvl 1_101
+  - first:
+      213: -6184364630815577386
+    second: Tileset Map Swamp lvl 1_81
+  - first:
+      213: -1109950959125587456
+    second: Tileset Map Swamp lvl 1_82
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1416,8 +1422,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_37
       rect:
         serializedVersion: 2
-        x: 112
-        y: 112
+        x: 0
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1437,8 +1443,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_38
       rect:
         serializedVersion: 2
-        x: 128
-        y: 112
+        x: 16
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1458,8 +1464,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_39
       rect:
         serializedVersion: 2
-        x: 144
-        y: 112
+        x: 32
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -1479,7 +1485,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_40
       rect:
         serializedVersion: 2
-        x: 0
+        x: 48
         y: 96
         width: 16
         height: 16
@@ -1500,7 +1506,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_41
       rect:
         serializedVersion: 2
-        x: 16
+        x: 64
         y: 96
         width: 16
         height: 16
@@ -1521,7 +1527,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_42
       rect:
         serializedVersion: 2
-        x: 32
+        x: 80
         y: 96
         width: 16
         height: 16
@@ -1542,7 +1548,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_43
       rect:
         serializedVersion: 2
-        x: 48
+        x: 96
         y: 96
         width: 16
         height: 16
@@ -1563,7 +1569,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_44
       rect:
         serializedVersion: 2
-        x: 64
+        x: 112
         y: 96
         width: 16
         height: 16
@@ -1584,8 +1590,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_45
       rect:
         serializedVersion: 2
-        x: 80
-        y: 96
+        x: 0
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1605,8 +1611,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_46
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
+        x: 16
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1626,8 +1632,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_47
       rect:
         serializedVersion: 2
-        x: 112
-        y: 96
+        x: 32
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1647,8 +1653,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_48
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
+        x: 48
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1668,8 +1674,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_49
       rect:
         serializedVersion: 2
-        x: 144
-        y: 96
+        x: 64
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -1689,7 +1695,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_50
       rect:
         serializedVersion: 2
-        x: 0
+        x: 80
         y: 80
         width: 16
         height: 16
@@ -1710,7 +1716,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_51
       rect:
         serializedVersion: 2
-        x: 16
+        x: 96
         y: 80
         width: 16
         height: 16
@@ -1731,7 +1737,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_52
       rect:
         serializedVersion: 2
-        x: 32
+        x: 112
         y: 80
         width: 16
         height: 16
@@ -1752,8 +1758,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_53
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
+        x: 0
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1773,8 +1779,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_54
       rect:
         serializedVersion: 2
-        x: 64
-        y: 80
+        x: 16
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1794,8 +1800,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_55
       rect:
         serializedVersion: 2
-        x: 80
-        y: 80
+        x: 32
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1815,8 +1821,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_56
       rect:
         serializedVersion: 2
-        x: 96
-        y: 80
+        x: 48
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1836,8 +1842,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_57
       rect:
         serializedVersion: 2
-        x: 112
-        y: 80
+        x: 64
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1857,8 +1863,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_58
       rect:
         serializedVersion: 2
-        x: 144
-        y: 80
+        x: 80
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -1878,7 +1884,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_59
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 64
         width: 16
         height: 16
@@ -1899,7 +1905,7 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_60
       rect:
         serializedVersion: 2
-        x: 16
+        x: 112
         y: 64
         width: 16
         height: 16
@@ -1920,8 +1926,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_61
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 0
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1941,8 +1947,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_62
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
+        x: 16
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1962,8 +1968,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_63
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 32
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -1983,8 +1989,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_64
       rect:
         serializedVersion: 2
-        x: 80
-        y: 64
+        x: 48
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2004,8 +2010,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_65
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 64
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -2025,8 +2031,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_66
       rect:
         serializedVersion: 2
-        x: 112
-        y: 64
+        x: 0
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2046,8 +2052,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_67
       rect:
         serializedVersion: 2
-        x: 144
-        y: 64
+        x: 16
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2067,8 +2073,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_68
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 32
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2088,8 +2094,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_69
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 48
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2109,8 +2115,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_70
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 64
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2130,8 +2136,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_71
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 80
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -2151,8 +2157,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_72
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
+        x: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -2172,8 +2178,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_73
       rect:
         serializedVersion: 2
-        x: 96
-        y: 48
+        x: 16
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -2193,8 +2199,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_74
       rect:
         serializedVersion: 2
-        x: 112
-        y: 48
+        x: 32
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -2214,8 +2220,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_75
       rect:
         serializedVersion: 2
-        x: 128
-        y: 48
+        x: 48
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -2235,8 +2241,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_76
       rect:
         serializedVersion: 2
-        x: 144
-        y: 48
+        x: 64
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -2256,8 +2262,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_77
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 80
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -2277,8 +2283,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_78
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -2298,8 +2304,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_79
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 16
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -2319,8 +2325,8 @@ TextureImporter:
       name: Tileset Map Swamp lvl 1_80
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -2341,7 +2347,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -2351,8 +2357,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc68b29204abf8000800000000000000
-      internalID: 40455706401015501
+      spriteID: 6da6fba6229bc2aa0800000000000000
+      internalID: -6184364630815577386
       vertices: []
       indices: 
       edges: []
@@ -2362,321 +2368,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 587e879eefd2838f0800000000000000
-      internalID: -560647580745668731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_83
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b81fec48a91cc8c0800000000000000
-      internalID: -3977776160239052616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_84
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8d465d3831d950b0800000000000000
-      internalID: -5739326210629546609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_85
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48b08eeb1ff182040800000000000000
-      internalID: 4622980140646271876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_86
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2991621f02bbb6af0800000000000000
-      internalID: -402021991560373870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_87
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c9a6fcdc39c53fd0800000000000000
-      internalID: -2362761166243583545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_88
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfaefa70e231b80d0800000000000000
-      internalID: -3419618403639366916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_89
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08a80d1a3c6f28e70800000000000000
-      internalID: 9116119915845159552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_90
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20bf47c56801e7190800000000000000
-      internalID: -7962908921881625854
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_91
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef6e037b51f0a97c0800000000000000
-      internalID: -4063919127806286082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_92
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 167d0036d2f8dcef0800000000000000
-      internalID: -86255392752871583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_93
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90849365609494740800000000000000
-      internalID: 5136717141557987337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_94
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5be35e97fed3a8540800000000000000
-      internalID: 5010885634154643125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_95
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e9906fbffd8b0bf0800000000000000
-      internalID: -357035615878866456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_96
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00cfd3615013ab770800000000000000
-      internalID: 8627261934099364864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_97
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
         width: 16
         height: 16
@@ -2687,92 +2378,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b50efd6c384a24690800000000000000
-      internalID: -7619346733673226149
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_98
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72e91cfcd35dcedf0800000000000000
-      internalID: -149510226154775001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_99
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6ed65e61def9ac50800000000000000
-      internalID: 6677148098006277738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_100
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f1ebe570518579d0800000000000000
-      internalID: -2777171412628282891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Map Swamp lvl 1_101
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e0cee8acc5969dc0800000000000000
-      internalID: -3632551343187640092
+      spriteID: 00a1733cb79a890f0800000000000000
+      internalID: -1109950959125587456
       vertices: []
       indices: 
       edges: []
