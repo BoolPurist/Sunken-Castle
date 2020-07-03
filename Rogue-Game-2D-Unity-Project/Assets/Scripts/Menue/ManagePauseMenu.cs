@@ -16,7 +16,7 @@ public class ManagePauseMenu : MonoBehaviour
     // Stores an object which a menu that comes up when game is paused.
     private GameObject pauseMenu;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // A prefab that makes up the menu for the pause should be attached through the unity inspector.
         if (pauseMenuPrefab == null)
@@ -27,7 +27,7 @@ public class ManagePauseMenu : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         // Nothing happens if no prefab for the pause menu through unity inspector.
         if (pauseMenuPrefab == null)
