@@ -9,6 +9,7 @@ TagManager:
   - GUIHealth
   - MenueGameOver
   - SceneLoader
+  - GUIEnemyCount
   layers:
   - Default
   - TransparentFX
