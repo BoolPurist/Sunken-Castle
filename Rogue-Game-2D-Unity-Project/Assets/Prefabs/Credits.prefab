@@ -132,8 +132,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -122.02}
-  m_SizeDelta: {x: 1729.147, y: 852.87006}
+  m_AnchoredPosition: {x: 0, y: -1.4347}
+  m_SizeDelta: {x: 1729.147, y: 973.45026}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &3446824524408676873
 CanvasRenderer:
@@ -177,7 +177,6 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Programming:
 
-
     Florian Naumann
 
     Patrick Bauer
@@ -201,7 +200,12 @@ MonoBehaviour:
     Project
     Management:
 
-    Jan Ziegler'
+    Jan Ziegler
+
+
+    Sound Art:
+
+    Niklas Enser'
 --- !u!1 &5157918750287866533
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +390,7 @@ PrefabInstance:
     - target: {fileID: 8262639289397968196, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.305
+      value: -42.305054
       objectReference: {fileID: 0}
     - target: {fileID: 8262639289397968196, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}
