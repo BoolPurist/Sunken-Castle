@@ -14,6 +14,13 @@ public class SelectScenes : MonoBehaviour
     // Indexes of scenes left to be able to be selected randomly until next Reset.
     private List<int> sceneIndexesLeft;
 
+    private int completedLevels = -1;
+
+    public int CompletedLevels
+    {
+        get => this.completedLevels;
+    }
+
     private void Awake()
     {
         // Check for preventing Out of bound exception because of too high start index.
@@ -75,6 +82,8 @@ public class SelectScenes : MonoBehaviour
 
     public void LoadNextScene()
     {
+        this.completedLevels++;
+
         // Check if the list of left scenes to select from is empty.
         // If true, perform a reset of the list.
         if (this.sceneIndexesLeft.Count <= 0)

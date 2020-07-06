@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209da3d25ce6c6b498d7c558a5769622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerGainPerLeveCompleted: 0
+  tagForObjectWithCompleted: SceneLoader
   attackPos: {fileID: 5138362718058992253}
   whatIsPlayer:
     serializedVersion: 2
@@ -172,6 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914be3fb13cefb44ea9b347e5e9e2841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerGainPerLeveCompleted: 1
+  tagForObjectWithCompleted: SceneLoader
   animator: {fileID: 5138362718015605875}
   score: 100
   maxHealth: 100
@@ -184,7 +188,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5138362718015605771}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 436b69414b04047fca3929c70df57c4f, type: 3}
   m_Controller: {fileID: 9100000, guid: 862605194ab71f74ebb678321aa73c5e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
