@@ -65,7 +65,7 @@ public class EnemyAttack : EnemyPowerGainPerLevel
 
         Collider2D Player = Physics2D.OverlapBox(attackPos.position, attackRange, angle, whatIsPlayer);
 
-        if (Player != null)
+        if (Player != null && this.allowToAttack == true)
         {
             Player.GetComponent<PlayerInfo>().TakeDamage(damage);
             if (Player.GetComponent<PlayerInfo>().CurrentHealth <= 0)
