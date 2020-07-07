@@ -61,7 +61,7 @@ public class ManageSceneWideObject : MonoBehaviour
         this.prefabSceneWideObjectTag = sceneWideObject.tag;
 
         // This causes the object to continue to exits throughout the scene.
-        DontDestroyOnLoad(sceneWideObject);
+        UnityEngine.Object.DontDestroyOnLoad(sceneWideObject);
     }
 
     // Deletes the scene wide object if was created.

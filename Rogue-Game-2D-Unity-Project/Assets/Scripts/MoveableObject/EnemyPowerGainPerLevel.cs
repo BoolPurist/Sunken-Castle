@@ -12,7 +12,7 @@ public class EnemyPowerGainPerLevel : MonoBehaviour
     [Tooltip("Tag of scene wide object for holding number of completed levels.")]
     public string tagForObjectWithCompleted = "";
 
-    protected int completedLevels = -1;
+    protected int completedLevels;
 
     // Start is called before the first frame update
     protected void Start()
@@ -36,7 +36,7 @@ public class EnemyPowerGainPerLevel : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning($"Object with the tag given by this.tagForObjectWithCompleted was found !");
+                Debug.LogWarning($"Object with the tag {this.tagForObjectWithCompleted} for holding the progress made by player was not found !");
             }
         }
         else
@@ -52,13 +52,18 @@ public class EnemyPowerGainPerLevel : MonoBehaviour
 
     }
 
-    private float TotalPowerGainThroughCompletedLevels() => Math.Max(0, this.completedLevels) * this.powerGainPerLeveCompleted;
-
-    protected int WholeNumberStatFromPowerGain(int referenceValue)
+    // Getter for the percentage as power gain on base of completed levels so far. 
+    private float TotalPowerGainThroughCompletedLevels
     {
-        float referenceValueFloat = (float)referenceValue;
-        int totalPowerGain = (int)(referenceValue * this.TotalPowerGainThroughCompletedLevels());
+        get => this.completedLevels * this.powerGainPerLeveCompleted;
+    }
 
-        return referenceValue + totalPowerGain;
+    // Returns a whole number as a result  referenceStat + precentage as power gain of referenceStat 
+    protected int WholeNumberStatFromPowerGain(int referenceStat)
+    {
+        float referenceStatFloat = (float)referenceStat;
+        int totalPowerGain = (int)(referenceStat * this.TotalPowerGainThroughCompletedLevels);
+
+        return referenceStat + totalPowerGain;
     }
 }
