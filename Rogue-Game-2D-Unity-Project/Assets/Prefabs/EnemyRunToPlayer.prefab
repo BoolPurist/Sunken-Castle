@@ -176,6 +176,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerGainPerLeveCompleted: 1
   tagForObjectWithCompleted: SceneLoader
+  TagForGUIScore: GUIScore
+  TagForGUIEnemiesLeft: GUIEnemyCount
   animator: {fileID: 5138362718015605875}
   score: 100
   maxHealth: 100
