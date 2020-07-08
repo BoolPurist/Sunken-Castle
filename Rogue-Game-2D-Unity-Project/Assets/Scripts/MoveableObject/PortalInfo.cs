@@ -14,6 +14,7 @@ public class PortalInfo : MonoBehaviour
     void Update()
     {
         this.isActivated = isActivated == false && GameObject.FindGameObjectsWithTag("Enemy").Length == 0;
+
     }
 
     public void OnTriggerStay2D(Collider2D other)

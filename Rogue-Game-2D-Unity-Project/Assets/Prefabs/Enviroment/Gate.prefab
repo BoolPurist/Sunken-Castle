@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1935089909891508625}
   m_Layer: 0
   m_Name: Gate
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,7 +149,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   portalRadius: {x: 1.77, y: 1.77}
-  sceneToLoad: SecondTestLevel
 --- !u!95 &618536024265183925
 Animator:
   serializedVersion: 3
