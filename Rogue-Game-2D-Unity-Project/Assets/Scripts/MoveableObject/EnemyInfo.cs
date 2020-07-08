@@ -21,6 +21,8 @@ public class EnemyInfo : EnemyPowerGainPerLevel
     [Tooltip("Tag to find GUI element for showing left enemies to the player")]
     public string TagForGUIEnemiesLeft;
 
+    public GameObject myPrefab;
+
     private int currentHealth;
     private bool isDead = false;
 
@@ -89,10 +91,6 @@ public class EnemyInfo : EnemyPowerGainPerLevel
 
     public void Die()
     {
-        this.GetComponent<EnemyAI>().allowedToMove = false;
-
-        if (isDead == false)
-        {
             // Increases the score in the player gui.
             if (this.OnDeathEnemiesScore != null)
             {
@@ -104,13 +102,10 @@ public class EnemyInfo : EnemyPowerGainPerLevel
             {
                 this.OnEnemyCountChange.Invoke(-1);
             }
-        }
 
-        this.isDead = true;
-        this.GetComponent<EnemyAttack>().allowToAttack = false;
-        this.animator.SetTrigger("Dies");
+        Instantiate(myPrefab, this.GetComponent<Transform>().position, Quaternion.identity);
 
-        Destroy(gameObject, 2f);
+        Destroy(gameObject);
     }
 
 
