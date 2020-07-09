@@ -26,7 +26,7 @@ public class PlayerInfo : MonoBehaviour
         get { return currentHealth; }
     }
 
-    void Start()
+    private void Start()
     {
         animator = gameObject.GetComponent<Animator>();
         currentHealth = maxHealth;
@@ -35,7 +35,7 @@ public class PlayerInfo : MonoBehaviour
         OnHealthChanges.Invoke(CurrentHealth);
     }
 
-    void Update()
+    private void Update()
     {
         // Checks if player dies.
         if (currentHealth <= 0)

@@ -24,8 +24,6 @@ public class EnemyInfo : EnemyPowerGainPerLevel
     public GameObject myPrefab;
 
     private int currentHealth;
-    private bool isDead = false;
-
 
     public int CurrentHealth
     {
@@ -76,7 +74,7 @@ public class EnemyInfo : EnemyPowerGainPerLevel
     {
         base.Update();
 
-        if (this.currentHealth <= 0 && this.isDead == false)
+        if (this.currentHealth <= 0)
         {
             Die();
         }
