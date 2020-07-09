@@ -1,5 +1,0 @@
-1. Backup mit E-Mail Notifikation.
-2. Funktions E-Mail fehlt noch.
-3. Docker Abstürze reduzieren.
-4. Benachrichtigung bei Docker Abstürze.
-5. Bot besser in wordpress einbinden.  
