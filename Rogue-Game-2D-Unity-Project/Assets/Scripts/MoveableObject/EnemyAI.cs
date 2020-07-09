@@ -17,15 +17,15 @@ public class EnemyAI : MonoBehaviour
 
 
     //Attributes used for A* pathfinding
-    Path path;
-    int currentWaypoint = 0; //Current waypoint of current path
-    bool reachedEndOfPath = false; //Did we reach the end of the path?
+    private Path path;
+    private int currentWaypoint = 0; //Current waypoint of current path
+    private bool reachedEndOfPath = false; //Did we reach the end of the path?
 
-    Seeker seeker; //Class from datapacket
-    Rigidbody2D rb;
+    private Seeker seeker; //Class from datapacket
+    private Rigidbody2D rb;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
@@ -36,7 +36,7 @@ public class EnemyAI : MonoBehaviour
         seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 
-    void UpdatePath()
+    private void UpdatePath()
     {
         if (seeker.IsDone() && this.target != null) //If seeker is done updating the path, update the path again
         {
@@ -45,7 +45,7 @@ public class EnemyAI : MonoBehaviour
 
     }
 
-    void OnPathComplete(Path p)
+    private void OnPathComplete(Path p)
     {
         if (!p.error)
         {
@@ -55,12 +55,13 @@ public class EnemyAI : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
+        float distanceToTarget = 0f;
+        Vector2 force = Vector2.zero;
+
         if (this.target != null)
         {
-            float distanceToTarget = 0f;
-            Vector2 force = Vector2.zero;
 
             if (target != null)
                 distanceToTarget = Vector3.Distance(target.position, transform.position);  //saves the distance between Player and Enemy
@@ -75,7 +76,7 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                reachedEndOfPath = false; //We didn't reacht the end yet
+                reachedEndOfPath = false; //We didn't reach the end yet
             }
 
 
@@ -107,7 +108,7 @@ public class EnemyAI : MonoBehaviour
 
     }
 
-    void OnDrawGizmosSelected() //Visualizes the trigger distance for testing
+    private void OnDrawGizmosSelected() //Visualizes the trigger distance for testing
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, triggerDistance);

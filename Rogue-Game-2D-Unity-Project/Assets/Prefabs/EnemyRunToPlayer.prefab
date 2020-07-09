@@ -181,7 +181,7 @@ MonoBehaviour:
   maxHealth: 100
   TagForGUIScore: GUIScore
   TagForGUIEnemiesLeft: GUIEnemyCount
-  EnemyAfterDeath: {fileID: 8163872362353196046, guid: 0605071733de4bc4fb31afe18522f729,
+  prefabDeathAnimation: {fileID: 8163872362353196046, guid: 0605071733de4bc4fb31afe18522f729,
     type: 3}
 --- !u!95 &5138362718015605875
 Animator:
