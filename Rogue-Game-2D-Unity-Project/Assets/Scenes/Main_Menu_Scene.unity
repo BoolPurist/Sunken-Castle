@@ -339,6 +339,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Menu Buttons
       objectReference: {fileID: 0}
+    - target: {fileID: 2675737088447819735, guid: 8ec7d46a03a924349a62834310e6ac69,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1765683068}
+    - target: {fileID: 2675737088447819735, guid: 8ec7d46a03a924349a62834310e6ac69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1728807865
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec7d46a03a924349a62834310e6ac69, type: 3}
 --- !u!1 &646963696
