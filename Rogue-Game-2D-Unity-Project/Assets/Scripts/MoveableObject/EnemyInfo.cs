@@ -21,7 +21,7 @@ public class EnemyInfo : EnemyPowerGainPerLevel
     [Tooltip("Tag to find GUI element for showing left enemies to the player")]
     public string TagForGUIEnemiesLeft;
 
-    public GameObject myPrefab;
+    public GameObject prefabDeathAnimation;
 
     private int currentHealth;
     private bool isDead = false;
@@ -91,19 +91,19 @@ public class EnemyInfo : EnemyPowerGainPerLevel
 
     public void Die()
     {
-            // Increases the score in the player gui.
-            if (this.OnDeathEnemiesScore != null)
-            {
-                this.OnDeathEnemiesScore.Invoke(this.score);
-            }
+        // Increases the score in the player gui.
+        if (this.OnDeathEnemiesScore != null)
+        {
+            this.OnDeathEnemiesScore.Invoke(this.score);
+        }
 
-            // Decrements the count of enemy left in the player gui.
-            if (this.OnEnemyCountChange != null)
-            {
-                this.OnEnemyCountChange.Invoke(-1);
-            }
+        // Decrements the count of enemy left in the player gui.
+        if (this.OnEnemyCountChange != null)
+        {
+            this.OnEnemyCountChange.Invoke(-1);
+        }
 
-        Instantiate(myPrefab, this.GetComponent<Transform>().position, Quaternion.identity);
+        Instantiate(prefabDeathAnimation, this.GetComponent<Transform>().position, Quaternion.identity);
 
         Destroy(gameObject);
     }
