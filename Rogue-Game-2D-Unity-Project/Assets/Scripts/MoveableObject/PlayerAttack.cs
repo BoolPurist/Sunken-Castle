@@ -18,7 +18,7 @@ public class PlayerAttack : MonoBehaviour
     public int damage; //Damage dealt to enemies in radius
     public LayerMask whatIsEnemy; 
 
-    void Update()
+    private void Update()
     {
         if(curTimeBtwAttacks <= 0) //If the minimal time between two attacks has passed, you can attack
         {
@@ -74,7 +74,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    void OnDrawGizmosSelected() //Visualizes the attack for testing
+    private void OnDrawGizmosSelected() //Visualizes the attack for testing
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPosRight.position, attackRange);

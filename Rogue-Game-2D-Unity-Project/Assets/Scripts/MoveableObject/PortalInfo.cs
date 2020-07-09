@@ -5,13 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PortalInfo : MonoBehaviour
 {
-    public LayerMask WhatIsPlayer;
-    public Vector2 portalRadius;
-
     private bool isActivated = false;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         this.isActivated = isActivated == false && GameObject.FindGameObjectsWithTag("Enemy").Length == 0;
 
@@ -24,11 +21,5 @@ public class PortalInfo : MonoBehaviour
         {
             this.GetComponent<ChooseRandomScene>().ChooseNextRandomScene();
         }
-    }
-
-    void OnDrawGizmosSelected() //Visualizes the levelRadius and portalRadius for testing
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(this.gameObject.transform.position, (Vector3)portalRadius);
     }
 }
