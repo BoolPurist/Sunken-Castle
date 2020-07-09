@@ -57,10 +57,11 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        float distanceToTarget = 0f;
+        Vector2 force = Vector2.zero;
+
         if (this.target != null)
         {
-            float distanceToTarget = 0f;
-            Vector2 force = Vector2.zero;
 
             if (target != null)
                 distanceToTarget = Vector3.Distance(target.position, transform.position);  //saves the distance between Player and Enemy
@@ -75,7 +76,7 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                reachedEndOfPath = false; //We didn't reacht the end yet
+                reachedEndOfPath = false; //We didn't reach the end yet
             }
 
 
