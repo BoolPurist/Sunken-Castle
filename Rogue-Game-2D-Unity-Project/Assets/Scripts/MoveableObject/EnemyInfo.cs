@@ -21,9 +21,9 @@ public class EnemyInfo : EnemyPowerGainPerLevel
     [Tooltip("Tag to find GUI element for showing left enemies to the player")]
     public string TagForGUIEnemiesLeft;
 
-    private int currentHealth;
-    private bool isDead = false;
+    public GameObject prefabDeathAnimation;
 
+    private int currentHealth;
 
     public int CurrentHealth
     {
@@ -74,7 +74,7 @@ public class EnemyInfo : EnemyPowerGainPerLevel
     {
         base.Update();
 
-        if (this.currentHealth <= 0 && this.isDead == false)
+        if (this.currentHealth <= 0)
         {
             Die();
         }
@@ -89,28 +89,21 @@ public class EnemyInfo : EnemyPowerGainPerLevel
 
     public void Die()
     {
-        this.GetComponent<EnemyAI>().allowedToMove = false;
-
-        if (isDead == false)
+        // Increases the score in the player gui.
+        if (this.OnDeathEnemiesScore != null)
         {
-            // Increases the score in the player gui.
-            if (this.OnDeathEnemiesScore != null)
-            {
-                this.OnDeathEnemiesScore.Invoke(this.score);
-            }
-
-            // Decrements the count of enemy left in the player gui.
-            if (this.OnEnemyCountChange != null)
-            {
-                this.OnEnemyCountChange.Invoke(-1);
-            }
+            this.OnDeathEnemiesScore.Invoke(this.score);
         }
 
-        this.isDead = true;
-        this.GetComponent<EnemyAttack>().allowToAttack = false;
-        this.animator.SetTrigger("Dies");
+        // Decrements the count of enemy left in the player gui.
+        if (this.OnEnemyCountChange != null)
+        {
+            this.OnEnemyCountChange.Invoke(-1);
+        }
 
-        Destroy(gameObject, 2f);
+        Instantiate(prefabDeathAnimation, this.GetComponent<Transform>().position, Quaternion.identity);
+
+        Destroy(gameObject);
     }
 
 

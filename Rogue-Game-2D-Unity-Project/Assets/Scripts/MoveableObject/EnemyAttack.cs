@@ -50,14 +50,14 @@ public class EnemyAttack : EnemyPowerGainPerLevel
 
     }
 
-    void OnDrawGizmosSelected() //Visualizes the attack for testing
+    private void OnDrawGizmosSelected() //Visualizes the attack for testing
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(attackPos.position, (Vector3)attackRange);
 
     }
 
-    IEnumerator TryToAttack()
+    private IEnumerator TryToAttack()
     {
         this.anim.SetTrigger("Attacking");
 

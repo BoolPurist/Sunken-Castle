@@ -9,7 +9,7 @@ public class EnemyAfterDeath : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         animator.SetTrigger("Dies");
     }
