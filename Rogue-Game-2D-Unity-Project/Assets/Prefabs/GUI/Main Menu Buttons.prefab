@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2675737088340706160}
   - component: {fileID: 1222727388820810102}
   m_Layer: 5
-  m_Name: Button Manuel Control
+  m_Name: 'Button Control Menu '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1051,7 +1051,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: M a n u e l  C o n t r o l e
+  m_Text: C O N T R O L  M E N U
 --- !u!1 &2675737090091339162
 GameObject:
   m_ObjectHideFlags: 0

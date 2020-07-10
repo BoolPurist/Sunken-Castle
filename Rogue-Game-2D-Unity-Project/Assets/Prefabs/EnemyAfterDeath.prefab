@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5733127091134307869}
   - component: {fileID: 1317715716748698781}
   - component: {fileID: 7980605746814472867}
-  - component: {fileID: 1094912393}
   m_Layer: 0
   m_Name: EnemyAfterDeath
   m_TagString: Untagged
@@ -167,19 +166,3 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 5
   updateOnce: 1
---- !u!70 &1094912393
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8163872362353196046}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.005095443, y: -0.12308829}
-  m_Size: {x: 0.066708736, y: 0.063042305}
-  m_Direction: 0
