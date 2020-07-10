@@ -278,6 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagForCamera: MainCamera
+  sortingLayer: UI
 --- !u!1 &2675737088728432476
 GameObject:
   m_ObjectHideFlags: 0
