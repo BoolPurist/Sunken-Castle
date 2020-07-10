@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 307443734}
   - component: {fileID: 307443736}
   - component: {fileID: 307443735}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: smoke double
   m_TagString: Untagged
   m_Icon: {fileID: 0}
