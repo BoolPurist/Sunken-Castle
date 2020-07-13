@@ -7,6 +7,8 @@ public class GetCameraComponent : MonoBehaviour
     [Tooltip("Tag to find object that is a camera in a scene.")]
     public string tagForCamera;
     // Start is called before the first frame update
+    public string sortingLayer;
+
     void Start()
     {
         Canvas canvas = this.GetComponent<Canvas>();
@@ -22,6 +24,7 @@ public class GetCameraComponent : MonoBehaviour
                 if (cameraComponent != null)
                 {
                     canvas.worldCamera = cameraComponent;
+                    canvas.sortingLayerName = this.sortingLayer;
                 }
                 else
                 {

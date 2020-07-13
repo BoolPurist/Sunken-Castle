@@ -775,12 +775,12 @@ PrefabInstance:
     - target: {fileID: 8262639289397968203, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}
       propertyPath: m_Name
-      value: ButtonContinue
+      value: Button New Game
       objectReference: {fileID: 0}
     - target: {fileID: 8262639289714857869, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}
       propertyPath: m_Name
-      value: TextContinue
+      value: Text New Game
       objectReference: {fileID: 0}
     - target: {fileID: 8262639289714857871, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}
