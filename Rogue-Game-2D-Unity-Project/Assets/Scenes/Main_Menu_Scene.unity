@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 307443734}
   - component: {fileID: 307443736}
   - component: {fileID: 307443735}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: smoke double
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1765683069}
     m_Modifications:
     - target: {fileID: 2675737088447819728, guid: 8ec7d46a03a924349a62834310e6ac69,
         type: 3}
@@ -267,7 +267,7 @@ PrefabInstance:
     - target: {fileID: 2675737088447819728, guid: 8ec7d46a03a924349a62834310e6ac69,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2675737088447819728, guid: 8ec7d46a03a924349a62834310e6ac69,
         type: 3}
@@ -339,8 +339,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Menu Buttons
       objectReference: {fileID: 0}
+    - target: {fileID: 2675737088447819735, guid: 8ec7d46a03a924349a62834310e6ac69,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2675737088447819735, guid: 8ec7d46a03a924349a62834310e6ac69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1728807865
+      objectReference: {fileID: 0}
+    - target: {fileID: 6685063528981763895, guid: 8ec7d46a03a924349a62834310e6ac69,
+        type: 3}
+      propertyPath: sortingLayer
+      value: UI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ec7d46a03a924349a62834310e6ac69, type: 3}
+--- !u!224 &549991118 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2675737088447819728, guid: 8ec7d46a03a924349a62834310e6ac69,
+    type: 3}
+  m_PrefabInstance: {fileID: 549991117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &646963696
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +672,7 @@ GameObject:
   - component: {fileID: 1765683067}
   - component: {fileID: 1765683070}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainMenuCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -721,6 +742,7 @@ Transform:
   m_Children:
   - {fileID: 307443734}
   - {fileID: 646963697}
+  - {fileID: 549991118}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

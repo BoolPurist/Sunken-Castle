@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 6431898090133734346}
   - component: {fileID: 7389588481164152125}
   - component: {fileID: 7389588481164152074}
+  - component: {fileID: 6172398234438529471}
   m_Layer: 8
   m_Name: EnemyRunToPlayer
   m_TagString: Enemy
@@ -35,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 5138362718015605771}
   m_LocalRotation: {x: 0, y: 0, z: -0.00042768705, w: 0.99999994}
   m_LocalPosition: {x: 0.72, y: -7.13, z: 0}
-  m_LocalScale: {x: 2.1869004, y: 2.1869004, z: 2.1869}
+  m_LocalScale: {x: 2.1869001, y: 2.1869001, z: 2.1869}
   m_Children:
   - {fileID: 5138362718058992253}
   m_Father: {fileID: 0}
@@ -151,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209da3d25ce6c6b498d7c558a5769622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerGainPerLeveCompleted: 0
+  tagForObjectWithCompleted: SceneLoader
   attackPos: {fileID: 5138362718058992253}
   whatIsPlayer:
     serializedVersion: 2
@@ -171,9 +174,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 914be3fb13cefb44ea9b347e5e9e2841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerGainPerLeveCompleted: 1
+  tagForObjectWithCompleted: SceneLoader
   animator: {fileID: 5138362718015605875}
   score: 100
   maxHealth: 100
+  TagForGUIScore: GUIScore
+  TagForGUIEnemiesLeft: GUIEnemyCount
+  prefabDeathAnimation: {fileID: 8163872362353196046, guid: 0605071733de4bc4fb31afe18522f729,
+    type: 3}
 --- !u!95 &5138362718015605875
 Animator:
   serializedVersion: 3
@@ -183,7 +192,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5138362718015605771}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 436b69414b04047fca3929c70df57c4f, type: 3}
   m_Controller: {fileID: 9100000, guid: 862605194ab71f74ebb678321aa73c5e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -240,7 +249,7 @@ MonoBehaviour:
   speed: 130
   nextWaypointDistance: 1
   animator: {fileID: 5138362718015605875}
-  triggerDistance: 5
+  triggerDistance: 3.63
   allowedToMove: 1
 --- !u!114 &7389588481164152074
 MonoBehaviour:
@@ -270,6 +279,18 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
+--- !u!114 &6172398234438529471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5138362718015605771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2a8cb8d1eaab0458a18ce15c70046b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5138362718058992252
 GameObject:
   m_ObjectHideFlags: 0

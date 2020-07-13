@@ -18,7 +18,7 @@ public class CameraFollow : MonoBehaviour
 
 
 
-    void Start()
+    private void Start()
     {
         this.playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
@@ -27,7 +27,7 @@ public class CameraFollow : MonoBehaviour
             transform.position = playerTransform.position;
         }
     }
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (this.playerTransform != null)
         {

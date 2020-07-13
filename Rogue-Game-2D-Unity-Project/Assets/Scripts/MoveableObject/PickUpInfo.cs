@@ -14,7 +14,7 @@ public class PickUpInfo : MonoBehaviour
     public Vector2 healingRange;
 
 
-    void Update()
+    private void Update()
     {
         Collider2D[] Player = Physics2D.OverlapBoxAll(healthPos.position, healingRange, whatIsPlayer);
         for (int i = 0; i < Player.Length; i++)
@@ -29,7 +29,7 @@ public class PickUpInfo : MonoBehaviour
 
     }
 
-    void OnDrawGizmosSelected() //Visualizes the attack for testing
+    private void OnDrawGizmosSelected() //Visualizes the attack for testing
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(healthPos.position, (Vector3)healingRange);

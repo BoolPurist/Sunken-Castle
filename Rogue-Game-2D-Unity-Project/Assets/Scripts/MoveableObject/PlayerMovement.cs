@@ -7,18 +7,18 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     public Animator animator;
-    Vector2 movement;
+    private Vector2 movement;
     public bool allowToMove = true;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKey(KeyCode.RightArrow) == false && Input.GetKey(KeyCode.LeftArrow) == false
             && Input.GetKey(KeyCode.UpArrow) == false && Input.GetKey(KeyCode.DownArrow) == false) // Doesn't accept movement input from the arrow keys as they are for attacking
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (allowToMove)
         {

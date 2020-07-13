@@ -14,6 +14,13 @@ public class SelectScenes : MonoBehaviour
     // Indexes of scenes left to be able to be selected randomly until next Reset.
     private List<int> sceneIndexesLeft;
 
+    private int completedLevels = 0;
+
+    public int CompletedLevels
+    {
+        get => this.completedLevels;
+    }
+
     private void Awake()
     {
         // Check for preventing Out of bound exception because of too high start index.
@@ -30,25 +37,26 @@ public class SelectScenes : MonoBehaviour
             this.sceneIndexes[j] = i;
         }
 
-        // Start a new fresh list of index for a scene to choose from.
+        // Start a new fresh list of index for a scene to choose from randomly.
         this.ResetScenePool();
-        this.LoadNextScene();
 
+        // LoadNextScene will load next random scene and increment the count of completed scenes.
+        // Depending if the first scene played is the main menu or a chosen scene started from the debugger in unity.
+        // The start value for the count of completed levels must set accordingly. 
+        // If the buildIndex is zero than the next scene is chosen from the main menu. 
+        // In that case the player did not complete a level so far ! So enemy don't get stronger in the first level already.
+        // If buildIndex is not zero first Level was started in the debugger from unity.
+        // In that case the enemy should become stronger in the next level.
+        this.completedLevels = SceneManager.GetActiveScene().buildIndex == 0 ? -1 : 0;
+
+        this.LoadNextScene();
     }
 
     // Start is called before the first frame update
-    private void Start()
-    {
-
-
-
-    }
+    private void Start() { }
 
     // Update is called once per frame
-    void Update()
-    {
-
-    }
+    void Update() { }
 
     // Reseting list of indexes of scene meant to be selected randomly.
     private void ResetScenePool()
@@ -64,10 +72,11 @@ public class SelectScenes : MonoBehaviour
         int indexCount = this.sceneIndexesLeft.Count;
 
         // Current scene should not be picked again for the next scene.
-        // Check for only main menu is accessible to player. indexCount == 0 ?
+        // Check for only main menu is accessible to player. indexCount == 0 and
         // Check for only main menu and one scene is accessible to the player. indexCount == 1 ?  
         if (indexCount != 0 && indexCount != 1)
         {
+            // Making sure that after reset of scene pool to choose from, not the current scene is chosen for the first pick to load a scene. 
             this.sceneIndexesLeft.Remove(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -75,6 +84,8 @@ public class SelectScenes : MonoBehaviour
 
     public void LoadNextScene()
     {
+        this.completedLevels++;
+
         // Check if the list of left scenes to select from is empty.
         // If true, perform a reset of the list.
         if (this.sceneIndexesLeft.Count <= 0)

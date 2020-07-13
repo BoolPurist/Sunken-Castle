@@ -9,6 +9,9 @@ TagManager:
   - GUIHealth
   - MenueGameOver
   - SceneLoader
+  - GUIEnemyCount
+  - Gate
+  - Portal
   layers:
   - Default
   - TransparentFX
@@ -20,7 +23,7 @@ TagManager:
   - 
   - Enemy
   - Player
-  - 
+  - BackgroundUI
   - 
   - 
   - 
