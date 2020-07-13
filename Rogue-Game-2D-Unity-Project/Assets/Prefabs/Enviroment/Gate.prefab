@@ -107,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b93eab63b70228f478f0d5489f3aa426, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26d57c0901e6b0f499d2a43037a2525c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -145,10 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db09e92efafcf724ab9a168035c952d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WhatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 512
-  portalRadius: {x: 1.77, y: 1.77}
+  animator: {fileID: 618536024265183925}
 --- !u!95 &618536024265183925
 Animator:
   serializedVersion: 3

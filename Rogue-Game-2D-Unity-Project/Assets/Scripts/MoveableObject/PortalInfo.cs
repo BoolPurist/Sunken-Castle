@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 public class PortalInfo : MonoBehaviour
 {
     private bool isActivated = false;
+    public Animator animator;
 
     // Update is called once per frame
     private void Update()
     {
         this.isActivated = isActivated == false && GameObject.FindGameObjectsWithTag("Enemy").Length == 0;
+        if(isActivated == true)
+        {
+            animator.SetTrigger("isActivated");
+        }
 
     }
 

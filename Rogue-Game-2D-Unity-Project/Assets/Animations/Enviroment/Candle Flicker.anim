@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Torch
+  m_Name: Candle Flicker
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -22,7 +22,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5
+        value: 0.464
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -30,8 +30,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.3
-        value: 0.572
+        time: 0.5
+        value: 0.862
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -39,8 +39,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.7
-        value: 0.5
+        time: 1
+        value: 0.474
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -51,37 +51,28 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_FalloffIntensity
-    path: 
+    path: Point Light 2D
     classID: 114
     script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -8553596595128423742, guid: fb1fde2e2ac880f4d937123ada520714,
+      value: {fileID: 2107866372319049227, guid: 7a37b855fd81a324faffc58513aefcec,
         type: 3}
-    - time: 0.1
-      value: {fileID: 330400763883709057, guid: fb1fde2e2ac880f4d937123ada520714,
-        type: 3}
-    - time: 0.2
-      value: {fileID: 6950709768184568528, guid: fb1fde2e2ac880f4d937123ada520714,
-        type: 3}
-    - time: 0.3
-      value: {fileID: 837017221450738011, guid: fb1fde2e2ac880f4d937123ada520714,
-        type: 3}
-    - time: 0.4
-      value: {fileID: 9103131428984308761, guid: fb1fde2e2ac880f4d937123ada520714,
+    - time: 0.25
+      value: {fileID: -2119797723131338626, guid: 7a37b855fd81a324faffc58513aefcec,
         type: 3}
     - time: 0.5
-      value: {fileID: -6545210212983845557, guid: fb1fde2e2ac880f4d937123ada520714,
+      value: {fileID: 4256947714483866764, guid: 7a37b855fd81a324faffc58513aefcec,
         type: 3}
-    - time: 0.6
-      value: {fileID: 2483307524810053647, guid: fb1fde2e2ac880f4d937123ada520714,
+    - time: 0.75
+      value: {fileID: -3872239424520025761, guid: 7a37b855fd81a324faffc58513aefcec,
         type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 10
+  m_SampleRate: 4
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -89,7 +80,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
+      path: 2303167742
       attribute: 4172385972
       script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
       typeID: 114
@@ -103,19 +94,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -8553596595128423742, guid: fb1fde2e2ac880f4d937123ada520714, type: 3}
-    - {fileID: 330400763883709057, guid: fb1fde2e2ac880f4d937123ada520714, type: 3}
-    - {fileID: 6950709768184568528, guid: fb1fde2e2ac880f4d937123ada520714, type: 3}
-    - {fileID: 837017221450738011, guid: fb1fde2e2ac880f4d937123ada520714, type: 3}
-    - {fileID: 9103131428984308761, guid: fb1fde2e2ac880f4d937123ada520714, type: 3}
-    - {fileID: -6545210212983845557, guid: fb1fde2e2ac880f4d937123ada520714, type: 3}
-    - {fileID: 2483307524810053647, guid: fb1fde2e2ac880f4d937123ada520714, type: 3}
+    - {fileID: 2107866372319049227, guid: 7a37b855fd81a324faffc58513aefcec, type: 3}
+    - {fileID: -2119797723131338626, guid: 7a37b855fd81a324faffc58513aefcec, type: 3}
+    - {fileID: 4256947714483866764, guid: 7a37b855fd81a324faffc58513aefcec, type: 3}
+    - {fileID: -3872239424520025761, guid: 7a37b855fd81a324faffc58513aefcec, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.70000005
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -136,7 +124,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.5
+        value: 0.464
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -144,8 +132,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.3
-        value: 0.572
+        time: 0.5
+        value: 0.862
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -153,8 +141,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.7
-        value: 0.5
+        time: 1
+        value: 0.474
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -165,7 +153,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_FalloffIntensity
-    path: 
+    path: Point Light 2D
     classID: 114
     script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_EulerEditorCurves: []
