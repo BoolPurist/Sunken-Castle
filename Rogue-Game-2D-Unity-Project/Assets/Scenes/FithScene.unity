@@ -1414,6 +1414,16 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 32b00584398f877449f3ecdd0d5e446e, type: 3}
+    - target: {fileID: 1542855501972361794, guid: 567ecb02f87517542bb0845d9fa8ad75,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751267301467211108, guid: 567ecb02f87517542bb0845d9fa8ad75,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8520280414304190853, guid: 567ecb02f87517542bb0845d9fa8ad75,
         type: 3}
       propertyPath: m_ClearFlags
@@ -1433,6 +1443,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520280414304190853, guid: 567ecb02f87517542bb0845d9fa8ad75,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8520280414304190855, guid: 567ecb02f87517542bb0845d9fa8ad75,
         type: 3}
@@ -12607,7 +12622,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 52a25b588b60af149a250d3c2379043d, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
