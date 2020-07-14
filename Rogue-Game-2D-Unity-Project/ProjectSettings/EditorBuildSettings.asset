@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SixthScene.unity
     guid: f727ff51bec357c42bf12a67f791ec6d
+  - enabled: 1
+    path: Assets/Scenes/SeventhScene.unity
+    guid: 09b85260544992843b8bbde75d250aae
   m_configObjects: {}
