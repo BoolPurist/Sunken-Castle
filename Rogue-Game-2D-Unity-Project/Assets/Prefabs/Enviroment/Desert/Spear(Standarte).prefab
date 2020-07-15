@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4516209236294060539}
   - component: {fileID: 4516209236294060536}
   - component: {fileID: 1954561035}
+  - component: {fileID: 5080015946928753285}
   m_Layer: 0
   m_Name: Spear(Standarte)
   m_TagString: Untagged
@@ -118,3 +119,32 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: -27
   updateOnce: 1
+--- !u!60 &5080015946928753285
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516209236294060537}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.93808633, y: 1.2507818}
+    newSize: {x: 0.9375, y: 1.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.3439045, y: -0.5612955}
+      - {x: -0.2830429, y: -0.55976963}
+      - {x: -0.28469086, y: -0.5003433}
+      - {x: -0.34187698, y: -0.4991083}
