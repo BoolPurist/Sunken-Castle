@@ -45,9 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.47
-  m_Color: {r: 0.9811321, g: 0.18974723, b: 0.18974723, a: 1}
-  m_Intensity: 0.6
+  m_FalloffIntensity: 0.31
+  m_Color: {r: 0.9716981, g: 0.24292453, b: 0.24292453, a: 1}
+  m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: f3d60b387b76614dd59f84e40000000049988627934bc9ba7dd34fbb477cf498
   m_LightCookieSprite: {fileID: 0}
@@ -58,8 +58,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.29704428
-  m_PointLightOuterRadius: 0.54811555
+  m_PointLightInnerRadius: 0.39
+  m_PointLightOuterRadius: 0.89
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 7347493087365615817}
   - component: {fileID: 7347493087365615818}
   m_Layer: 0
-  m_Name: CandleAnimated 1
+  m_Name: CandleAnimated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
