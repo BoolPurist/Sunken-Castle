@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 130
-  nextWaypointDistance: 1
+  nextWaypointDistance: 0.5
   animator: {fileID: 5138362718015605875}
   triggerDistance: 3.63
   allowedToMove: 1
