@@ -27,7 +27,7 @@ public class EnemyInfo : EnemyPowerGainPerLevel
 
     public int CurrentHealth
     {
-        get { return currentHealth; }
+        get { return this.currentHealth; }
     }
 
     private new void Start()
@@ -101,9 +101,9 @@ public class EnemyInfo : EnemyPowerGainPerLevel
             this.OnEnemyCountChange.Invoke(-1);
         }
 
-        Instantiate(prefabDeathAnimation, this.GetComponent<Transform>().position, Quaternion.identity);
+        Instantiate(this.prefabDeathAnimation, this.GetComponent<Transform>().position, Quaternion.identity);
 
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 
 
