@@ -160,7 +160,7 @@ MonoBehaviour:
     m_Bits: 512
   damage: 10
   attackRange: {x: 1.5, y: 1.5}
-  timeBtwEnemyAttack: 1
+  timeBtwEnemyAttack: 2
   allowToAttack: 1
 --- !u!114 &5138362718015605768
 MonoBehaviour:
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   speed: 130
-  nextWaypointDistance: 1
+  nextWaypointDistance: 0.5
   animator: {fileID: 5138362718015605875}
   triggerDistance: 3.63
   allowedToMove: 1
