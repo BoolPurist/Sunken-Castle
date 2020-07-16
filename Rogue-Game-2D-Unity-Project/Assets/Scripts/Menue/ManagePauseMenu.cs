@@ -19,7 +19,7 @@ public class ManagePauseMenu : MonoBehaviour
     private void Start()
     {
         // A prefab that makes up the menu for the pause should be attached through the unity inspector.
-        if (pauseMenuPrefab == null)
+        if (this.pauseMenuPrefab == null)
         {
             Debug.LogError("No Prefab for the pause menu was assigned !");
         }
@@ -30,16 +30,16 @@ public class ManagePauseMenu : MonoBehaviour
     private void Update()
     {
         // Nothing happens if no prefab for the pause menu through unity inspector.
-        if (pauseMenuPrefab == null)
+        if (this.pauseMenuPrefab == null)
         {
             return;
         }
         // Toggles between the game and pause when the respective key is pressed.
-        else if (Input.GetKeyDown(buttonPause))
+        else if (Input.GetKeyDown(this.buttonPause))
         {
             // If no pause menu as an object is stored the game is not paused.
             // Otherwise a object as pause menu was created already and is stored. The game is paused.
-            if (pauseMenu == null)
+            if (this.pauseMenu == null)
             {
                 this.Pause();
             }
@@ -55,14 +55,14 @@ public class ManagePauseMenu : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1f;
-        Destroy(pauseMenu);
+        Destroy(this.pauseMenu);
     }
 
     // Pausing starts. Game speed is set to zero so every thing stand stills.
     // Pause menu is created.
     private void Pause()
     {
-        pauseMenu = Instantiate(pauseMenuPrefab, this.transform);
+        this.pauseMenu = Instantiate(this.pauseMenuPrefab, this.transform);
         Time.timeScale = 0f;
     }
 

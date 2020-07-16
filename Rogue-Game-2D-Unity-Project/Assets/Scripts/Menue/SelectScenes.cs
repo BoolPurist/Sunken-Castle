@@ -24,7 +24,7 @@ public class SelectScenes : MonoBehaviour
     private void Awake()
     {
         // Check for preventing Out of bound exception because of too high start index.
-        if (startIndexScene > SceneManager.sceneCountInBuildSettings - 1)
+        if (this.startIndexScene > SceneManager.sceneCountInBuildSettings - 1)
         {
             Debug.LogError("Start index is greater than the last index of scenes in the building settings.");
             return;
