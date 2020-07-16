@@ -14,7 +14,7 @@ public class GetCameraComponent : MonoBehaviour
     public string sortingLayer;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // Access canvas component that renders the surface for the gui elements displayed on the camera.
         Canvas canvas = this.GetComponent<Canvas>();
@@ -55,7 +55,7 @@ public class GetCameraComponent : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
 
     }
