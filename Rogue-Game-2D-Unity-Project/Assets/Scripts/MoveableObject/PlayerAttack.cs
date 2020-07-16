@@ -20,64 +20,64 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if(curTimeBtwAttacks <= 0) //If the minimal time between two attacks has passed, you can attack
+        if(this.curTimeBtwAttacks <= 0) //If the minimal time between two attacks has passed, you can attack
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosRight.position, attackRange, whatIsEnemy);
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(this.attackPosRight.position, this.attackRange, this.whatIsEnemy);
                 //Circle gets cast at certain position, all enemies in the circle get put into array enemiesToDamage, which will take damage
 
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(this.damage);
                 }
-                animator.SetTrigger("IsAttackingRight");
+                this.animator.SetTrigger("IsAttackingRight");
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
             {
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosLeft.position, attackRange, whatIsEnemy);
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(this.attackPosLeft.position, this.attackRange, this.whatIsEnemy);
                 //Circle gets cast at certain position, all enemies in the circle get put into array enemiesToDamage, which will take damage
 
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(this.damage);
                 }
-                animator.SetTrigger("IsAttackingLeft");
+                this.animator.SetTrigger("IsAttackingLeft");
             }
             else if (Input.GetKey(KeyCode.UpArrow))
             {
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosUp.position, attackRange, whatIsEnemy);
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(this.attackPosUp.position, this.attackRange, this.whatIsEnemy);
                 //Circle gets cast at certain position, all enemies in the circle get put into array enemiesToDamage, which will take damage
 
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(this.damage);
                 }
-                animator.SetTrigger("IsAttackingUp");
+                this.animator.SetTrigger("IsAttackingUp");
             }
             else if (Input.GetKey(KeyCode.DownArrow))
             {
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosDown.position, attackRange, whatIsEnemy);
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(this.attackPosDown.position, this.attackRange, this.whatIsEnemy);
                 //Circle gets cast at certain position, all enemies in the circle get put into array enemiesToDamage, which will take damage
 
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyInfo>().TakeDamage(this.damage);
                 }
-                animator.SetTrigger("IsAttackingDown");
+                this.animator.SetTrigger("IsAttackingDown");
             }
-            curTimeBtwAttacks = timeBtwAttacks; //After the attack, Timer gets set back
+            this.curTimeBtwAttacks = this.timeBtwAttacks; //After the attack, Timer gets set back
         }
         else
         {
-            curTimeBtwAttacks -= Time.deltaTime; //Time gets reduced by time passed
+            this.curTimeBtwAttacks -= Time.deltaTime; //Time gets reduced by time passed
         }
     }
 
     private void OnDrawGizmosSelected() //Visualizes the attack for testing
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPosRight.position, attackRange);
+        Gizmos.DrawWireSphere(this.attackPosRight.position, this.attackRange);
 
     }
 }

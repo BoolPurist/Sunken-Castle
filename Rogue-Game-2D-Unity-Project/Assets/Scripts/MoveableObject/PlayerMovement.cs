@@ -13,8 +13,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        rb = this.GetComponent<Rigidbody2D>();
-        animator = gameObject.GetComponent<Animator>();
+        this.rb = this.GetComponent<Rigidbody2D>();
+        this.animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,26 +23,26 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow) == false && Input.GetKey(KeyCode.LeftArrow) == false
             && Input.GetKey(KeyCode.UpArrow) == false && Input.GetKey(KeyCode.DownArrow) == false) // Doesn't accept movement input from the arrow keys as they are for attacking
         {
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
+            this.movement.x = Input.GetAxisRaw("Horizontal");
+            this.movement.y = Input.GetAxisRaw("Vertical");
         }
         else
         {
-            movement.x = 0;
-            movement.y = 0;
+            this.movement.x = 0;
+            this.movement.y = 0;
         }
 
     }
 
     private void FixedUpdate()
     {
-        if (allowToMove)
+        if (this.allowToMove)
         {
-            rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime); //moves the character
+            this.rb.MovePosition(this.rb.position + this.movement.normalized * this.moveSpeed * Time.fixedDeltaTime); //moves the character
         }
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        this.animator.SetFloat("Horizontal", movement.x);
+        this.animator.SetFloat("Vertical", movement.y);
+        this.animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 }
