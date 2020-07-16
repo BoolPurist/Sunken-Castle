@@ -21,10 +21,19 @@ public class ChooseRandomScene : ManageSceneWideObject
     public void ChooseNextRandomScene()
     {
         // Accessing the loader for selecting a random scene.
-        GameObject sceneLoader = GameObject.FindGameObjectWithTag(this.prefabSceneWideObjectTag);
+        GameObject sceneLoader = GameObject.FindGameObjectWithTag(base.prefabSceneWideObjectTag);
         if (sceneLoader != null)
         {
-            sceneLoader.GetComponent<SelectScenes>().LoadNextScene();
+            SelectScenes selectScenes = sceneLoader.GetComponent<SelectScenes>();
+
+            if (selectScenes != null)
+            {
+                selectScenes.LoadNextScene();
+            }
+            else
+            {
+                Debug.LogWarning($"The object with tag \"{base.prefabSceneWideObjectTag}\" has no component \"SelectScenes\" ");
+            }
         }
         else
         {

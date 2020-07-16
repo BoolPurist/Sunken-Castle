@@ -21,6 +21,6 @@ public class ChangeScene : MonoBehaviour
     public void OnClickChangeSceneFromPause(string sceneName)
     {
         Time.timeScale = 1f;
-        OnClickChangeScene(sceneName);
+        this.OnClickChangeScene(sceneName);
     }
 }
