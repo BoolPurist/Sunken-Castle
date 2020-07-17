@@ -16,7 +16,5 @@ public class ReplaceObjectWithPrefab : MonoBehaviour
 
         // Remove the object to be replaced.
         Destroy(this.toReplaceObject);
-
-
     }
 }
