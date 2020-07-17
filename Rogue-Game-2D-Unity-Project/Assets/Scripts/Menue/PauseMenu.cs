@@ -6,18 +6,6 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
 
-    // PauseMenu ist not active when Level is launched.
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void CallbackResumeButton()
     {
         // The parent of the object which is component is attached to is has the component to resume the game properly.

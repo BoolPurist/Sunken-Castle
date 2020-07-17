@@ -19,16 +19,10 @@ public class ManageGameOverScreen : MonoBehaviour
     private bool hasSpawnGameOver;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // Enables to spawn one game over screen on the death event of the player.
         this.hasSpawnGameOver = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void CallbackCreateGameOverScreen(object sender, EventArgs e)

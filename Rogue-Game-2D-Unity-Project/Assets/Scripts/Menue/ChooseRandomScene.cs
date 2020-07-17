@@ -4,19 +4,6 @@ using UnityEngine;
 
 public class ChooseRandomScene : ManageSceneWideObject
 {
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     // Chooses the next left random level.
     public void ChooseNextRandomScene()
     {
@@ -47,6 +34,5 @@ public class ChooseRandomScene : ManageSceneWideObject
         // Stoping pausing the game.
         Time.timeScale = 1f;
         this.ChooseNextRandomScene();
-
     }
 }

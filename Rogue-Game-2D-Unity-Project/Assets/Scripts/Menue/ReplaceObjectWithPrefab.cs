@@ -9,18 +9,6 @@ public class ReplaceObjectWithPrefab : MonoBehaviour
     [Tooltip("Object which should be created in a scene.")]
     public GameObject prefab;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void ReplaceObject()
     {
         // First creates the game object based on a provided prefab on the same position of the object to be replaced.

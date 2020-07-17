@@ -52,12 +52,6 @@ public class SelectScenes : MonoBehaviour
         this.LoadNextScene();
     }
 
-    // Start is called before the first frame update
-    private void Start() { }
-
-    // Update is called once per frame
-    void Update() { }
-
     // Reseting list of indexes of scene meant to be selected randomly.
     private void ResetScenePool()
     {
