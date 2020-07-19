@@ -22,7 +22,7 @@ Summary: calculated movement vector
 
 public bool allowToMove
 
-Summary: bool whicht allows/disallows the player to move
+Summary: bool which allows/disallows the player to move
 
 ## methods
 
