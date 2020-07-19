@@ -11,11 +11,11 @@ public class PlayerInfo : MonoBehaviour
     public delegate void OnHealthChange(int number);
     public event OnHealthChange OnHealthChanges;
     public event EventHandler OnDeathPlayer;
+
     public Animator animator;
     public int maxHealth = 100;
     [HideInInspector]
     public int currentHealth;
-
     [HideInInspector]
     public bool isDead;
 

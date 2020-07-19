@@ -5,22 +5,28 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
 
-    public float timeBtwAttacks; //Time the player has to wait before attacking again, public so changeable by the designer (in seconds, so value 5f means 5 seconds)
-    private float curTimeBtwAttacks; //Time until the next attack can be started
+    public float timeBtwAttacks; 
+    //Time the player has to wait before attacking again, public so changeable by the designer (in seconds, so value 5f means 5 seconds)
+    private float curTimeBtwAttacks; 
+    //Time until the next attack can be started
     public Animator animator;
     
-    public Transform attackPosRight; //Position of the attack
+    public Transform attackPosRight; 
+    //Position of the attack
     public Transform attackPosLeft;
     public Transform attackPosUp;
     public Transform attackPosDown; 
 
-    public float attackRange; //Range of the attack
-    public int damage; //Damage dealt to enemies in radius
+    public float attackRange; 
+    //Range of the attack
+    public int damage; 
+    //Damage dealt to enemies in radius
     public LayerMask whatIsEnemy; 
 
     private void Update()
     {
-        if(this.curTimeBtwAttacks <= 0) //If the minimal time between two attacks has passed, you can attack
+        if(this.curTimeBtwAttacks <= 0) 
+            //If the minimal time between two attacks has passed, you can attack
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {
@@ -66,15 +72,18 @@ public class PlayerAttack : MonoBehaviour
                 }
                 this.animator.SetTrigger("IsAttackingDown");
             }
-            this.curTimeBtwAttacks = this.timeBtwAttacks; //After the attack, Timer gets set back
+            this.curTimeBtwAttacks = this.timeBtwAttacks; 
+            //After the attack, Timer gets set back
         }
         else
         {
-            this.curTimeBtwAttacks -= Time.deltaTime; //Time gets reduced by time passed
+            this.curTimeBtwAttacks -= Time.deltaTime; 
+            //Time gets reduced by time passed
         }
     }
 
-    private void OnDrawGizmosSelected() //Visualizes the attack for testing
+    private void OnDrawGizmosSelected() 
+        //Visualizes the attack for testing
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(this.attackPosRight.position, this.attackRange);

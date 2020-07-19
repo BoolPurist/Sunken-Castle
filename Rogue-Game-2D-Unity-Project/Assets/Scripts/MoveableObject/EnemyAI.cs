@@ -7,9 +7,12 @@ public class EnemyAI : MonoBehaviour
 {
     //Classic attributes
     [HideInInspector]
-    public Transform target; //Player position
-    public float speed = 2f; //Enemy walking speed
-    public float nextWaypointDistance = 1f; //When Enemy is this close to waypoint, waypoint is seen as reached, go after the next waypoint
+    public Transform target; 
+    //Player position
+    public float speed = 2f; 
+    //Enemy walking speed
+    public float nextWaypointDistance = 1f; 
+    //When Enemy is this close to waypoint, waypoint is seen as reached, go after the next waypoint
     public Animator animator;
     public float triggerDistance = 5f;
     [HideInInspector]
@@ -18,13 +21,15 @@ public class EnemyAI : MonoBehaviour
 
     //Attributes used for A* pathfinding
     private Path path;
-    private int currentWaypoint = 0; //Current waypoint of current path
-    private bool reachedEndOfPath = false; //Did we reach the end of the path?
+    private int currentWaypoint = 0; 
+    //Current waypoint of current path
+    private bool reachedEndOfPath = false; 
+    //Did we reach the end of the path?
 
-    private Seeker seeker; //Class from datapacket
+    private Seeker seeker; 
+    //Class from datapacket
     private Rigidbody2D rb;
 
-    // Start is called before the first frame update
     private void Start()
     {
         this.seeker = GetComponent<Seeker>();
@@ -46,15 +51,16 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void OnPathComplete(Path p)
+    //Gets called if current Path is completed
     {
         if (!p.error)
+        //if we have a new path to follow
         {
             this.path = p;
             this.currentWaypoint = 0;
         }
     }
 
-    // Update is called once per frame
     private void FixedUpdate()
     {
         float distanceToTarget = 0f;
@@ -64,26 +70,33 @@ public class EnemyAI : MonoBehaviour
         {
 
             if (this.target != null)
-                distanceToTarget = Vector3.Distance(this.target.position, this.transform.position);  //saves the distance between Player and Enemy
+                distanceToTarget = Vector3.Distance(this.target.position, this.transform.position);  
+            //saves the distance between Player and Enemy
 
-            if (this.path == null) //If we don't have a path, do nothing
+            if (this.path == null) 
+                //If we don't have a path, do nothing
                 return;
 
-            if (this.currentWaypoint >= this.path.vectorPath.Count) //Current waypoint greater than amount of waypoints => We are at the end
+            if (this.currentWaypoint >= this.path.vectorPath.Count) 
+                //Current waypoint greater than amount of waypoints => We are at the end
             {
-                this.reachedEndOfPath = true; //We reached the end
+                this.reachedEndOfPath = true; 
+                //We reached the end
                 return;
             }
             else
             {
-                this.reachedEndOfPath = false; //We didn't reach the end yet
+                this.reachedEndOfPath = false; 
+                //We didn't reach the end yet
             }
 
 
-            Vector2 direction = ((Vector2)this.path.vectorPath[currentWaypoint] - this.rb.position).normalized; //Next waypoint - currentPositon gives us vector to the waypoint
+            Vector2 direction = ((Vector2)this.path.vectorPath[currentWaypoint] - this.rb.position).normalized; 
+            //Next waypoint - currentPositon gives us vector to the waypoint
             if (this.allowedToMove == true && this.target != null && distanceToTarget <= this.triggerDistance)
             {
-                force = direction * this.speed * Time.deltaTime; //force that moves the enemy, normalized direction Vector times the speed
+                force = direction * this.speed * Time.deltaTime; 
+                //force that moves the enemy, normalized direction Vector times the speed
             }
             else if (this.allowedToMove == false || this.target == null || distanceToTarget >= this.triggerDistance)
             {
@@ -94,13 +107,16 @@ public class EnemyAI : MonoBehaviour
             this.animator.SetFloat("Vertical", force.y);
             this.animator.SetFloat("Speed", force.sqrMagnitude);
 
-            this.rb.AddForce(force); //Moves the enemy
+            this.rb.AddForce(force); 
+            //Moves the enemy
 
             float distance = Vector2.Distance(this.rb.position, this.path.vectorPath[currentWaypoint]);
 
-            if (distance < this.nextWaypointDistance) //If we are near enough by the next waypoint
+            if (distance < this.nextWaypointDistance) 
+                //If we are near enough by the next waypoint
             {
-                this.currentWaypoint++; //go to the next waypoint
+                this.currentWaypoint++; 
+                //go to the next waypoint
             }
 
         }
@@ -108,7 +124,8 @@ public class EnemyAI : MonoBehaviour
 
     }
 
-    private void OnDrawGizmosSelected() //Visualizes the trigger distance for testing
+    private void OnDrawGizmosSelected() 
+        //Visualizes the trigger distance for testing
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(this.transform.position, this.triggerDistance);

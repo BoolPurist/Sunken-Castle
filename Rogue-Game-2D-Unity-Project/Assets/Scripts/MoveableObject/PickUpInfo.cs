@@ -29,7 +29,8 @@ public class PickUpInfo : MonoBehaviour
 
     }
 
-    private void OnDrawGizmosSelected() //Visualizes the attack for testing
+    private void OnDrawGizmosSelected() 
+        //Visualizes the attack for testing
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(this.healthPos.position, (Vector3)this.healingRange);

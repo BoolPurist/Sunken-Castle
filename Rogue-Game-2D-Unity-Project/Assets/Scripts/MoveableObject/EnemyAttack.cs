@@ -11,8 +11,6 @@ public class EnemyAttack : EnemyPowerGainPerLevel
     public Vector2 attackRange;
     private int angle = 0;
     private Animator anim;
-
-
     public float timeBtwEnemyAttack;
     private float curTimeBtwEnemyAttack;
     [HideInInspector]
@@ -27,6 +25,7 @@ public class EnemyAttack : EnemyPowerGainPerLevel
         this.damage = base.WholeNumberStatFromPowerGain(this.damage);
         this.anim = this.gameObject.GetComponent<Animator>();
     }
+
     private new void Update()
     {
         base.Update();
@@ -50,7 +49,8 @@ public class EnemyAttack : EnemyPowerGainPerLevel
 
     }
 
-    private void OnDrawGizmosSelected() //Visualizes the attack for testing
+    private void OnDrawGizmosSelected() 
+        //Visualizes the attack for testing
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(this.attackPos.position, (Vector3)this.attackRange);
@@ -71,9 +71,8 @@ public class EnemyAttack : EnemyPowerGainPerLevel
             if (Player.GetComponent<PlayerInfo>().CurrentHealth <= 0)
             {
                 Destroy(this.gameObject);
+                //Enemy that killed the player gets destroyed as to not to attack the player while in the death animation
             }
         }
-
-
     }
 }

@@ -21,7 +21,6 @@ public class PortalInfo : MonoBehaviour
 
     public void OnTriggerStay2D(Collider2D other)
     {
-
         if (this.isActivated == true && other.CompareTag("Player") && other.isTrigger == false)
         {
             this.GetComponent<ChooseRandomScene>().ChooseNextRandomScene();
