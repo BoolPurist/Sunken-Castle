@@ -11,8 +11,6 @@ public class EnemyAttack : EnemyPowerGainPerLevel
     public Vector2 attackRange;
     private int angle = 0;
     private Animator anim;
-
-
     public float timeBtwEnemyAttack;
     private float curTimeBtwEnemyAttack;
     [HideInInspector]
@@ -27,13 +25,14 @@ public class EnemyAttack : EnemyPowerGainPerLevel
         this.damage = base.WholeNumberStatFromPowerGain(this.damage);
         this.anim = this.gameObject.GetComponent<Animator>();
     }
+
     private new void Update()
     {
         base.Update();
 
-        if (curTimeBtwEnemyAttack <= 0 && allowToAttack)
+        if (this.curTimeBtwEnemyAttack <= 0 && this.allowToAttack)
         {
-            Collider2D Player = Physics2D.OverlapBox(attackPos.position, attackRange, angle, whatIsPlayer);
+            Collider2D Player = Physics2D.OverlapBox(this.attackPos.position, this.attackRange, this.angle, this.whatIsPlayer);
 
             if (Player != null)
             {
@@ -50,10 +49,11 @@ public class EnemyAttack : EnemyPowerGainPerLevel
 
     }
 
-    private void OnDrawGizmosSelected() //Visualizes the attack for testing
+    private void OnDrawGizmosSelected() 
+        //Visualizes the attack for testing
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(attackPos.position, (Vector3)attackRange);
+        Gizmos.DrawWireCube(this.attackPos.position, (Vector3)this.attackRange);
 
     }
 
@@ -63,17 +63,16 @@ public class EnemyAttack : EnemyPowerGainPerLevel
 
         yield return new WaitForSeconds(0.8f);
 
-        Collider2D Player = Physics2D.OverlapBox(attackPos.position, attackRange, angle, whatIsPlayer);
+        Collider2D Player = Physics2D.OverlapBox(this.attackPos.position, this.attackRange, this.angle, this.whatIsPlayer);
 
         if (Player != null && this.allowToAttack == true)
         {
             Player.GetComponent<PlayerInfo>().TakeDamage(damage);
             if (Player.GetComponent<PlayerInfo>().CurrentHealth <= 0)
             {
-                Destroy(gameObject);
+                Destroy(this.gameObject);
+                //Enemy that killed the player gets destroyed as to not to attack the player while in the death animation
             }
         }
-
-
     }
 }

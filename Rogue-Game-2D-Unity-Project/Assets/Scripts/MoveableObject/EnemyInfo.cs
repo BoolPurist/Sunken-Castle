@@ -15,19 +15,17 @@ public class EnemyInfo : EnemyPowerGainPerLevel
     public int score = 100;
     [Tooltip("Amount of health the enemy stats with.")]
     public int maxHealth = 100;
-
     [Tooltip("Tag to find GUI element for showing score to the player")]
     public string TagForGUIScore;
     [Tooltip("Tag to find GUI element for showing left enemies to the player")]
     public string TagForGUIEnemiesLeft;
-
     public GameObject prefabDeathAnimation;
 
     private int currentHealth;
 
     public int CurrentHealth
     {
-        get { return currentHealth; }
+        get { return this.currentHealth; }
     }
 
     private new void Start()
@@ -76,7 +74,7 @@ public class EnemyInfo : EnemyPowerGainPerLevel
 
         if (this.currentHealth <= 0)
         {
-            Die();
+            this.Die();
         }
     }
 
@@ -101,9 +99,9 @@ public class EnemyInfo : EnemyPowerGainPerLevel
             this.OnEnemyCountChange.Invoke(-1);
         }
 
-        Instantiate(prefabDeathAnimation, this.GetComponent<Transform>().position, Quaternion.identity);
+        Instantiate(this.prefabDeathAnimation, this.GetComponent<Transform>().position, Quaternion.identity);
 
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 
 

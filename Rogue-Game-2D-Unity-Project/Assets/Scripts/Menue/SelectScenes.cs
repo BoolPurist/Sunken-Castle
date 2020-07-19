@@ -24,7 +24,7 @@ public class SelectScenes : MonoBehaviour
     private void Awake()
     {
         // Check for preventing Out of bound exception because of too high start index.
-        if (startIndexScene > SceneManager.sceneCountInBuildSettings - 1)
+        if (this.startIndexScene > SceneManager.sceneCountInBuildSettings - 1)
         {
             Debug.LogError("Start index is greater than the last index of scenes in the building settings.");
             return;
@@ -51,12 +51,6 @@ public class SelectScenes : MonoBehaviour
 
         this.LoadNextScene();
     }
-
-    // Start is called before the first frame update
-    private void Start() { }
-
-    // Update is called once per frame
-    void Update() { }
 
     // Reseting list of indexes of scene meant to be selected randomly.
     private void ResetScenePool()

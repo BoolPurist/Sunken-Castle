@@ -24,6 +24,10 @@ private int angle
 
 Summary: Angle at which the attack is launched
 
+private Animator anim
+
+Summary: Enemy Animator
+
 public float timeBtwEnemyAttack
 
 Summary: set time that needs to pass for the enemy to be able to attack again
@@ -32,11 +36,23 @@ private float curTimeBtwEnemyAttack
 
 Summary: Time that has to pass until the next attack can be launched
 
+public bool allowToAttack 
+
+Summary: Allows or disallows the enemy to attack
+
 ## Methods
+
+private new void Start()
+
+Summary: Sets variables to needed components and increases the enemy damage according to the number of levels the player has completed
 
 private void Update()
 
-Summary: Is cast once per frame. Checks if player is touching the enemy, if yes, casts the "TakeDamage(int x)" method of the player, whereas x is the "damage". Only able to attack if "curTimeBtwEnemyAttack" is 0, if higher, reduces the time.
+Summary: Is cast once per frame. Checks if player is touching the enemy, if that is the case, the enemy is allowed to attack and the timeBtwÁttacks is smaller than 0 the enemy starts the "TryToAttack" Coroutine, else, the timer counts down
+
+private IEnumerator TryToAttack()
+
+Summary: Starts attack animation, when the animation is at its peak, checks again for the player, if he is still there, damage the player
 
 void OnDrawGizmosSelected()
 

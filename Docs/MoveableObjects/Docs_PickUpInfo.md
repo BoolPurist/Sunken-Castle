@@ -20,10 +20,6 @@ public LayerMask whatIsPlayer
 
 Summary: Layer used to check if a Player is currently touching the entity
 
-public Light2D li
-
-Summary: PointLight2D used to enlighten the healing potion
-
 ## Methods
 
 private void Update()

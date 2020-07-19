@@ -16,12 +16,12 @@ public class PickUpInfo : MonoBehaviour
 
     private void Update()
     {
-        Collider2D[] Player = Physics2D.OverlapBoxAll(healthPos.position, healingRange, whatIsPlayer);
+        Collider2D[] Player = Physics2D.OverlapBoxAll(this.healthPos.position, this.healingRange, this.whatIsPlayer);
         for (int i = 0; i < Player.Length; i++)
         {
             if (Player[i] != null && Player[i].GetComponent<PlayerInfo>() != null && Player[i].GetComponent<PlayerInfo>().currentHealth < 100)
             {
-                Player[i].GetComponent<PlayerInfo>().GainHealth(healthAmount);
+                Player[i].GetComponent<PlayerInfo>().GainHealth(this.healthAmount);
                 Destroy(this.gameObject);
             }
 
@@ -29,10 +29,11 @@ public class PickUpInfo : MonoBehaviour
 
     }
 
-    private void OnDrawGizmosSelected() //Visualizes the attack for testing
+    private void OnDrawGizmosSelected() 
+        //Visualizes the attack for testing
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(healthPos.position, (Vector3)healingRange);
+        Gizmos.DrawWireCube(this.healthPos.position, (Vector3)this.healingRange);
 
     }
 }

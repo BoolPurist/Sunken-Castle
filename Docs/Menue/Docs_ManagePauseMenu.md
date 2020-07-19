@@ -12,4 +12,4 @@ Button Pause (mandatory)
 Button that the player presses to pause/ unpause the game.
 
 Pause Menu Prefab (mandatory)
-Prefabs that makes up a button menu that can be navigated.
+Prefabs that makes up a button menu that can be navigated

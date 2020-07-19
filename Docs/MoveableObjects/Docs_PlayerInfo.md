@@ -40,7 +40,7 @@ Summary: get-Method for currentHealth
 
 private void Start()
 
-Summary: sets currentHealth to maxHealth, Adds needed Methods to events, fires event onHealthChange as to update the UI to maxHealth
+Summary: sets currentHealth to maxHealth, Adds needed Methods to events, fires event onHealthChange as to update the UI to maxHealth, is used for cameraFollow
 
 private void Update()
 

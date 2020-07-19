@@ -11,18 +11,6 @@ public class UpdateStatsText : MonoBehaviour
     private int currentStat = 0;
     // Start is called before the first frame update
 
-    void Start()
-    {
-
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     // Updates the gui text the current stat value.
     private void UpdateText()
     {

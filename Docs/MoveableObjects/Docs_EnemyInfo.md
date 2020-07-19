@@ -8,17 +8,17 @@ public delegate void OnDeathEnemy(int number)
 
 Summary: used for event OnDeathEnemy
 
-public event OnDeathEnemy OnDeathEnemies
+public event OnDeathEnemy OnDeathEnemiesScore
 
 Summary: invoked when an enemy dies, raises score
+
+public event DelegateUpdateStatGUI OnEnemyCountChange;
+
+Summary: Needed to know how many enemies are on the level
 
 public Animator animator
 
 Summary: enemy animator
-
-private bool isDead
-
-Summary: bool which checks if enemy is dead, true if yes, false else
 
 public int score
 
@@ -31,6 +31,14 @@ Summary: Maximal health of the enemy
 private int currentHealth
 
 Summary: current health of the enemy
+
+public string TagForGuiScore
+
+Summary: Tag to find GUI element for showing score to the player
+
+public string TagForGUIEnemiesLeft
+
+Summary: Tag to find GUI element for showing left enemies to the player
 
 ## methods
 
@@ -52,6 +60,6 @@ Summary: subtracts "damage" from "currentHealth"
 
 public void Die()
 
-Summary: disallows the enemy to move, invokes event to raise player score, disallows the enemy to attack, plays death animation, destroys the enemy
+Summary: invokes event to raise player score and destroys the enemy
 
 

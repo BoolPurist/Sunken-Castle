@@ -18,18 +18,6 @@ public class ManageSceneWideObject : MonoBehaviour
         this.prefabSceneWideObjectTag = this.prefabSceneWideObject.tag;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     // Deletes the scene wide object and creates a new one. This way the object is rested.
     public void ResetSceneWideObject()
     {

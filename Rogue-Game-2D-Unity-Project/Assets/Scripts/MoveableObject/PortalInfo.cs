@@ -11,17 +11,16 @@ public class PortalInfo : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        this.isActivated = isActivated == false && GameObject.FindGameObjectsWithTag("Enemy").Length == 0;
-        if(isActivated == true)
+        this.isActivated = this.isActivated == false && GameObject.FindGameObjectsWithTag("Enemy").Length == 0;
+        if(this.isActivated == true)
         {
-            animator.SetTrigger("isActivated");
+            this.animator.SetTrigger("isActivated");
         }
 
     }
 
     public void OnTriggerStay2D(Collider2D other)
     {
-
         if (this.isActivated == true && other.CompareTag("Player") && other.isTrigger == false)
         {
             this.GetComponent<ChooseRandomScene>().ChooseNextRandomScene();
