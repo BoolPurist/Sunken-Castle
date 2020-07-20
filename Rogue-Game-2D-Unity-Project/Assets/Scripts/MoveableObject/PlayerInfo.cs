@@ -67,6 +67,7 @@ public class PlayerInfo : MonoBehaviour
             // Triggers game over screen and disables toggling pause menu.
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
             this.CurrentHealth = PlayerInfo.maxHealth;
+            GameStats.score = 0;
             Destroy(this.gameObject, 2f);
         }
 
