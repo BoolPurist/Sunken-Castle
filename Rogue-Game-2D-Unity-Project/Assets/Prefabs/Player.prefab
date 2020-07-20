@@ -266,8 +266,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4214852443846517674}
-  maxHealth: 100
-  currentHealth: 0
+  objectToGetCompletedLevels: {fileID: 4930179866177097568, guid: bf41eb87f1f82cc41bbbe614a0e897f6,
+    type: 3}
   isDead: 0
 --- !u!114 &4214852443846517668
 MonoBehaviour:

@@ -13,9 +13,8 @@ public class PlayerInfo : MonoBehaviour
     public event EventHandler OnDeathPlayer;
 
     public Animator animator;
-    public int maxHealth = 100;
-    [HideInInspector]
-    public int currentHealth;
+    public static int maxHealth = 100;
+    private static int currentHealth;
     [HideInInspector]
     public bool isDead;
 
@@ -23,22 +22,35 @@ public class PlayerInfo : MonoBehaviour
 
     public int CurrentHealth
     {
-        get { return this.currentHealth; }
+        get => PlayerInfo.currentHealth;
+        set
+        {
+            PlayerInfo.currentHealth = value;
+            GameStats.currentPlayerHealth = value;
+        }
     }
 
     private void Start()
     {
         this.animator = gameObject.GetComponent<Animator>();
-        this.currentHealth = this.maxHealth;
+
+        // Need to update the score text otherwise the current score is not shown until the 1. enemy is slain.
+        GameObject.FindGameObjectWithTag("GUIScore").GetComponent<UpdateStatsText>().CallbackUpdateStats(GameStats.score);
+        // If -1 the game just started and the health must be set with the max Health form the unity inspector. 
+        if (GameStats.currentPlayerHealth == -1)
+        {
+            this.CurrentHealth = PlayerInfo.maxHealth;
+        }
+
         this.OnHealthChanges += GameObject.FindWithTag("GUIHealth").GetComponent<UpdateStatsText>().CallbackUpdateStats;
         this.OnDeathPlayer += GameObject.FindWithTag("MainCamera").GetComponent<ManageGameOverScreen>().CallbackCreateGameOverScreen;
-        this.OnHealthChanges.Invoke(CurrentHealth);
+        this.OnHealthChanges.Invoke(this.CurrentHealth);
     }
 
     private void Update()
     {
         // Checks if player dies.
-        if (this.currentHealth <= 0)
+        if (this.CurrentHealth <= 0)
         {
             if (this.isDead == false)
             {
@@ -50,11 +62,11 @@ public class PlayerInfo : MonoBehaviour
                 GetComponent<PlayerMovement>().allowToMove = false;
             }
             // Prevents the display of health to show a negativ number.
-            this.currentHealth = 0;
+            this.CurrentHealth = 0;
             OnHealthChanges.Invoke(CurrentHealth);
             // Triggers game over screen and disables toggling pause menu.
             OnDeathPlayer.Invoke(this, EventArgs.Empty);
-
+            this.CurrentHealth = PlayerInfo.maxHealth;
             Destroy(this.gameObject, 2f);
         }
 
@@ -64,7 +76,7 @@ public class PlayerInfo : MonoBehaviour
     {
         // Gives visuell feedback to player for player being hit.
         this.animator.SetTrigger("IsHit");
-        this.currentHealth -= damage;
+        this.CurrentHealth -= damage;
         // Updates health gui on the player view.
         OnHealthChanges.Invoke(CurrentHealth);
     }
@@ -72,16 +84,16 @@ public class PlayerInfo : MonoBehaviour
     public void GainHealth(int health)
     {
         // Checks that the player does not gain more health than his max health.
-        if (this.currentHealth + health >= 100)
+        if (this.CurrentHealth + health >= 100)
         {
-            this.currentHealth = 100;
+            this.CurrentHealth = 100;
         }
         else
         {
-            this.currentHealth += health;
+            this.CurrentHealth += health;
         }
         // Updates gui for player health
-        OnHealthChanges.Invoke(CurrentHealth);
+        OnHealthChanges.Invoke(this.CurrentHealth);
 
     }
 

@@ -40,7 +40,7 @@ public class EnemyInfo : EnemyPowerGainPerLevel
 
         if (guiScore != null)
         {
-            this.OnDeathEnemiesScore += guiScore.GetComponent<UpdateStatsText>().CallbackUpdateStatsAdd;
+            this.OnDeathEnemiesScore += guiScore.GetComponent<UpdateStatsText>().CallbackUpdateStats;
         }
         else
         {
@@ -90,7 +90,8 @@ public class EnemyInfo : EnemyPowerGainPerLevel
         // Increases the score in the player gui.
         if (this.OnDeathEnemiesScore != null)
         {
-            this.OnDeathEnemiesScore.Invoke(this.score);
+            GameStats.score += this.score;
+            this.OnDeathEnemiesScore.Invoke(GameStats.score);
         }
 
         // Decrements the count of enemy left in the player gui.
