@@ -6,18 +6,6 @@ using UnityEngine;
 // All global stat are stored in static class GameStats.
 public class ChangeGameStats : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     // Makes sure the global player stats are as if the game just started.
     public void ResetStatsInGame()
     {
