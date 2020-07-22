@@ -132,8 +132,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1.4347}
-  m_SizeDelta: {x: 1729.147, y: 973.45026}
+  m_AnchoredPosition: {x: 0, y: -1.4346924}
+  m_SizeDelta: {x: 1729.147, y: 913.018}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &3446824524408676873
 CanvasRenderer:
@@ -184,13 +184,11 @@ MonoBehaviour:
 
     Level Design:
 
-
     Andre
     Barthel
 
 
     Graphic Art:
-
 
     Marcus Heider
 
@@ -390,7 +388,7 @@ PrefabInstance:
     - target: {fileID: 8262639289397968196, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.305054
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8262639289397968196, guid: 0b8241047789bf747a5214f8d5eda36c,
         type: 3}

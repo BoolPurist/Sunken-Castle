@@ -17,24 +17,28 @@ public class PositionRendererSorter : MonoBehaviour
 
 
 
-    void Awake()
+    private void Awake()
     {
-        myRender = GetComponent<Renderer>();
+        this.myRender = this.GetComponent<Renderer>();
 
     }
 
-    void LateUpdate()
+    private void LateUpdate()
     {
-        timer -= Time.deltaTime;
-        if (timer <= 0f)
+        this.timer -= Time.deltaTime;
+        if (this.timer <= 0f)
         {
-            myRender.sortingOrder = (int)(sortingOrderBase - (transform.position.y * 100) - offset);
-            if (updateOnce)
+            this.myRender.sortingOrder = (int)(this.sortingOrderBase - (this.transform.position.y * 100) - this.offset);
+
+            if (this.updateOnce)
+            {
                 Destroy(this);
-            timer = timerMax;
+            }
+
+            this.timer = this.timerMax;
         }
     }
 
 
-    
+
 }
