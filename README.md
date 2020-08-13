@@ -8,8 +8,6 @@
 
 * [Bugs and Feature Requests](#Bugs-and-Feature-Requests)
 
-* [Contributing To the Project](#Contributing-To-the-Project)
-
 * [Who can contribute to the Project](#Who-can-contribute-to-the-Project)
 
 ## Purpose
