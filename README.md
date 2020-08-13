@@ -33,4 +33,4 @@ Only the current collaborator are meant to change the project.
 
 Reason: This respo is a result of a former project in Software Engineering at an university of applied researched. We decided to continue the work for this game. We want to develop the game for us in the first place
 
-For collaborator there is the [wiki](https://github.com/BoolPurist/Sunken-Castle/wiki) of this respo about how to work in the project
+For collaborator there is the [wiki](https://github.com/BoolPurist/Sunken-Castle/wiki/Wiki-of-Sunken-Castle) of this respo about how to work in the project
