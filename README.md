@@ -21,10 +21,7 @@ Currently you play a character which goes from one level to the other. In every 
 
 Caution: We only tested the game on windows 10. So it is not certain if it works on another os.
 
-Currently the executable can not be downloaded directly. You have to build yourself. To do that, clone the respo on your computer.
-
-Start the project with the version "2019.3.13f1" by selecting the folder "Rogue-Game-2D-Unity-Project" in unity hub. Go to the file/Build Settings and make sure "PC, Max & Linux Standalone is selected".
-Then select file/build and run and select the folder where the executable game should be stored. Then in that folder you should find the executable you can double click to start the game. The executable should have the name of the unity project.
+You can download the folder with the excutable under the section [releases](https://github.com/BoolPurist/Sunken-Castle/releases) of this respo. The executable should have the name of the unity project "Sunken Castle". Just double click it and have fun with the game ^^.
 
 ## Bugs and Feature Requests
 
