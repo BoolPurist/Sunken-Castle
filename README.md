@@ -30,6 +30,7 @@ You can download the folder with the excutable under the section [releases](http
 ## Who can contribute to the Project
 
 Only the current collaborator are meant to change the project.
+So pull requets from a frok of this respo will be declinded.
 
 Reason: This respo is a result of a former project in Software Engineering at an university of applied researched. We decided to continue the work for this game. We want to develop the game for us in the first place
 
