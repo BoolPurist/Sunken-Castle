@@ -2,7 +2,7 @@
 
 ## Status
 
-This respo is no longer mantained !
+This respo is no longer maintained !
 
 ## Table of Content
 
